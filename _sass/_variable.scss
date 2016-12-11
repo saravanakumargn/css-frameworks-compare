@@ -7,3 +7,8 @@ $side-bg: darken($site-body-bg, 5%);
 $side-border: darken($site-body-bg, 10%);
 
 $footer-space: $spacer * 2;
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+$header-color: white;

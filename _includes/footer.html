@@ -1,9 +1,8 @@
 <footer>
-    <div class="container">
-        <span class="text-muted">&copy; {{ site.time | date: '%Y' }} <a href="http://saravanakumar.org">Saravanakumar.org</a></span>
-    </div>
+    <section class="container">
+       <div>
+           <span class="text-muted">Last updated on: {{ site.time | date: '%B %d, %Y' }}</span>
+       <span class="text-muted">&copy; {{ site.time | date: '%Y' }} <a href="http://saravanakumar.org">Saravanakumar.org</a></span></div>
+        
+    </section>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-<script src="{{ "/assets/js/jquery.dataTables.min.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
-<script src="{{ "/assets/js/list.min.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
-<script src="{{ "/assets/js/script.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>

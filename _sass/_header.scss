@@ -3,6 +3,13 @@
  */
 .#{$site-class-prefix}header {
     background: #c13832;
-    color: white;
+    color: $header-color;
     margin-bottom: 0;
+    #{$a-tags} {
+      color: $header-color;
+      text-decoration: none;
+    }
+    #{$a-tags-hover} {
+      color: $header-color;
+    }
 }

@@ -1,4 +1,11 @@
 footer {
     padding: $spacer*3 0;
     background-color: $gray;
+    #{$a-tags} {
+      color: $text-muted;
+      text-decoration: none;
+    }
+    #{$a-tags-hover} {
+      color: $text-muted;
+    }    
 }

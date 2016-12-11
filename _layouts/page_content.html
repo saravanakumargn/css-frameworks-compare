@@ -1,0 +1,61 @@
+---
+layout: page
+---
+
+{{ content }}
+<hr>
+<div class="my-2 text-xl-center text-md-center">
+    <a class="btn btn-primary mx-1" ng-href="{#cssPage.repoData.svn_url#}" role="button">Visit Github page</a>
+    <a class="btn btn-primary mx-1" ng-href="{#cssPage.repoData.homepage#}" role="button">Visit {# cssPage.repoData.name #} Page</a>
+</div>
+
+<hr>
+<div class="card-deck-wrapper my-2">
+    <div class="card-deck">
+        <div class="card card-inverse card-info text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current Version</h4>
+                <h2 class="card-title">{# cssPage.latestData.tag_name #}</h2>
+            </div>
+        </div>
+        <div class="card card-inverse card-success text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last Release</h4>
+                <h2 class="card-title">{# cssPage.latestData.published_at | date:'LLLL d, yyyy' #}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="card-deck-wrapper my-2">
+    <div class="card-deck">
+        <div class="card card-inverse card-danger text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
+                <h2 class="card-title">{# cssPage.repoData.open_issues_count | number #}</h2>
+            </div>
+        </div>
+        <div class="card card-inverse card-primary text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
+                <h2 class="card-title">{# cssPage.repoData.forks_count | number #}</h2>
+            </div>
+        </div>
+        <div class="card card-inverse card-info text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
+                <h2 class="card-title">{# cssPage.repoData.stargazers_count | number #}</h2>
+            </div>
+        </div>
+        <div class="card card-inverse card-warning text-xs-center">
+            <div class="card-block">
+                <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
+                <h2 class="card-title">{# cssPage.repoData.subscribers_count | number #}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
