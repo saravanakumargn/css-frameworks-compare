@@ -1,0 +1,14 @@
+.#{$site-class-prefix}sidebar {
+    background-color: $side-bg;
+    border: 1px solid $side-border;
+    height: 100%;
+    ._sidebar-content {
+        .__recent-posts {
+            padding-left:0;
+            list-style:none;
+            li {
+                padding-bottom: $spacer/2;
+            }
+        }        
+    }
+}

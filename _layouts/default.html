@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+
+<body>
+
+    {% include header.html %}
+
+    <main class="container">
+      <div class="py-3">
+          {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+  {% if jekyll.environment == 'production' %}
+      {% include google-analytics.html %}
+  {% endif %}
+
+</body>
+
+</html>

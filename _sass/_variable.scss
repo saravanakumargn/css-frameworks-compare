@@ -1,0 +1,9 @@
+@import "bt/variables";
+
+$site-class-prefix: sa-;
+$site-body-bg:        #f5f5f5;
+
+$side-bg: darken($site-body-bg, 5%);
+$side-border: darken($site-body-bg, 10%);
+
+$footer-space: $spacer * 2;

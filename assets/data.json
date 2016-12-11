@@ -1,0 +1,6 @@
+{
+    "bootstrap": "twbs/bootstrap",
+    "semantic_ui": "Semantic-Org/Semantic-UI",
+    "foundation": "zurb/foundation-sites",
+    "pure": "yahoo/pure"
+}
