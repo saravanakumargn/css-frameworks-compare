@@ -6,11 +6,11 @@ layout: home
 ---
 
 
-
+{% if jekyll.environment == 'production' %}
     <div class="my-1">
        <hr>
        <div class="my-1">
-           {% if jekyll.environment == 'production' %}
+           
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- github_pages _responsive -->
             <ins class="adsbygoogle"
@@ -21,114 +21,71 @@ layout: home
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            {% endif %}
       </div>
        <hr>
     </div>
-    
-<section>
+{% endif %}
+
+<section ng-app="cssApp" ng-controller="cssPageController as cssPage" ng-cloak>
     <div class="table-responsive">
         <table class="table" id="framework-list">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th ng-click="cssPage.sortBy('label')">
+                        <span>Name</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'label'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'label'"></span>
+                    </th>
                     <th>Written in</th>
                     <th>Supports</th>
-                    <th>Release Date</th>
-                    <th>Release Type</th>
+                    <th ng-click="cssPage.sortBy('published_at')">
+                        <span>Release Date</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'published_at'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'published_at'"></span>
+                    </th>
+                    <th ng-click="cssPage.sortBy('stargazers_count')">
+                        <span>Star</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'stargazers_count'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'stargazers_count'"></span>
+                    </th>
+                    <th ng-click="cssPage.sortBy('size')">
+                        <span>Size</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'size'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'size'"></span>
+                    </th>
+                    <th ng-click="cssPage.sortBy('open_issues_count')">
+                        <span>Open Issues</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'open_issues_count'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'open_issues_count'"></span>
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr id="bootstrap">
+                <tr ng-repeat="list in cssPage.listData | orderBy:cssPage.sortType:cssPage.reverse">
                     <td>
-                        <a class="btn btn-link" href="bootstrap" role="button">Bootstrap</a>
-                    </td>
-                    <td>
-                        <h6>
-                        <span class="tag tag-pill tag-success">SASS</span>
-                        <span class="tag tag-pill tag-success">LESS</span>
-                        <span class="tag tag-pill tag-success">JS</span>
-                        </h6>
+                        <a class="btn btn-link" ng-href="{# list.url #}" role="button">{# list.label #}</a>
                     </td>
                     <td>
-                        <i class="fa fa-desktop fa-2x yes" aria-hidden="true"></i>
-                        <i class="fa fa-tablet fa-3x yes" aria-hidden="true"></i>
-                        <i class="fa fa-mobile fa-3x yes" aria-hidden="true"></i>
-                    </td>
-                    <td class="published_at">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                    <td class="prerelease">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                </tr>
-                <tr id="foundation">
-                    <td>
-                    <a class="btn btn-link" href="foundation" role="button">Foundation</a>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">SASS</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.less, 'tag-default': !list.written.less }">LESS</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.js, 'tag-default': !list.written.js }">JS</span>
                     </td>
                     <td>
-                        <h6>
-                        <span class="tag tag-pill tag-success">SASS</span>
-                        <span class="tag tag-pill tag-default">LESS</span>
-                        <span class="tag tag-pill tag-success">JS</span>
-                        </h6>
+                        <i class="fa fa-desktop fa-2x " ng-class="{ 'yes': list.supports.lg, 'no': !list.supports.lg }" aria-hidden="true"></i>
+                        <i class="fa fa-tablet fa-2x " ng-class="{ 'yes': list.supports.xs, 'no': !list.supports.xs }" aria-hidden="true"></i>
+                        <i class="fa fa-mobile fa-2x " ng-class="{ 'yes': list.supports.xs, 'no': !list.supports.xs }" aria-hidden="true"></i>
                     </td>
                     <td>
-                        <i class="fa fa-desktop fa-2x yes" aria-hidden="true"></i>
-                        <i class="fa fa-tablet fa-3x yes" aria-hidden="true"></i>
-                        <i class="fa fa-mobile fa-3x yes" aria-hidden="true"></i>
-                    </td>
-                    <td class="published_at">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                    <td class="prerelease">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                </tr>
-                <tr id="semantic_ui">
-                    <td>
-                    <a class="btn btn-link" href="semantic_ui" role="button">Semantic UI</a>
+                        {# list.published_at | date:'LLLL d, yyyy' #}
                     </td>
                     <td>
-                        <h6>
-                        <span class="tag tag-pill tag-default">SASS</span>
-                        <span class="tag tag-pill tag-success">LESS</span>
-                        <span class="tag tag-pill tag-success">JS</span>
-                        </h6>
+                        {# list.stargazers_count | number #}
                     </td>
                     <td>
-                        <i class="fa fa-desktop fa-2x yes" aria-hidden="true"></i>
-                        <i class="fa fa-tablet fa-3x yes" aria-hidden="true"></i>
-                        <i class="fa fa-mobile fa-3x yes" aria-hidden="true"></i>
-                    </td>
-                    <td class="published_at">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                    <td class="prerelease">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                </tr>
-                <tr id="pure">
-                    <td>
-                    <a class="btn btn-link" href="pure" role="button">Pure CSS</a>
+                        {# list.size | bytes #}
                     </td>
                     <td>
-                        <h6>
-                        <span class="tag tag-pill tag-default">SASS</span>
-                        <span class="tag tag-pill tag-default">LESS</span>
-                        <span class="tag tag-pill tag-default">JS</span>
-                        </h6>
-                    </td>
-                    <td>
-                        <i class="fa fa-desktop fa-2x yes" aria-hidden="true"></i>
-                        <i class="fa fa-tablet fa-3x yes" aria-hidden="true"></i>
-                        <i class="fa fa-mobile fa-3x yes" aria-hidden="true"></i>
-                    </td>
-                    <td class="published_at">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
-                    </td>
-                    <td class="prerelease">
-                        <i class="fa fa-refresh fa-spin fa-fw"></i>
+                        {# list.open_issues_count | number #}
                     </td>
                 </tr>
             </tbody>

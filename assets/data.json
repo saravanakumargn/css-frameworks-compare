@@ -1,6 +1,82 @@
-{
-    "bootstrap": "twbs/bootstrap",
-    "semantic_ui": "Semantic-Org/Semantic-UI",
-    "foundation": "zurb/foundation-sites",
-    "pure": "yahoo/pure"
-}
+[
+  {
+    "url": "bootstrap",
+    "label": "Bootstrap",
+    "supports": {
+      "lg": true,
+      "xs": true
+    },
+    "written": {
+      "sass": true,
+      "less": true,
+      "js": true
+    },
+    "name": "bootstrap",
+    "stargazers_count": 104577,
+    "forks_count": 47482,
+    "open_issues_count": 311,
+    "size": 217052,
+    "published_at": "2016-07-25T16:04:06Z",
+    "prerelease": false
+  },
+  {
+    "url": "pure-css",
+    "label": "Pure CSS",
+    "supports": {
+      "lg": true,
+      "xs": true
+    },
+    "written": {
+      "sass": false,
+      "less": false,
+      "js": false
+    },
+    "name": "pure",
+    "stargazers_count": 15510,
+    "forks_count": 1832,
+    "open_issues_count": 76,
+    "size": 2244,
+    "published_at": "2016-12-12T22:34:35Z",
+    "prerelease": false
+  },
+  {
+    "url": "semantic-ui",
+    "label": "Semantic UI",
+    "supports": {
+      "lg": true,
+      "xs": true
+    },
+    "written": {
+      "sass": false,
+      "less": true,
+      "js": true
+    },
+    "name": "Semantic-UI",
+    "stargazers_count": 30122,
+    "forks_count": 3433,
+    "open_issues_count": 1023,
+    "size": 187095,
+    "published_at": "2016-10-28T03:12:19Z",
+    "prerelease": false
+  },
+  {
+    "url": "foundation",
+    "label": "Foundation",
+    "supports": {
+      "lg": true,
+      "xs": true
+    },
+    "written": {
+      "sass": true,
+      "less": false,
+      "js": true
+    },
+    "name": "foundation-sites",
+    "stargazers_count": 24583,
+    "forks_count": 5377,
+    "open_issues_count": 351,
+    "size": 119222,
+    "published_at": "2016-12-15T16:55:53Z",
+    "prerelease": false
+  }
+]

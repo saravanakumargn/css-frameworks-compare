@@ -17,3 +17,14 @@
 .no {
     color: $gray-light;
 }
+
+.sortorder:after {
+  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder-disabled:after {
+  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+    color: $gray-light;
+}
+.sortorder.reverse:after {
+  content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}

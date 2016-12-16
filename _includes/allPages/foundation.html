@@ -1,0 +1,70 @@
+<p>foundation-sites's Pug source code!</p><p>v6.3.0 tagname</p><section><p>Foundation 6.3 contains new features, reworked old features, and more bugfixes than you can shake a stick at! Foundation is now EVEN MORE accessible out of the box, with a default color palette that meets AA contrast requirements, better keyboard navigation, and a slew of other improvements.</p>
+<h3 id="migrationnotes">Migration Notes:</h3>
+<ul>
+<li>If you're using the ZURB template, check out this pull request to see the changes you'll want to make to update: https://github.com/zurb/foundation-zurb-template/pull/49/files</li>
+<li>Flex Videos are now Responsive Embeds.  Old classes and mixin names are now deprecated.  Check out https://github.com/zurb/foundation-sites/pull/8765</li>
+<li>Accordion Items now MUST be labeled with <code>data-accordion-item</code>, they are no longer inferred from <code>li</code> elements.  Check out https://github.com/zurb/foundation-sites/pull/9178</li>
+<li>The dist directory structure has changed. CSS files now live in <code>dist/css</code>, JS files in <code>dist/js</code>.  Check out https://github.com/zurb/foundation-sites/pull/9078</li>
+<li>The default color palette has changed to be meet AA contrast requirements. This has changed both defaults and a number scss variables and functions.  Check out https://github.com/zurb/foundation-sites/pull/9319#issuecomment-263414697</li>
+<li>In order to facilitate vertical rhythm layouts, the old <code>$header-sizes</code> map has been replaced with a more general <code>$header-styles</code> map. <code>$header-styles</code> map not only allows to set the <code>font-size</code>, but also <code>line-height</code>, <code>margin-top</code> and <code>margin-bottom</code> per header size and breakpoint. <code>$header-sizes</code> still works, however, it is going to be depreciated. If <code>$header-sizes</code> is present in your <code>_settings.scss</code> it overrides any <code>$header-styles</code> map. Check out <a href="https://github.com/zurb/foundation-sites/pull/9419">#9419</a></li>
+<li>Some older flex based mixins (flex-grid-order, flex-grid-row-align, flex-grid-column-align) and classes (.align-column/.align-row), that had been deprecated are now removed, along with a few old variables that are no longer relevant.  Check out <a href="https://github.com/zurb/foundation-sites/pull/9437">#9437</a></li>
+</ul>
+<h4 id="newcomponents">New Components:</h4>
+<ul>
+<li>Cards - see https://github.com/zurb/foundation-sites/pull/9215</li>
+<li>Responsive Accordion Tabs - see https://github.com/zurb/foundation-sites/pull/8774</li>
+</ul>
+<h4 id="supercoolenhancements">Super cool enhancements:</h4>
+<ul>
+<li>Completely reworked Off Canvas - see https://github.com/zurb/foundation-sites/pull/9357</li>
+<li>Mutation Observers! (components like tabs and equalizer automatically adjusting when their content changes) - see https://github.com/zurb/foundation-sites/pull/9126 and https://github.com/zurb/foundation-sites/issues/9320</li>
+<li>Vertical Rhythm Support - see https://github.com/zurb/foundation-sites/pull/9419</li>
+<li>Improved Print Style Control - see https://github.com/zurb/foundation-sites/pull/9304</li>
+<li>Autoresizing Drilldowns - see https://github.com/zurb/foundation-sites/pull/8699</li>
+<li>Deep linking to tabs - see https://github.com/zurb/foundation-sites/pull/9242 and https://github.com/zurb/foundation-sites/pull/9407</li>
+<li>Flexbox Helpers - see https://github.com/zurb/foundation-sites/pull/9324</li>
+</ul>
+<h3 id="contributors">Contributors</h3>
+<ul>
+<li>Aaron Arney (@ocularrhythm)</li>
+<li>Abdullah Salem (@abdullahsalem)</li>
+<li>Alec Joy (@ajoy39)</li>
+<li>Andy Cochran (@andycochran)</li>
+<li>Andy Hebrank (@ahebrank)</li>
+<li>Arian Xhezairi (@xhezairi)</li>
+<li>Brett Mason (@brettsmason)</li>
+<li>Brian Tan (@briantan888)</li>
+<li>Colin Marshall (@colin-marshall)</li>
+<li>Corey Snyder (@coreysyms)</li>
+<li>Daniel Schuba (@DaSchTour)</li>
+<li>David Ball (@drball)</li>
+<li>David Reese (@whatcould)</li>
+<li>Dominik Pieper</li>
+<li>Jens Köhler (@designerno1)</li>
+<li>John Wei</li>
+<li>Karl Anders (@karland)</li>
+<li>Kevin Ball (@kball)</li>
+<li>Leslie Doherty (@lesliedoherty)</li>
+<li>Maks Feltrin (@pine3ree)</li>
+<li>Marcelo Luz (@Lindsor)</li>
+<li>Marius Olbertz (@Owlbertz)</li>
+<li>Matt Ferderer (@mattferderer)</li>
+<li>Michael Manhire (@MichaelManhire)</li>
+<li>Milos (@milose)</li>
+<li>Nicolas Coden (@ncoden)</li>
+<li>Paul Bailey (@spacepants)</li>
+<li>Quy (@quy)</li>
+<li>Rafi Benkual (@rafibomb)</li>
+<li>Raymond Perez (@rspraymond)</li>
+<li>Rawikitua Isherwood (@rawiki)</li>
+<li>Sébastien Gravier (@IllusionPerdu)</li>
+<li>Seth M Kane (@sethkane)</li>
+<li>Shawn (@simshaun)</li>
+<li>Sujayjaju (@sujayjaju)</li>
+<li>Vinicius Tadeu (@tadeusrox)</li>
+<li>Webdevan (@webdevan)</li>
+</ul>
+<p><em>Proxima Centauri b</em></p>
+<p><em>A recently discovered Earth-sized planet, rotating around the star closest to our sun, Proxima Centauri b "would be the most natural location to where our civilization could aspire to move after the sun will die, five billion years from now" - Avi Loeb, Harvard-Smithsonian Center for Astrophysics</em></p>
+<p><img src="http://news.nationalgeographic.com/content/dam/news/2016/08/24/exoplanets/planet-Proxima-Centauri-1.ngsversion.1472070113732.adapt.768.1.jpg"/>
+(Artists rendition courtesy of http://news.nationalgeographic.com/2016/08/earth-mass-planet-proxima-centauri-habitable-space-science/)</p></section>

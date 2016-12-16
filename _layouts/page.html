@@ -2,13 +2,10 @@
 layout: default
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-<script src="{{ "/assets/js/page.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
-
-<section ng-app="cssApp">
+<section>
 
     <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="{{site.baseurl}}">Home</a>
+        <a class="breadcrumb-item" href="{{ site.baseurl }}/">Home</a>
         <span class="breadcrumb-item active">{{ page.title | escape }}</span>
     </nav>
 
@@ -38,7 +35,7 @@ layout: default
         <h1 class="post-title">{{ page.title | escape }}</h1>
     </header>
 
-    <div class="post-content" ng-controller="cssPageController as cssPage" ng-cloak>
+    <div class="post-content">
         {{ content }}
     </div>
 
