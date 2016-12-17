@@ -3,13 +3,19 @@ layout: default
 ---
 
 <section>
-
-    <nav class="breadcrumb">
-        <a class="breadcrumb-item" href="{{ site.baseurl }}/">Home</a>
-        <span class="breadcrumb-item active">{{ page.title | escape }}</span>
-    </nav>
-
-   
+    <nav>
+        <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"  class="breadcrumb-item">
+            <a itemprop="item" href="{{ site.baseurl }}/">
+            <span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item active">
+            <span itemprop="name">{{ page.title | escape }}</span>
+            <meta itemprop="position" content="2" />
+          </li>
+        </ol>  
+    </nav>   
 {% if jekyll.environment == 'production' %}
     <div class="my-1">
        <hr>
@@ -45,16 +51,15 @@ layout: default
         </div>
        <hr>
     </div>
-{% endif %}
-    
+{% endif %}   
    
-    <header class="post-header">
-        <h1 class="post-title">{{ page.title | escape }}</h1>
+    <header>
+        <h1>{{ page.title | escape }}</h1>
     </header>
-
-    <div class="post-content">
+    
+    <section>
         {{ content }}
-    </div>
-
+    </section>
+    
 </section>
 
