@@ -23,7 +23,7 @@ angular.module('cssApp', [])
             cssScope.sortType = sortType;
         };
         function getDataJSON() {
-            $http.get('assets/data.json').then(successData, errorData);
+            $http.get('assets/data.json?'+window.pageTime).then(successData, errorData);
         }
         function successData(result) {
             cssScope.listData = result.data;

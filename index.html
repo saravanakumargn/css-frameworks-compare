@@ -27,7 +27,12 @@ layout: home
 {% endif %}
 
 <section ng-app="cssApp" ng-controller="cssPageController as cssPage" ng-cloak>
-    <div class="table-responsive">
+    <div ng-show="cssPage.listData.length<=0" class="text-xs-center sa-loading">
+        <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+        <div>Loading...</div>
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="table-responsive" ng-show="cssPage.listData.length>0">
         <table class="table" id="framework-list">
             <thead>
                 <tr>

@@ -5,6 +5,9 @@
     background: #c13832;
     color: $header-color;
     margin-bottom: 0;
+    .text {
+        color: darken($header-color, 25);
+    }
     #{$a-tags} {
       color: $header-color;
       text-decoration: none;

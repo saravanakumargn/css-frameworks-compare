@@ -28,3 +28,22 @@
 .sortorder.reverse:after {
   content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
 }
+
+.all-links {
+    background-color: $gray-light;
+    padding: $spacer * 2;
+    .items {
+        padding: $spacer/2;
+            #{$a-tags} {
+      color: $header-color;
+      text-decoration: none;
+    }
+    #{$a-tags-hover} {
+      color: $header-color;
+    }
+    }
+}
+
+.#{$site-class-prefix}loading {
+    padding: $spacer*3 0;
+}

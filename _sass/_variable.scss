@@ -10,5 +10,6 @@ $footer-space: $spacer * 2;
 
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
- 
-$header-color: white;
+
+$white-color: white;
+$header-color: $white-color;

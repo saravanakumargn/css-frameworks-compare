@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?{{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script>
+        window.pageTime = {{site.time | date: '%s%N'}};
+    </script>
     <script src="{{ "/assets/js/page.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
-
 </head>
