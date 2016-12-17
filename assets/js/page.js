@@ -18,23 +18,16 @@ angular.module('cssApp', [])
         cssScope.reverse = false;
         cssScope.listData = [];
 
-
         cssScope.sortBy = function (sortType) {
-//            console.log('sortBy');
             cssScope.reverse = (cssScope.sortType === sortType) ? !cssScope.reverse : false;
             cssScope.sortType = sortType;
         };
-
-
         function getDataJSON() {
             $http.get('assets/data.json').then(successData, errorData);
         }
-
         function successData(result) {
-            console.log(result.data);
             cssScope.listData = result.data;
         }
-
         function errorData(error) {
             console.log(error);
         }
