@@ -2,20 +2,16 @@
   {
     "url": "bootstrap",
     "label": "Bootstrap",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": true,
       "js": true
     },
     "name": "bootstrap",
-    "stargazers_count": 104596,
-    "forks_count": 47485,
-    "open_issues_count": 311,
-    "updated_at": "2016-12-17T10:18:15Z",
+    "stargazers_count": 104635,
+    "forks_count": 47489,
+    "open_issues_count": 314,
+    "updated_at": "2016-12-18T16:14:41Z",
     "type": "Organization",
     "size": 217052,
     "published_at": "2016-07-25T16:04:06Z",
@@ -24,20 +20,16 @@
   {
     "url": "pure-css",
     "label": "Pure CSS",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": false,
       "js": false
     },
     "name": "pure",
-    "stargazers_count": 15511,
+    "stargazers_count": 15516,
     "forks_count": 1832,
     "open_issues_count": 75,
-    "updated_at": "2016-12-17T10:45:50Z",
+    "updated_at": "2016-12-18T15:37:23Z",
     "type": "Organization",
     "size": 2244,
     "published_at": "2016-12-12T22:34:35Z",
@@ -46,20 +38,16 @@
   {
     "url": "semantic-ui",
     "label": "Semantic UI",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": true,
       "js": true
     },
     "name": "Semantic-UI",
-    "stargazers_count": 30133,
-    "forks_count": 3433,
-    "open_issues_count": 1024,
-    "updated_at": "2016-12-17T11:02:47Z",
+    "stargazers_count": 30146,
+    "forks_count": 3432,
+    "open_issues_count": 1026,
+    "updated_at": "2016-12-18T15:45:23Z",
     "type": "Organization",
     "size": 187095,
     "published_at": "2016-10-28T03:12:19Z",
@@ -68,20 +56,16 @@
   {
     "url": "foundation",
     "label": "Foundation",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "foundation-sites",
-    "stargazers_count": 24588,
+    "stargazers_count": 24594,
     "forks_count": 5379,
-    "open_issues_count": 352,
-    "updated_at": "2016-12-17T07:36:23Z",
+    "open_issues_count": 357,
+    "updated_at": "2016-12-18T11:56:56Z",
     "type": "Organization",
     "size": 119222,
     "published_at": "2016-12-15T16:55:53Z",
@@ -90,20 +74,16 @@
   {
     "url": "ink",
     "label": "Ink",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "Ink",
-    "stargazers_count": 1824,
-    "forks_count": 278,
+    "stargazers_count": 1825,
+    "forks_count": 279,
     "open_issues_count": 11,
-    "updated_at": "2016-12-17T09:15:20Z",
+    "updated_at": "2016-12-18T15:50:13Z",
     "type": "Organization",
     "size": 117790,
     "published_at": "2015-08-06T16:57:29Z",
@@ -112,20 +92,16 @@
   {
     "url": "skeleton",
     "label": "Skeleton",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": false,
       "js": true
     },
     "name": "Skeleton",
-    "stargazers_count": 13155,
-    "forks_count": 2334,
+    "stargazers_count": 13162,
+    "forks_count": 2333,
     "open_issues_count": 104,
-    "updated_at": "2016-12-17T06:59:03Z",
+    "updated_at": "2016-12-18T15:01:09Z",
     "type": "User",
     "size": 6398,
     "published_at": "2014-12-29T18:38:04Z",
@@ -134,30 +110,22 @@
   {
     "url": "bulma",
     "label": "Bulma",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "bulma",
-    "stargazers_count": 10780,
-    "forks_count": 571,
-    "open_issues_count": 146,
-    "updated_at": "2016-12-17T10:37:06Z",
+    "stargazers_count": 10807,
+    "forks_count": 574,
+    "open_issues_count": 148,
+    "updated_at": "2016-12-18T16:04:06Z",
     "type": "User",
     "size": 2943
   },
   {
     "url": "kube",
     "label": "Kube",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -176,20 +144,16 @@
   {
     "url": "uikit",
     "label": "uikit",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": true,
       "js": true
     },
     "name": "uikit",
-    "stargazers_count": 8011,
+    "stargazers_count": 8013,
     "forks_count": 1513,
-    "open_issues_count": 461,
-    "updated_at": "2016-12-17T11:05:11Z",
+    "open_issues_count": 462,
+    "updated_at": "2016-12-17T19:45:40Z",
     "type": "Organization",
     "size": 27596,
     "published_at": "2016-10-24T07:53:16Z",
@@ -198,10 +162,6 @@
   {
     "url": "cascadeframework",
     "label": "Cascade Framework",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": false,
@@ -218,20 +178,16 @@
   {
     "url": "material-design-lite",
     "label": "Material Design Lite",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "material-design-lite",
-    "stargazers_count": 25111,
-    "forks_count": 4226,
+    "stargazers_count": 25125,
+    "forks_count": 4234,
     "open_issues_count": 267,
-    "updated_at": "2016-12-17T09:35:46Z",
+    "updated_at": "2016-12-18T15:49:44Z",
     "type": "Organization",
     "size": 56653,
     "published_at": "2016-09-08T15:38:11Z",
@@ -240,20 +196,16 @@
   {
     "url": "materialize",
     "label": "Materialize",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "materialize",
-    "stargazers_count": 23380,
-    "forks_count": 3390,
+    "stargazers_count": 23390,
+    "forks_count": 3391,
     "open_issues_count": 1348,
-    "updated_at": "2016-12-17T08:22:06Z",
+    "updated_at": "2016-12-18T12:32:18Z",
     "type": "User",
     "size": 141386,
     "published_at": "2016-10-30T21:08:12Z",
@@ -262,10 +214,6 @@
   {
     "url": "responsive",
     "label": "Responsive",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -284,10 +232,6 @@
   {
     "url": "metro-ui-css",
     "label": "Metro UI CSS",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": true,
@@ -295,7 +239,7 @@
     },
     "name": "Metro-UI-CSS",
     "stargazers_count": 5159,
-    "forks_count": 1822,
+    "forks_count": 1823,
     "open_issues_count": 80,
     "updated_at": "2016-12-16T10:36:37Z",
     "type": "User",
@@ -306,10 +250,6 @@
   {
     "url": "avalanche",
     "label": "Avalanche",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -328,32 +268,24 @@
   {
     "url": "awsmcss",
     "label": "awsm.css",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "awsm.css",
-    "stargazers_count": 79,
+    "stargazers_count": 81,
     "forks_count": 4,
-    "open_issues_count": 8,
-    "updated_at": "2016-11-27T10:10:30Z",
+    "open_issues_count": 6,
+    "updated_at": "2016-12-18T12:05:54Z",
     "type": "User",
-    "size": 348,
+    "size": 376,
     "published_at": "2016-04-03T14:08:19Z",
     "prerelease": false
   },
   {
     "url": "baseguide",
     "label": "Baseguide",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -372,30 +304,22 @@
   {
     "url": "cardinalcss",
     "label": "Cardinal",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": true,
       "js": true
     },
     "name": "cardinalcss",
-    "stargazers_count": 654,
+    "stargazers_count": 655,
     "forks_count": 83,
     "open_issues_count": 1,
-    "updated_at": "2016-12-16T09:01:23Z",
+    "updated_at": "2016-12-17T13:32:32Z",
     "type": "Organization",
     "size": 2302
   },
   {
     "url": "chopstick-boilerplate",
     "label": "Chopstick Boilerplate",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -414,20 +338,16 @@
   {
     "url": "jeet",
     "label": "Jeet",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
       "js": true
     },
     "name": "jeet",
-    "stargazers_count": 2912,
+    "stargazers_count": 2914,
     "forks_count": 283,
     "open_issues_count": 2,
-    "updated_at": "2016-12-15T21:22:25Z",
+    "updated_at": "2016-12-18T11:22:31Z",
     "type": "Organization",
     "size": 14394,
     "published_at": "2016-11-22T16:33:30Z",
@@ -436,10 +356,6 @@
   {
     "url": "modestgrid",
     "label": "Modest Grid",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -456,10 +372,6 @@
   {
     "url": "motus",
     "label": "Motus",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": true,
       "less": false,
@@ -478,10 +390,6 @@
   {
     "url": "mi-grid",
     "label": "MI GRID",
-    "supports": {
-      "lg": true,
-      "xs": true
-    },
     "written": {
       "sass": false,
       "less": false,

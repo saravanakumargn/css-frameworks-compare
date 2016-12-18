@@ -59,7 +59,6 @@ layout: home
                         <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'label'"></span>
                     </th>
                     <th>Written in</th>
-                    <th>Supports</th>
                     <th ng-click="cssPage.sortBy('published_at')">
                         <span>Release Date</span>
                         <span class="sortorder" ng-show="cssPage.sortType === 'published_at'" ng-class="{reverse: cssPage.reverse}"></span>
@@ -91,11 +90,6 @@ layout: home
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">SASS</span>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.less, 'tag-default': !list.written.less }">LESS</span>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.js, 'tag-default': !list.written.js }">JS</span>
-                    </td>
-                    <td>
-                        <i class="fa fa-desktop fa-2x " ng-class="{ 'yes': list.supports.lg, 'no': !list.supports.lg }" aria-hidden="true"></i>
-                        <i class="fa fa-tablet fa-2x " ng-class="{ 'yes': list.supports.xs, 'no': !list.supports.xs }" aria-hidden="true"></i>
-                        <i class="fa fa-mobile fa-2x " ng-class="{ 'yes': list.supports.xs, 'no': !list.supports.xs }" aria-hidden="true"></i>
                     </td>
                     <td>
                         {# list.published_at | date:'LLLL d, yyyy' #}
