@@ -22,6 +22,12 @@ angular.module('cssApp', [])
             cssScope.reverse = (cssScope.sortType === sortType) ? !cssScope.reverse : false;
             cssScope.sortType = sortType;
         };
+    
+    cssScope.filterTags = function (tag) {
+        return true;//tag.type == "User";
+//        return tag.category == $scope.catSort;
+    };    
+    
         function getDataJSON() {
             $http.get('assets/data.json?'+window.pageTime).then(successData, errorData);
         }

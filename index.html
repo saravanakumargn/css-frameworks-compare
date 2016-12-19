@@ -49,6 +49,8 @@ layout: home
         <div>Loading...</div>
         <span class="sr-only">Loading...</span>
     </div>
+    {% include index-filter.html %}
+    <div class="text-xs-right my-1"><small>Total results: {# filtered.length #}</small></div>
     <div class="table-responsive" ng-show="cssPage.listData.length>0">
         <table class="table" id="framework-list">
             <thead>
@@ -82,7 +84,7 @@ layout: home
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="list in cssPage.listData | orderBy:cssPage.sortType:cssPage.reverse">
+                <tr ng-repeat="list in filtered = (cssPage.listData | filter:cssPage.filterTags | orderBy:cssPage.sortType:cssPage.reverse)">
                     <td>
                         <a class="btn btn-link" ng-href="{# list.url #}" role="button">{# list.label #}</a>
                     </td>
