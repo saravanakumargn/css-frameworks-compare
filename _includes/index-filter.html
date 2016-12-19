@@ -1,16 +1,60 @@
 <form>
-    <div class="form-group row">
-        <label class="col-sm-2">Project type</label>
-        <div class="col-sm-10">
-            <label class="form-check-inline">
-                <input class="form-check-input" type="radio" ng-value="type_all" checked> All
-            </label>
-            <label class="form-check-inline">
-                <input class="form-check-input" type="radio" ng-value="type_org"> Organization
-            </label>
-            <label class="form-check-inline">
-                <input class="form-check-input" type="radio" ng-value="type_user"> User
-            </label>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="form-group row">
+                <label for="search" class="col-xs-4 col-form-label">Search</label>
+                <div class="col-xs-8">
+                    <input class="form-control" type="text" ng-model="searchName" placeholder="Search by name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4">Project type</label>
+                <div class="col-sm-8">
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value=""> All
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value="Organization"> Organization
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value="User"> User
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4">Written</label>
+                <div class="col-sm-8">
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.written" value=""> All
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.written" value="sass"> Sass
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.written" value="less"> Less
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.written" value="js"> JS
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-sm-4 col-sm-8">
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            {% if jekyll.environment == 'production' %}
+            <div class="sa-round-border my-1">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- github_pages _responsive_1 -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2445138966914411" data-ad-slot="1768590408" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            {% endif %}
         </div>
     </div>
 </form>

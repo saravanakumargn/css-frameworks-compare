@@ -1,18 +1,9 @@
-angular.module('cssApp', [])
+angular.module('cssApp', ['angular.filter'])
     .config(function ($interpolateProvider) {
         $interpolateProvider.startSymbol('{#');
         $interpolateProvider.endSymbol('#}');
     })
-.filter('bytes', function() {
-	return function(bytes, precision) {
-		if (isNaN(parseFloat(bytes)) || !isFinite(bytes)) return '-';
-		if (typeof precision === 'undefined') precision = 1;
-		var units = ['bytes', 'kB', 'MB', 'GB', 'TB', 'PB'],
-			number = Math.floor(Math.log(bytes) / Math.log(1024));
-		return (bytes / Math.pow(1024, Math.floor(number))).toFixed(precision) +  ' ' + units[number];
-	}
-})
-    .controller('cssPageController', function ($http) {
+    .controller('cssPageController', function ($http, $scope) {
         var cssScope = this;
         cssScope.sortType = 'label';
         cssScope.reverse = false;
@@ -22,18 +13,31 @@ angular.module('cssApp', [])
             cssScope.reverse = (cssScope.sortType === sortType) ? !cssScope.reverse : false;
             cssScope.sortType = sortType;
         };
-    
-    cssScope.filterTags = function (tag) {
-        return true;//tag.type == "User";
-//        return tag.category == $scope.catSort;
-    };    
-    
+        $scope.reset = function () {
+            $scope.search.projType = '';
+            $scope.searchName = '';
+            $scope.search.written = '';
+        };
+        $scope.search = {
+            projType: '',
+            written: ''
+        };
+        $scope.reset();
+        $scope.written = function (tag) {
+            if ($scope.search.written == '') {
+                return true;
+            }
+            return tag.written[$scope.search.written];
+        };
+
         function getDataJSON() {
-            $http.get('assets/data.json?'+window.pageTime).then(successData, errorData);
+            $http.get('assets/data.json?' + window.pageTime).then(successData, errorData);
         }
+
         function successData(result) {
             cssScope.listData = result.data;
         }
+
         function errorData(error) {
             console.log(error);
         }

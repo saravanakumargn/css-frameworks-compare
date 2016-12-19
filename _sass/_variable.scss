@@ -13,3 +13,6 @@ $a-tags-hover: 'a:active, a:hover';
 
 $white-color: white;
 $header-color: $white-color;
+
+$table-link-color: $gray-lighter;
+$table-link-color-hover: darken($table-link-color, 10%);

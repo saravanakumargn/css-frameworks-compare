@@ -9,35 +9,17 @@ layout: home
 {% if jekyll.environment == 'production' %}
     <div class="my-1">
        <hr>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-               <div class="my-1">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- github_pages _responsive -->
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-2445138966914411"
-                         data-ad-slot="6757193203"
-                         data-ad-format="auto"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="my-1">
-                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- github_pages _responsive_1 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-2445138966914411"
-             data-ad-slot="1768590408"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-              </div>
-            </div>
+        <div class="my-1">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- github_pages _responsive -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2445138966914411"
+                 data-ad-slot="6757193203"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
        <hr>
     </div>
@@ -49,10 +31,19 @@ layout: home
         <div>Loading...</div>
         <span class="sr-only">Loading...</span>
     </div>
-    {% include index-filter.html %}
-    <div class="text-xs-right my-1"><small>Total results: {# filtered.length #}</small></div>
-    <div class="table-responsive" ng-show="cssPage.listData.length>0">
-        <table class="table" id="framework-list">
+    <section ng-show="cssPage.listData.length>0">
+        {% include index-filter.html %}
+        <div ng-show="filtered.length">
+            <div class="text-xs-right my-1"><small>Total results: {# filtered.length #}</small></div>
+        </div>
+        <div ng-show="!filtered.length" class="m-t-1">
+            <div class="alert alert-danger" role="alert">
+              No results found!
+            </div>
+        </div>
+    </section>
+    <div class="table-responsive" ng-show="cssPage.listData.length>0 && filtered.length>0">
+        <table class="table table-bordered table-inverse sa-table">
             <thead>
                 <tr>
                     <th ng-click="cssPage.sortBy('label')">
@@ -62,7 +53,7 @@ layout: home
                     </th>
                     <th>Written in</th>
                     <th ng-click="cssPage.sortBy('published_at')">
-                        <span>Release Date</span>
+                        <span>Last release</span>
                         <span class="sortorder" ng-show="cssPage.sortType === 'published_at'" ng-class="{reverse: cssPage.reverse}"></span>
                         <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'published_at'"></span>
                     </th>
@@ -77,20 +68,20 @@ layout: home
                         <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'size'"></span>
                     </th>
                     <th ng-click="cssPage.sortBy('open_issues_count')">
-                        <span>Open Issues</span>
+                        <span>Open issues</span>
                         <span class="sortorder" ng-show="cssPage.sortType === 'open_issues_count'" ng-class="{reverse: cssPage.reverse}"></span>
                         <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'open_issues_count'"></span>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="list in filtered = (cssPage.listData | filter:cssPage.filterTags | orderBy:cssPage.sortType:cssPage.reverse)">
+                <tr ng-repeat="list in filtered = (cssPage.listData | filter:{label:searchName,type:search.projType} | filter:written | orderBy:cssPage.sortType:cssPage.reverse)">
                     <td>
-                        <a class="btn btn-link" ng-href="{# list.url #}" role="button">{# list.label #}</a>
+                        <a ng-href="{# list.url #}" role="button">{# list.label #}</a>
                     </td>
                     <td>
-                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">SASS</span>
-                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.less, 'tag-default': !list.written.less }">LESS</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">Sass</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.less, 'tag-default': !list.written.less }">Less</span>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.js, 'tag-default': !list.written.js }">JS</span>
                     </td>
                     <td>
@@ -100,7 +91,7 @@ layout: home
                         {# list.stargazers_count | number #}
                     </td>
                     <td>
-                        {# list.size | bytes #}
+                        {# list.size | byteFmt: 2 #}
                     </td>
                     <td>
                         {# list.open_issues_count | number #}

@@ -47,3 +47,19 @@
 .#{$site-class-prefix}loading {
     padding: $spacer*3 0;
 }
+
+.#{$site-class-prefix}round-border {
+      padding: $thumbnail-padding;
+      background-color: $thumbnail-bg;
+      border: $thumbnail-border-width solid $thumbnail-border-color;
+}
+
+.#{$site-class-prefix}table {
+    #{$a-tags} {
+        color: $table-link-color;
+        text-decoration: underline;
+    }
+    #{$a-tags-hover} {
+        color: $table-link-color-hover;
+    }
+}
