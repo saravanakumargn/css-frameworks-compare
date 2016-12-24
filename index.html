@@ -5,7 +5,12 @@
 layout: home
 ---
 
- 
+<article itemscope itemtype="http://schema.org/Article">
+    <blockquote class="blockquote">
+        <p class="mb-0" itemprop="articleBody">Here you can compare with all kind of distinguish between Responsive CSS Frameworks like github forks, stars, watchers, templates, document, latest release, last commit, etc..</p>
+    </blockquote>    
+</article>
+  
 {% if jekyll.environment == 'production' %}
     <div class="my-1">
        <hr>
@@ -24,8 +29,8 @@ layout: home
        <hr>
     </div>
 {% endif %}
-
-<section ng-app="cssApp" ng-controller="cssPageController as cssPage" ng-cloak>
+  
+   <section ng-app="cssApp" ng-controller="cssPageController as cssPage" ng-cloak>
     <div ng-show="cssPage.listData.length<=0" class="text-xs-center sa-loading">
         <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
         <div>Loading...</div>
@@ -38,7 +43,7 @@ layout: home
         </div>
         <div ng-show="!filtered.length" class="m-t-1">
             <div class="alert alert-danger" role="alert">
-              No results found!
+                No results found!
             </div>
         </div>
     </section>
@@ -75,9 +80,9 @@ layout: home
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="list in filtered = (cssPage.listData | filter:{label:searchName,type:search.projType} | filter:written | orderBy:cssPage.sortType:cssPage.reverse)">
+                <tr ng-repeat="list in filtered = (cssPage.listData | filter:{label:searchName,type:search.projType} | filter:written | filter:design | filter:feature | filter:{has_templates: search.templates} | orderBy:cssPage.sortType:cssPage.reverse)">
                     <td>
-                        <a ng-href="{# list.url #}" role="button">{# list.label #}</a>
+                        <a ng-href="{# list.url #}">{# list.label #}</a>
                     </td>
                     <td>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">Sass</span>

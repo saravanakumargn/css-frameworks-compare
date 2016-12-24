@@ -11,7 +11,7 @@ layout: default
             <meta itemprop="position" content="1" />
           </li>
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item active">
-            <span itemprop="name">{{ page.title | escape }}</span>
+            <span itemprop="name">{{ page.btitle | escape }}</span>
             <meta itemprop="position" content="2" />
           </li>
         </ol>  
@@ -19,36 +19,18 @@ layout: default
 {% if jekyll.environment == 'production' %}
     <div class="my-1">
        <hr>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-               <div class="my-1">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- github_pages _responsive -->
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-2445138966914411"
-                         data-ad-slot="6757193203"
-                         data-ad-format="auto"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="my-1">
-                  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- github_pages _responsive_1 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-2445138966914411"
-             data-ad-slot="1768590408"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-              </div>
-            </div>
-        </div>
+        <div class="my-1">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- github_pages _responsive -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-2445138966914411"
+                 data-ad-slot="6757193203"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>        
        <hr>
     </div>
 {% endif %}   

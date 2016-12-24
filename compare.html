@@ -1,0 +1,139 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+---
+<nav>
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+            <a itemprop="item" href="{{ site.baseurl }}/">
+                <span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item active">
+            <span itemprop="name">Compare framework</span>
+            <meta itemprop="position" content="2" />
+        </li>
+    </ol>
+</nav>
+{% if jekyll.environment == 'production' %}
+    <div class="my-1">
+       <hr>
+        <div class="my-1">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- github_pages _responsive -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-2445138966914411"
+				 data-ad-slot="6757193203"
+				 data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+        </div>
+       <hr>
+    </div>
+{% endif %}
+<section ng-app="cssApp" ng-controller="CompareController as compare" ng-cloak>
+    <div ng-show="compare.compareData.length<=0" class="text-xs-center sa-loading">
+        <i class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+        <div>Loading...</div>
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="table-responsive" ng-show="compare.compareData.length>0">
+        <table class="table table-bordered table-inverse sa-compare">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th ng-repeat="list in compare.compareData">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object img-thumbnail" width="50" height="50" ng-src="{# list.avatar_url #}" alt="{# list.label #}">
+                            </a>
+                            <div class="media-body">
+                                <a ng-href="{# list.url #}">{# list.label #}</a>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="keyItems in compare.compareItems">
+                    <td>{# keyItems.text #}</td>
+                    <td ng-repeat="list in compare.compareData" class="text-xs-center">
+                        <span ng-switch="keyItems.id">
+                            <span ng-switch-when="size"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="latest_size"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="download_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="full_name">
+                        <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                        <span ng-if="list[keyItems.id]">{# list[keyItems.id] #}</span>
+                        </span>
+                        <span ng-switch-when="has_templates">
+                            <span ng-if="!list[keyItems.id]" class="no"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
+                            <span ng-if="list[keyItems.id]" class="yes"><i class="fa fa-check fa-2x" aria-hidden="true"></i></span>
+                        </span>
+                        <span ng-switch-when="stargazers_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="forks_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="open_issues_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="published_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        <span ng-switch-when="created_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        <span ng-switch-when="updated_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        <span ng-switch-when="written">
+                                <span class="tag tag-pill " ng-class="{ 'tag-success': list[keyItems.id].sass, 'tag-default': !list[keyItems.id].sass }">Sass</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list[keyItems.id].less, 'tag-default': !list[keyItems.id].less }">Less</span>
+                        <span class="tag tag-pill " ng-class="{ 'tag-success': list[keyItems.id].js, 'tag-default': !list[keyItems.id].js }">JS</span>
+                        </span>
+                        
+                        <span ng-switch-when="prerelease">
+                            <span ng-if="list[keyItems.id]" class="no"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
+                            <span ng-if="!list[keyItems.id]" class="yes"><i class="fa fa-check fa-2x" aria-hidden="true"></i></span>                        
+                        </span>
+                        
+                        <span ng-switch-when="doc_rating">
+                                <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                        <span ng-if="list[keyItems.id]">
+                            <div class="rating-box">
+                                <div class="rating" style="width:{# list[keyItems.id]*2 #}0%;"></div>
+                            </div>
+                        </span>
+                        </span>
+                        <span ng-switch-when="homepage">
+                        <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                        <span ng-if="list[keyItems.id]">
+                            <a class="btn btn-primary m-1" ng-href="{# list[keyItems.id] #}" role="button" target="_blank">Visit Page <i class="fa fa-external-link" aria-hidden="true"></i></a>    
+                        </span>
+                        </span>
+                        <span ng-switch-when="url">
+                        <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                        <span ng-if="list[keyItems.id]">
+                            <a class="btn btn-primary btn-sm" ng-href="{# list[keyItems.id] #}" role="button">{# list['label'] #}</a>    
+                        </span>
+                        </span>
+                        <span ng-switch-default>{# list[keyItems.id] #}</span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}

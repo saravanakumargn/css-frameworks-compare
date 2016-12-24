@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Chopstick Boilerplate <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/5629259?v&#x3D;3" alt="getchopstick/chopstick-boilerplate">
   </div>
   <div class="media-body">
     <p class="lead">Chopstick boilerplate</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/getchopstick/chopstick-boilerplate" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://getchopstick.com" role="button" target="_blank">Visit Chopstick Boilerplate Page</a>    
+    <a class="btn btn-primary m-1" href="http://getchopstick.com" role="button" target="_blank">Visit Chopstick Boilerplate Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -73,10 +74,31 @@
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
         Release Notes <small>on September 24, 2015 for 0.7.0</small>
     </h1>
         <p>Preparations to split the layers into different repositories by adding variables to the generic, elements, objects and utilities layers.</p>
     </section>
+</article>

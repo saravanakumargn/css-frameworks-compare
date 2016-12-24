@@ -8,16 +8,33 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label class="col-sm-4">Project type</label>
+                <label class="col-sm-4">Framework design</label>
                 <div class="col-sm-8">
                     <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value=""> All
+                        <input class="form-check-input" type="radio" ng-model="search.design" value=""> All
                     </label>
                     <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value="Organization"> Organization
+                        <input class="form-check-input" type="radio" ng-model="search.design" value="plain"> Plain
                     </label>
                     <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value="User"> User
+                        <input class="form-check-input" type="radio" ng-model="search.design" value="material"> Material
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.design" value="metro"> Metro
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4">Startup templates</label>
+                <div class="col-sm-8">
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.templates" value=""> All
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.templates" value="true"> Yes
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.templates" value="false"> No
                     </label>
                 </div>
             </div>
@@ -39,26 +56,59 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-4">Feature type</label>
+                <div class="col-sm-8">
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.feature" value=""> All
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.feature" value="full"> Full
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.feature" value="prototype"> Prototype
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.feature" value="grid"> Grid
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4">Project type</label>
+                <div class="col-sm-8">
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value=""> All
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value="Organization"> Organization
+                    </label>
+                    <label class="form-check-inline">
+                        <input class="form-check-input" type="radio" ng-model="search.projType" value="User"> User
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group row">
                 <div class="offset-sm-4 col-sm-8">
                     <button type="button" class="btn btn-primary btn-sm" ng-click="reset()">Reset</button>
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6">
-            {% if jekyll.environment == 'production' %}
-            <div class="sa-round-border my-1" style="min-width:250px;min-height:250px;">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- github_pages _responsive_1 -->
-				<ins class="adsbygoogle"
-					 style="display:block"
-					 data-ad-client="ca-pub-2445138966914411"
-					 data-ad-slot="1768590408"
-					 data-ad-format="auto"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+            <div class="card text-xs-center">
+                <div class="card-header">
+                    Choose to compare frameworks
+                </div>
+                <div class="card-block text-xs-left">
+                    <section class="sa-filter">
+                        <label ng-repeat="role in filtered">
+                            <input type="checkbox" checklist-model="css.compare" checklist-value="role" ng-disabled="!checked && isReachLimit"> {# role.label #}
+                        </label>
+                    </section>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary" ng-href="compare.html?names={# compareParams #}" role="button" ng-class="{ 'disabled':!css.compare.length }">Compare</a>
+                </div>
             </div>
-            {% endif %}
         </div>
     </div>
 </form>

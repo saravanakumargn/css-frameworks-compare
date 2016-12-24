@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Ink <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/13458?v&#x3D;3" alt="sapo/Ink">
   </div>
   <div class="media-body">
     <p class="lead">An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/sapo/Ink" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://ink.sapo.pt" role="button" target="_blank">Visit Ink Page</a>    
+    <a class="btn btn-primary m-1" href="http://ink.sapo.pt" role="button" target="_blank">Visit Ink Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -52,7 +53,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
                 <h2 class="card-title">
-                        279
+                        280
                 </h2>
             </div>
         </div>
@@ -60,7 +61,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        1,825
+                        1,832
                 </h2>
             </div>
         </div>
@@ -68,13 +69,33 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
                 <h2 class="card-title">
-                        154
+                        153
                 </h2>
             </div>
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
         Release Notes <small>on August 6, 2015 for 3.1.10</small>
@@ -89,3 +110,4 @@
 <li>Fix SmoothScroller adding "active" classes in <code>&lt;li&gt;</code> elements, but never removing them</li>
 </ul>
     </section>
+</article>

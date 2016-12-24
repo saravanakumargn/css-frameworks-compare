@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Cardinal <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/15234353?v&#x3D;3" alt="cardinalcss/cardinalcss">
   </div>
   <div class="media-body">
     <p class="lead">A modular, “mobile-first” CSS framework built with performance and scalability in mind.</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/cardinalcss/cardinalcss" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://cardinalcss.com" role="button" target="_blank">Visit Cardinal Page</a>    
+    <a class="btn btn-primary m-1" href="http://cardinalcss.com" role="button" target="_blank">Visit Cardinal Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -73,4 +74,25 @@
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
+</article>

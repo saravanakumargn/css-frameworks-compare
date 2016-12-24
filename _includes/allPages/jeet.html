@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Jeet <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/314035?v&#x3D;3" alt="mojotech/jeet">
   </div>
   <div class="media-body">
     <p class="lead">The most advanced, yet intuitive, grid system available for Sass or Stylus</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/mojotech/jeet" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://jeet.gs" role="button" target="_blank">Visit Jeet Page</a>    
+    <a class="btn btn-primary m-1" href="http://jeet.gs" role="button" target="_blank">Visit Jeet Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -59,7 +60,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        2,914
+                        2,918
                 </h2>
             </div>
         </div>
@@ -73,7 +74,27 @@
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
         Release Notes <small>on November 22, 2016 for 7.1.0</small>
@@ -83,3 +104,4 @@
 <li>Make Jeet work via <code>@import 'jeet'</code> as well as <code>@import 'jeet/index'</code> (so it's non-breaking).</li>
 </ul>
     </section>
+</article>

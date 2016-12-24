@@ -7,20 +7,32 @@
       "less": true,
       "js": true
     },
-    "hasTemplates": true,
-    "docs": "good",
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "bootstrap",
-    "stargazers_count": 104659,
-    "forks_count": 47510,
-    "open_issues_count": 316,
-    "updated_at": "2016-12-19T10:06:31Z",
+    "stargazers_count": 104944,
+    "forks_count": 47593,
+    "open_issues_count": 251,
+    "watchers_count": 104944,
+    "size": 95338,
     "type": "Organization",
-    "size": 217052,
+    "full_name": "twbs",
+    "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+    "created_at": "2011-07-29T21:19:00Z",
+    "updated_at": "2016-12-24T10:17:22Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2918581?v=3",
+    "svn_url": "https://github.com/twbs/bootstrap",
+    "homepage": "http://getbootstrap.com",
     "published_at": "2016-07-25T16:04:06Z",
     "prerelease": false,
-    "download_count": 1973581,
-    "latest_size": 370276,
-    "latest_updated_at": "2016-07-25T15:56:03Z"
+    "download_count": 2034597,
+    "latest_size": 370276
   },
   {
     "url": "pure-css",
@@ -30,18 +42,32 @@
       "less": false,
       "js": false
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "pure",
-    "stargazers_count": 15521,
-    "forks_count": 1832,
-    "open_issues_count": 72,
-    "updated_at": "2016-12-19T09:06:22Z",
+    "stargazers_count": 15573,
+    "forks_count": 1830,
+    "open_issues_count": 45,
+    "watchers_count": 15573,
+    "size": 414,
     "type": "Organization",
-    "size": 2244,
+    "full_name": "yahoo",
+    "description": "A set of small, responsive CSS modules that you can use in every web project.",
+    "created_at": "2013-04-22T16:16:39Z",
+    "updated_at": "2016-12-24T06:42:44Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/16574?v=3",
+    "svn_url": "https://github.com/yahoo/pure",
+    "homepage": "http://purecss.io/",
     "published_at": "2016-12-12T22:34:35Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "semantic-ui",
@@ -51,18 +77,32 @@
       "less": true,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "Semantic-UI",
-    "stargazers_count": 30165,
-    "forks_count": 3431,
-    "open_issues_count": 1026,
-    "updated_at": "2016-12-19T10:53:42Z",
+    "stargazers_count": 30313,
+    "forks_count": 3447,
+    "open_issues_count": 1031,
+    "watchers_count": 30313,
+    "size": 100271,
     "type": "Organization",
-    "size": 100249,
-    "published_at": "2016-10-28T03:12:19Z",
+    "full_name": "Semantic-Org",
+    "description": "Semantic is a UI component framework based around useful principles from natural language.",
+    "created_at": "2013-04-08T23:32:04Z",
+    "updated_at": "2016-12-24T10:34:14Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5796209?v=3",
+    "svn_url": "https://github.com/Semantic-Org/Semantic-UI",
+    "homepage": "http://www.semantic-ui.com",
+    "published_at": "2016-12-21T20:27:44Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "foundation",
@@ -72,18 +112,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "foundation-sites",
-    "stargazers_count": 24600,
-    "forks_count": 5380,
-    "open_issues_count": 358,
-    "updated_at": "2016-12-19T09:32:24Z",
+    "stargazers_count": 24646,
+    "forks_count": 5389,
+    "open_issues_count": 347,
+    "watchers_count": 24646,
+    "size": 119284,
     "type": "Organization",
-    "size": 119222,
+    "full_name": "zurb",
+    "description": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
+    "created_at": "2011-10-13T23:05:42Z",
+    "updated_at": "2016-12-24T09:48:18Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/156122?v=3",
+    "svn_url": "https://github.com/zurb/foundation-sites",
+    "homepage": "http://foundation.zurb.com",
     "published_at": "2016-12-15T16:55:53Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "ink",
@@ -93,18 +147,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "Ink",
-    "stargazers_count": 1825,
-    "forks_count": 279,
+    "stargazers_count": 1832,
+    "forks_count": 280,
     "open_issues_count": 11,
-    "updated_at": "2016-12-18T15:50:13Z",
-    "type": "Organization",
+    "watchers_count": 1832,
     "size": 117790,
+    "type": "Organization",
+    "full_name": "sapo",
+    "description": "An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping",
+    "created_at": "2011-11-16T13:52:23Z",
+    "updated_at": "2016-12-24T05:58:18Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/13458?v=3",
+    "svn_url": "https://github.com/sapo/Ink",
+    "homepage": "http://ink.sapo.pt",
     "published_at": "2015-08-06T16:57:29Z",
     "prerelease": false,
-    "download_count": 14722,
-    "latest_size": 7710342,
-    "latest_updated_at": "2015-08-06T16:55:04Z"
+    "download_count": 14911,
+    "latest_size": 7710342
   },
   {
     "url": "skeleton",
@@ -112,20 +180,34 @@
     "written": {
       "sass": false,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "Skeleton",
-    "stargazers_count": 13164,
-    "forks_count": 2332,
-    "open_issues_count": 105,
-    "updated_at": "2016-12-19T06:04:10Z",
-    "type": "User",
+    "stargazers_count": 13211,
+    "forks_count": 2342,
+    "open_issues_count": 106,
+    "watchers_count": 13211,
     "size": 6398,
+    "type": "User",
+    "full_name": "dhg",
+    "description": "Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+    "created_at": "2011-04-30T20:04:24Z",
+    "updated_at": "2016-12-24T06:39:10Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/693790?v=3",
+    "svn_url": "https://github.com/dhg/Skeleton",
+    "homepage": "http://www.getskeleton.com",
     "published_at": "2014-12-29T18:38:04Z",
     "prerelease": false,
-    "download_count": 360253,
-    "latest_size": 8308,
-    "latest_updated_at": "2014-12-29T18:38:03Z"
+    "download_count": 362054,
+    "latest_size": 8308
   },
   {
     "url": "bulma",
@@ -133,15 +215,31 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain",
+      "metro"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "bulma",
-    "stargazers_count": 10823,
-    "forks_count": 580,
-    "open_issues_count": 148,
-    "updated_at": "2016-12-19T09:58:58Z",
+    "stargazers_count": 10964,
+    "forks_count": 594,
+    "open_issues_count": 151,
+    "watchers_count": 10964,
+    "size": 3069,
     "type": "User",
-    "size": 2943
+    "full_name": "jgthms",
+    "description": "Modern CSS framework based on Flexbox",
+    "created_at": "2016-01-23T23:48:34Z",
+    "updated_at": "2016-12-24T09:34:27Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1254808?v=3",
+    "svn_url": "https://github.com/jgthms/bulma",
+    "homepage": "http://bulma.io"
   },
   {
     "url": "kube",
@@ -151,18 +249,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 4,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "kube",
-    "stargazers_count": 827,
-    "forks_count": 157,
-    "open_issues_count": 23,
-    "updated_at": "2016-12-19T06:44:54Z",
-    "type": "User",
+    "stargazers_count": 834,
+    "forks_count": 158,
+    "open_issues_count": 24,
+    "watchers_count": 834,
     "size": 3733,
+    "type": "User",
+    "full_name": "imperavi",
+    "description": "Kube CSS Framework",
+    "created_at": "2014-01-10T23:38:36Z",
+    "updated_at": "2016-12-24T05:57:32Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1190498?v=3",
+    "svn_url": "https://github.com/imperavi/kube",
+    "homepage": "",
     "published_at": "2016-09-03T05:54:19Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "uikit",
@@ -172,18 +284,32 @@
       "less": true,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "uikit",
-    "stargazers_count": 8019,
-    "forks_count": 1514,
-    "open_issues_count": 462,
-    "updated_at": "2016-12-19T09:28:10Z",
-    "type": "Organization",
+    "stargazers_count": 8051,
+    "forks_count": 1518,
+    "open_issues_count": 465,
+    "watchers_count": 8051,
     "size": 27596,
+    "type": "Organization",
+    "full_name": "uikit",
+    "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces.",
+    "created_at": "2013-07-18T16:00:26Z",
+    "updated_at": "2016-12-24T02:57:26Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4173184?v=3",
+    "svn_url": "https://github.com/uikit/uikit",
+    "homepage": "http://getuikit.com",
     "published_at": "2016-10-24T07:53:16Z",
     "prerelease": false,
-    "download_count": 17644,
-    "latest_size": 835793,
-    "latest_updated_at": "2016-10-24T07:53:14Z"
+    "download_count": 19239,
+    "latest_size": 835793
   },
   {
     "url": "cascadeframework",
@@ -193,13 +319,28 @@
       "less": false,
       "js": false
     },
+    "has_templates": true,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "cascadeframework",
-    "stargazers_count": 242,
+    "stargazers_count": 241,
     "forks_count": 55,
     "open_issues_count": 7,
-    "updated_at": "2016-12-12T10:14:36Z",
+    "watchers_count": 241,
+    "size": 7626,
     "type": "User",
-    "size": 7626
+    "full_name": "jslegers",
+    "description": "Cascade Framework",
+    "created_at": "2013-02-22T21:10:18Z",
+    "updated_at": "2016-12-21T13:36:29Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/883647?v=3",
+    "svn_url": "https://github.com/jslegers/cascadeframework",
+    "homepage": null
   },
   {
     "url": "material-design-lite",
@@ -209,18 +350,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "material"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "material-design-lite",
-    "stargazers_count": 25136,
-    "forks_count": 4236,
-    "open_issues_count": 268,
-    "updated_at": "2016-12-19T11:02:15Z",
+    "stargazers_count": 25229,
+    "forks_count": 4257,
+    "open_issues_count": 241,
+    "watchers_count": 25229,
+    "size": 56855,
     "type": "Organization",
-    "size": 56653,
-    "published_at": "2016-09-08T15:38:11Z",
+    "full_name": "google",
+    "description": "Material Design Components in HTML/CSS/JS",
+    "created_at": "2015-01-14T22:01:33Z",
+    "updated_at": "2016-12-24T06:54:32Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1342004?v=3",
+    "svn_url": "https://github.com/google/material-design-lite",
+    "homepage": "http://getmdl.io",
+    "published_at": "2016-12-21T13:54:28Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "materialize",
@@ -230,18 +385,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": true,
+    "doc_rating": 5,
+    "design": [
+      "material"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "materialize",
-    "stargazers_count": 23404,
-    "forks_count": 3393,
-    "open_issues_count": 1348,
-    "updated_at": "2016-12-19T10:55:02Z",
+    "stargazers_count": 23541,
+    "forks_count": 3422,
+    "open_issues_count": 1315,
+    "watchers_count": 23541,
+    "size": 141906,
     "type": "User",
-    "size": 141386,
+    "full_name": "Dogfalo",
+    "description": "Materialize, a CSS Framework based on Material Design",
+    "created_at": "2014-09-12T19:35:38Z",
+    "updated_at": "2016-12-24T10:41:27Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2775751?v=3",
+    "svn_url": "https://github.com/Dogfalo/materialize",
+    "homepage": "http://materializecss.com",
     "published_at": "2016-10-30T21:08:12Z",
     "prerelease": false,
-    "download_count": 139,
-    "latest_size": 1248578,
-    "latest_updated_at": "2016-10-30T21:07:59Z"
+    "download_count": 152,
+    "latest_size": 1248578
   },
   {
     "url": "responsive",
@@ -251,18 +420,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "Responsive",
-    "stargazers_count": 622,
+    "stargazers_count": 625,
     "forks_count": 99,
     "open_issues_count": 7,
-    "updated_at": "2016-12-15T16:48:02Z",
-    "type": "Organization",
+    "watchers_count": 625,
     "size": 34802,
+    "type": "Organization",
+    "full_name": "ResponsiveBP",
+    "description": ":iphone: A super lightweight HTML, Sass, CSS, and JavaScript framework for building responsive websites",
+    "created_at": "2013-06-12T09:06:40Z",
+    "updated_at": "2016-12-22T19:49:02Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6408672?v=3",
+    "svn_url": "https://github.com/ResponsiveBP/Responsive",
+    "homepage": "http://responsivebp.com",
     "published_at": "2016-08-28T03:33:25Z",
     "prerelease": false,
-    "download_count": 1033,
-    "latest_size": 84228,
-    "latest_updated_at": "2016-08-28T03:33:19Z"
+    "download_count": 1080,
+    "latest_size": 84228
   },
   {
     "url": "metro-ui-css",
@@ -272,18 +455,33 @@
       "less": true,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain",
+      "metro"
+    ],
+    "feature": [
+      "full"
+    ],
     "name": "Metro-UI-CSS",
-    "stargazers_count": 5160,
-    "forks_count": 1824,
-    "open_issues_count": 80,
-    "updated_at": "2016-12-19T09:16:31Z",
-    "type": "User",
+    "stargazers_count": 5167,
+    "forks_count": 1827,
+    "open_issues_count": 82,
+    "watchers_count": 5167,
     "size": 91759,
+    "type": "User",
+    "full_name": "olton",
+    "description": "CSS styles for build Windows 8 Metro UI stylable interface",
+    "created_at": "2012-03-09T13:54:28Z",
+    "updated_at": "2016-12-24T08:09:36Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/365108?v=3",
+    "svn_url": "https://github.com/olton/Metro-UI-CSS",
+    "homepage": "http://metroui.org.ua/",
     "published_at": "2016-06-20T07:19:42Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "avalanche",
@@ -293,18 +491,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "avalanche",
     "stargazers_count": 519,
     "forks_count": 30,
     "open_issues_count": 3,
-    "updated_at": "2016-12-08T01:47:44Z",
-    "type": "User",
+    "watchers_count": 519,
     "size": 93,
+    "type": "User",
+    "full_name": "colourgarden",
+    "description": "Superclean, powerful, responsive, Sass-based, BEM-syntax CSS grid system",
+    "created_at": "2015-11-24T17:35:17Z",
+    "updated_at": "2016-12-08T01:47:44Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/793191?v=3",
+    "svn_url": "https://github.com/colourgarden/avalanche",
+    "homepage": "",
     "published_at": "2016-11-25T16:34:12Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "awsmcss",
@@ -312,20 +524,34 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 2,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "awsm.css",
     "stargazers_count": 81,
     "forks_count": 4,
-    "open_issues_count": 7,
-    "updated_at": "2016-12-18T12:05:54Z",
-    "type": "User",
+    "open_issues_count": 8,
+    "watchers_count": 81,
     "size": 377,
+    "type": "User",
+    "full_name": "igoradamenko",
+    "description": "Simple CSS library for semantic HTML markup",
+    "created_at": "2015-09-12T17:14:39Z",
+    "updated_at": "2016-12-18T12:05:54Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6537798?v=3",
+    "svn_url": "https://github.com/igoradamenko/awsm.css",
+    "homepage": "https://igoradamenko.github.io/awsm.css/",
     "published_at": "2016-04-03T14:08:19Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "baseguide",
@@ -333,20 +559,34 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "baseguide",
-    "stargazers_count": 66,
+    "stargazers_count": 67,
     "forks_count": 8,
     "open_issues_count": 0,
-    "updated_at": "2016-12-14T15:57:54Z",
-    "type": "User",
+    "watchers_count": 67,
     "size": 469,
+    "type": "User",
+    "full_name": "slavanga",
+    "description": "Lightweight and robust CSS framework for prototyping and production code.",
+    "created_at": "2015-03-07T23:11:32Z",
+    "updated_at": "2016-12-23T01:18:15Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1077807?v=3",
+    "svn_url": "https://github.com/slavanga/baseguide",
+    "homepage": "http://basegui.de",
     "published_at": "2016-11-06T16:51:00Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "cardinalcss",
@@ -354,15 +594,30 @@
     "written": {
       "sass": false,
       "less": true,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 2,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "cardinalcss",
     "stargazers_count": 655,
     "forks_count": 83,
     "open_issues_count": 1,
-    "updated_at": "2016-12-17T13:32:32Z",
+    "watchers_count": 655,
+    "size": 2302,
     "type": "Organization",
-    "size": 2302
+    "full_name": "cardinalcss",
+    "description": "A modular, “mobile-first” CSS framework built with performance and scalability in mind.",
+    "created_at": "2012-10-31T21:32:19Z",
+    "updated_at": "2016-12-17T13:32:32Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15234353?v=3",
+    "svn_url": "https://github.com/cardinalcss/cardinalcss",
+    "homepage": "http://cardinalcss.com"
   },
   {
     "url": "chopstick-boilerplate",
@@ -372,18 +627,32 @@
       "less": false,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 2,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
     "name": "chopstick-boilerplate",
     "stargazers_count": 105,
     "forks_count": 26,
     "open_issues_count": 3,
-    "updated_at": "2016-11-23T20:14:31Z",
+    "watchers_count": 105,
+    "size": 2086,
     "type": "Organization",
-    "size": 2108,
+    "full_name": "getchopstick",
+    "description": "Chopstick boilerplate",
+    "created_at": "2013-11-18T20:05:25Z",
+    "updated_at": "2016-11-23T20:14:31Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5629259?v=3",
+    "svn_url": "https://github.com/getchopstick/chopstick-boilerplate",
+    "homepage": "http://getchopstick.com",
     "published_at": "2015-09-24T11:24:53Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "jeet",
@@ -391,20 +660,34 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 5,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "jeet",
-    "stargazers_count": 2914,
+    "stargazers_count": 2918,
     "forks_count": 283,
     "open_issues_count": 2,
-    "updated_at": "2016-12-18T11:22:31Z",
-    "type": "Organization",
+    "watchers_count": 2918,
     "size": 14394,
+    "type": "Organization",
+    "full_name": "mojotech",
+    "description": "The most advanced, yet intuitive, grid system available for Sass or Stylus",
+    "created_at": "2012-12-11T21:01:06Z",
+    "updated_at": "2016-12-23T09:40:40Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/314035?v=3",
+    "svn_url": "https://github.com/mojotech/jeet",
+    "homepage": "http://jeet.gs",
     "published_at": "2016-11-22T16:33:30Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "modestgrid",
@@ -412,15 +695,30 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 4,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "Modest-Grid",
     "stargazers_count": 22,
     "forks_count": 7,
     "open_issues_count": 1,
-    "updated_at": "2016-12-09T00:15:35Z",
+    "watchers_count": 22,
+    "size": 647,
     "type": "User",
-    "size": 647
+    "full_name": "jamesgeorgedunn",
+    "description": "Modest Grid is an easy to customise grid framework that allows for the rapid development of responsive websites.",
+    "created_at": "2014-10-14T17:27:35Z",
+    "updated_at": "2016-12-09T00:15:35Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8740225?v=3",
+    "svn_url": "https://github.com/jamesgeorgedunn/Modest-Grid",
+    "homepage": "http://www.modestgrid.com"
   },
   {
     "url": "motus",
@@ -428,20 +726,34 @@
     "written": {
       "sass": true,
       "less": false,
-      "js": true
+      "js": false
     },
+    "has_templates": false,
+    "doc_rating": 1,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "motus",
     "stargazers_count": 1,
     "forks_count": 0,
     "open_issues_count": 0,
-    "updated_at": "2016-11-16T13:11:10Z",
-    "type": "User",
+    "watchers_count": 1,
     "size": 47,
+    "type": "User",
+    "full_name": "ludvigbruchmann",
+    "description": "Sass/css lightweight framework, built for speed and perfomance!",
+    "created_at": "2015-12-13T16:55:27Z",
+    "updated_at": "2016-11-16T13:11:10Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15819353?v=3",
+    "svn_url": "https://github.com/ludvigbruchmann/motus",
+    "homepage": "http://resources.ludvig.xyz/motus",
     "published_at": "2016-05-10T19:38:27Z",
     "prerelease": false,
     "download_count": null,
-    "latest_size": null,
-    "latest_updated_at": null
+    "latest_size": null
   },
   {
     "url": "mi-grid",
@@ -451,12 +763,202 @@
       "less": false,
       "js": true
     },
+    "has_templates": false,
+    "doc_rating": 1,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "grid"
+    ],
     "name": "mi-grid",
     "stargazers_count": 0,
     "forks_count": 0,
     "open_issues_count": 0,
-    "updated_at": "2016-03-01T14:39:29Z",
+    "watchers_count": 0,
+    "size": 177,
     "type": "User",
-    "size": 177
+    "full_name": "mi-dexigner",
+    "description": "MI GRID SYSTEM is one the most supportable framework for those who are passionate and professional about Web Designing can do a more efficient creativity using this framework.",
+    "created_at": "2016-03-01T14:38:39Z",
+    "updated_at": "2016-03-01T14:39:29Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7349178?v=3",
+    "svn_url": "https://github.com/mi-dexigner/mi-grid",
+    "homepage": null
+  },
+  {
+    "url": "material-framework",
+    "label": "Material framework",
+    "written": {
+      "sass": false,
+      "less": false,
+      "js": true
+    },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "material"
+    ],
+    "feature": [
+      "full"
+    ],
+    "name": "material-framework",
+    "stargazers_count": 276,
+    "forks_count": 87,
+    "open_issues_count": 35,
+    "watchers_count": 276,
+    "size": 804,
+    "type": "User",
+    "full_name": "nt1m",
+    "description": "An easy to use material design based framework.",
+    "created_at": "2014-07-31T07:53:52Z",
+    "updated_at": "2016-12-23T23:02:36Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1795135?v=3",
+    "svn_url": "https://github.com/nt1m/material-framework",
+    "homepage": "http://nt1m.github.io/material-framework",
+    "published_at": "2015-05-26T16:32:00Z",
+    "prerelease": false,
+    "download_count": null,
+    "latest_size": null
+  },
+  {
+    "url": "siimple",
+    "label": "Siimple",
+    "written": {
+      "sass": true,
+      "less": false,
+      "js": false
+    },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
+    "name": "siimple",
+    "stargazers_count": 165,
+    "forks_count": 26,
+    "open_issues_count": 2,
+    "watchers_count": 165,
+    "size": 133,
+    "type": "Organization",
+    "full_name": "siimple",
+    "description": "Minimal CSS Framework for flat and clean designs.",
+    "created_at": "2015-07-12T17:15:41Z",
+    "updated_at": "2016-12-23T16:15:29Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15037629?v=3",
+    "svn_url": "https://github.com/siimple/siimple",
+    "homepage": "http://siimple.juanes.xyz",
+    "published_at": "2016-09-23T07:13:10Z",
+    "prerelease": false,
+    "download_count": null,
+    "latest_size": null
+  },
+  {
+    "url": "turret",
+    "label": "Turret",
+    "written": {
+      "sass": false,
+      "less": true,
+      "js": false
+    },
+    "has_templates": true,
+    "doc_rating": 4,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
+    "name": "turret",
+    "stargazers_count": 262,
+    "forks_count": 23,
+    "open_issues_count": 0,
+    "watchers_count": 262,
+    "size": 2494,
+    "type": "Organization",
+    "full_name": "bigfishtv",
+    "description": "Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.",
+    "created_at": "2015-01-29T06:20:43Z",
+    "updated_at": "2016-12-18T21:49:56Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6046577?v=3",
+    "svn_url": "https://github.com/bigfishtv/turret",
+    "homepage": "http://turretcss.com/",
+    "published_at": "2016-04-04T23:16:33Z",
+    "prerelease": false,
+    "download_count": null,
+    "latest_size": null
+  },
+  {
+    "url": "concisecss",
+    "label": "Concise CSS",
+    "written": {
+      "sass": true,
+      "less": false,
+      "js": false
+    },
+    "has_templates": false,
+    "doc_rating": 4,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "full"
+    ],
+    "name": "concise.css",
+    "stargazers_count": 804,
+    "forks_count": 70,
+    "open_issues_count": 1,
+    "watchers_count": 804,
+    "size": 642,
+    "type": "Organization",
+    "full_name": "ConciseCSS",
+    "description": "A CSS framework that's lightweight and easy-to-use. Give up the bloat. Stop tripping over your classes. Be Concise.",
+    "created_at": "2014-06-01T04:41:26Z",
+    "updated_at": "2016-12-22T20:54:37Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7787115?v=3",
+    "svn_url": "https://github.com/ConciseCSS/concise.css",
+    "homepage": "http://concisecss.com",
+    "published_at": "2016-12-18T06:08:06Z",
+    "prerelease": false,
+    "download_count": null,
+    "latest_size": null
+  },
+  {
+    "url": "minicss",
+    "label": "mini.css",
+    "written": {
+      "sass": true,
+      "less": false,
+      "js": false
+    },
+    "has_templates": false,
+    "doc_rating": 3,
+    "design": [
+      "plain"
+    ],
+    "feature": [
+      "prototype"
+    ],
+    "name": "mini.css",
+    "stargazers_count": 86,
+    "forks_count": 4,
+    "open_issues_count": 19,
+    "watchers_count": 86,
+    "size": 3027,
+    "type": "User",
+    "full_name": "Chalarangelo",
+    "description": "A minimal, responsive, style-agnostic CSS toolkit!",
+    "created_at": "2016-08-22T06:31:31Z",
+    "updated_at": "2016-12-24T06:15:48Z",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8281875?v=3",
+    "svn_url": "https://github.com/Chalarangelo/mini.css",
+    "homepage": "https://chalarangelo.github.io/mini.css/",
+    "published_at": "2016-12-22T09:49:15Z",
+    "prerelease": false,
+    "download_count": null,
+    "latest_size": null
   }
 ]

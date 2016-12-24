@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Semantic UI <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/5796209?v&#x3D;3" alt="Semantic-Org/Semantic-UI">
   </div>
   <div class="media-body">
     <p class="lead">Semantic is a UI component framework based around useful principles from natural language.</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/Semantic-Org/Semantic-UI" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://www.semantic-ui.com" role="button" target="_blank">Visit Semantic UI Page</a>    
+    <a class="btn btn-primary m-1" href="http://www.semantic-ui.com" role="button" target="_blank">Visit Semantic UI Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -21,7 +22,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current Version</h4>
                 <h2 class="card-title">
-                        2.2.6
+                        2.2.7
                 </h2>
             </div>
         </div>
@@ -29,7 +30,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last Release</h4>
                 <h2 class="card-title">
-                        October 28, 2016
+                        December 22, 2016
                 </h2>
                 <p class="card-text"><small>Created at April 9, 2013</small></p>
             </div>
@@ -43,7 +44,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
                 <h2 class="card-title">
-                        1,026
+                        1,031
                 </h2>
             </div>
         </div>
@@ -51,7 +52,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
                 <h2 class="card-title">
-                        3,431
+                        3,447
                 </h2>
             </div>
         </div>
@@ -59,7 +60,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        30,165
+                        30,313
                 </h2>
             </div>
         </div>
@@ -67,24 +68,41 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
                 <h2 class="card-title">
-                        1,293
+                        1,300
                 </h2>
             </div>
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
-        Release Notes <small>on October 28, 2016 for 2.2.6</small>
+        Release Notes <small>on December 22, 2016 for 2.2.7</small>
     </h1>
-        <p><strong>Bugs</strong></p>
-<h3 id="version2256october272016">Version 2.2.5-6 - October, 27, 2016</h3>
-<p><strong>Bugs</strong></p>
+        <p><strong>Build Tools</strong></p>
 <ul>
-<li><strong>Tab</strong> - Hotfix for accidental use of ES6 <code>let</code>. This is cause of the bump to <code>2.2.6</code></li>
-<li><strong>Search</strong> - Fixed issue where pressing "up" key when no results selected would cause bottom result to be selected</li>
-<li><strong>Search</strong> - Fixed issue where input may attempt to refocus when search element is immediately removed from browser's DOM after a result is clicked.</li>
-<li><strong>Flat Theme</strong> - Fixes inverted input color</li>
+<li><strong>Autoinstall</strong> - Fixes issue where <code>autoinstall: true</code> was not copying build files during <code>npm install</code> <strong>Thanks @AnsonT</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4430">#4430</a></li>
+<li><strong>Dependencies</strong> - Updates build dependencies in <code>package.json</code></li>
 </ul>
     </section>
+</article>

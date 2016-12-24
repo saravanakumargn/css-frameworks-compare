@@ -32,6 +32,13 @@
 .all-links {
     background-color: $gray;
     padding: $spacer * 2;
+    li {
+            #{$a-tags} {
+      color: $header-color;
+      text-decoration: none;
+    }
+        
+    }
     .items {
         padding: $spacer/2;
             #{$a-tags} {
@@ -61,5 +68,30 @@
     }
     #{$a-tags-hover} {
         color: $table-link-color-hover;
+    }
+}
+
+.#{$site-class-prefix}filter {
+    max-height: 150px;
+    margin: $spacer/2;
+    overflow-y: auto;
+    background-color: $white-color;
+    label{
+        margin-right: $spacer;
+        margin-bottom: $spacer/2;
+    }
+}
+
+
+.#{$site-class-prefix}compare {
+    .yes {
+        color: $brand-success;        
+    }
+    .no {
+        color: $brand-danger;
+    }    
+    
+    .na {
+        color: $gray-light;
     }
 }

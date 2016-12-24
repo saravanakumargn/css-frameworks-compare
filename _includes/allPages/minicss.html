@@ -1,18 +1,19 @@
+<article>
 <header>
-    <h1>Pure CSS <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
+    <h1>mini.css <small><span class="tag tag-pill tag-default">User Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
-    <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/16574?v&#x3D;3" alt="yahoo/pure">
+    <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/8281875?v&#x3D;3" alt="Chalarangelo/mini.css">
   </div>
   <div class="media-body">
-    <p class="lead">A set of small, responsive CSS modules that you can use in every web project.</p>
+    <p class="lead">A minimal, responsive, style-agnostic CSS toolkit!</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
-    <a class="btn btn-primary" href="https://github.com/yahoo/pure" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://purecss.io/" role="button" target="_blank">Visit Pure CSS Page</a>    
+    <a class="btn btn-primary" href="https://github.com/Chalarangelo/mini.css" role="button" target="_blank">Visit Github page</a>
+    <a class="btn btn-primary m-1" href="https://chalarangelo.github.io/mini.css/" role="button" target="_blank">Visit mini.css Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -21,7 +22,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current Version</h4>
                 <h2 class="card-title">
-                        v0.6.1
+                        v2.0.1
                 </h2>
             </div>
         </div>
@@ -29,9 +30,9 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last Release</h4>
                 <h2 class="card-title">
-                        December 13, 2016
+                        December 22, 2016
                 </h2>
-                <p class="card-text"><small>Created at April 22, 2013</small></p>
+                <p class="card-text"><small>Created at August 22, 2016</small></p>
             </div>
         </div>
     </div>
@@ -43,7 +44,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
                 <h2 class="card-title">
-                        72
+                        19
                 </h2>
             </div>
         </div>
@@ -51,7 +52,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
                 <h2 class="card-title">
-                        1,832
+                        4
                 </h2>
             </div>
         </div>
@@ -59,7 +60,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        15,521
+                        86
                 </h2>
             </div>
         </div>
@@ -67,22 +68,42 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
                 <h2 class="card-title">
-                        766
+                        5
                 </h2>
             </div>
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
-        Release Notes <small>on December 13, 2016 for v0.6.1</small>
+        Release Notes <small>on December 22, 2016 for v2.0.1</small>
     </h1>
-        <ul>
-<li>Migrate to PostCSS for browser prefixes [#617]</li>
-<li>Remove duplicate Firefox inner focus border [#457]</li>
-<li>Fix grid inside table in IE 10/11 [#504]</li>
-<li>Fix CSSLint issues [#609]</li>
-<li>Upgraded grunt dependencies to 1.x [#609]</li>
+        <p>Patch for <strong>Fermion</strong>. Deals with moving imports out of the core module and into the flavor files.</p>
+<ul>
+<li>Updated module structure. <code>_core.scss</code> no longer contains all <code>@import</code> statements, but they are now included in the flavor files.</li>
+<li>Updated documentation for customization to reflect said changes.</li>
 </ul>
+<p>Special thanks to @roryprimrose for suggesting this restructure and helping with implementation!</p>
     </section>
+</article>

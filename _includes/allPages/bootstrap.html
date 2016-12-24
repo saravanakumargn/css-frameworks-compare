@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Bootstrap <small><span class="tag tag-pill tag-default">Organization Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/2918581?v&#x3D;3" alt="twbs/bootstrap">
   </div>
   <div class="media-body">
     <p class="lead">The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/twbs/bootstrap" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://getbootstrap.com" role="button" target="_blank">Visit Bootstrap Page</a>    
+    <a class="btn btn-primary m-1" href="http://getbootstrap.com" role="button" target="_blank">Visit Bootstrap Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -44,7 +45,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
                 <h2 class="card-title">
-                        316
+                        251
                 </h2>
             </div>
         </div>
@@ -52,7 +53,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
                 <h2 class="card-title">
-                        47,510
+                        47,593
                 </h2>
             </div>
         </div>
@@ -60,7 +61,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        104,659
+                        104,944
                 </h2>
             </div>
         </div>
@@ -68,13 +69,33 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
                 <h2 class="card-title">
-                        6,649
+                        6,674
                 </h2>
             </div>
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
         Release Notes <small>on July 25, 2016 for v3.3.7</small>
@@ -104,3 +125,4 @@
 <li>Numerous Wall of Browser Bugs updates</li>
 </ul>
     </section>
+</article>

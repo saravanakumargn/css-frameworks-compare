@@ -1,18 +1,19 @@
+<article>
 <header>
     <h1>Baseguide <small><span class="tag tag-pill tag-default">User Project</span></small></h1>
 </header>
-<div class="media my-2">
+<section class="media my-2">
   <div class="media-left">
     <img class="media-object img-thumbnail" width="65" height="65" src="https://avatars.githubusercontent.com/u/1077807?v&#x3D;3" alt="slavanga/baseguide">
   </div>
   <div class="media-body">
     <p class="lead">Lightweight and robust CSS framework for prototyping and production code.</p>
   </div>
-</div>
+</section>
 <hr>
 <div class="my-2 text-xs-center">
     <a class="btn btn-primary" href="https://github.com/slavanga/baseguide" role="button" target="_blank">Visit Github page</a>
-    <a class="btn btn-primary m-1" href="http://basegui.de" role="button" target="_blank">Visit Baseguide Page</a>    
+    <a class="btn btn-primary m-1" href="http://basegui.de" role="button" target="_blank">Visit Baseguide Page</a>
 </div>
 <hr>
 <div class="card-deck-wrapper my-2">
@@ -59,7 +60,7 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
                 <h2 class="card-title">
-                        66
+                        67
                 </h2>
             </div>
         </div>
@@ -67,13 +68,33 @@
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
                 <h2 class="card-title">
-                        9
+                        10
                 </h2>
             </div>
         </div>
     </div>
 </div>
-<hr>
+
+
+{% if jekyll.environment == 'production' %}
+<div class="my-1">
+	<hr>
+	<div class="my-1">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- github_pages _responsive_1 -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-2445138966914411"
+			 data-ad-slot="1768590408"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+	<hr>
+</div>
+{% endif %}
+
     <section class="my-2">
     <h1>
         Release Notes <small>on November 6, 2016 for v1.7.1</small>
@@ -89,3 +110,4 @@
 <li>Update breakpoint documentation (87163113f5f7a7075c6eb4f2d1edd0be4af726d6)</li>
 </ul>
     </section>
+</article>
