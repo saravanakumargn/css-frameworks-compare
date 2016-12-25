@@ -70,7 +70,10 @@ layout: home
                     <td>{# keyItems.text #}</td>
                     <td ng-repeat="list in compare.compareData" class="text-xs-center">
                         <span ng-switch="keyItems.id">
-                            <span ng-switch-when="size"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                            <span ng-switch-when="size">
+                                <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                                <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                            </span>
                         <span ng-switch-when="latest_size"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
                         <span ng-switch-when="download_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
                         <span ng-switch-when="full_name">
@@ -81,9 +84,18 @@ layout: home
                             <span ng-if="!list[keyItems.id]" class="no"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
                             <span ng-if="list[keyItems.id]" class="yes"><i class="fa fa-check fa-2x" aria-hidden="true"></i></span>
                         </span>
-                        <span ng-switch-when="stargazers_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
-                        <span ng-switch-when="forks_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
-                        <span ng-switch-when="open_issues_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="stargazers_count">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                        </span>
+                        <span ng-switch-when="forks_count">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                        </span>
+                        <span ng-switch-when="open_issues_count">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                        </span>
                         <span ng-switch-when="published_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
                         <span ng-switch-when="created_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
                         <span ng-switch-when="updated_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
