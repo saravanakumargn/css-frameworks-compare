@@ -72,13 +72,19 @@ layout: home
                         <span ng-switch="keyItems.id">
                             <span ng-switch-when="size">
                                 <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
-                                <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                                <span ng-if="list[keyItems.id]">{# list[keyItems.id] | byteFmt: 2 #}</span>
                             </span>
-                        <span ng-switch-when="latest_size"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
-                        <span ng-switch-when="download_count"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | number #}</span>
+                        <span ng-switch-when="latest_size">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | byteFmt: 2 #}</span>
+                        </span>
+                        <span ng-switch-when="download_count">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
+                        </span>
                         <span ng-switch-when="full_name">
-                        <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
-                        <span ng-if="list[keyItems.id]">{# list[keyItems.id] #}</span>
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] #}</span>
                         </span>
                         <span ng-switch-when="has_templates">
                             <span ng-if="!list[keyItems.id]" class="no"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
@@ -96,9 +102,17 @@ layout: home
                             <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
                             <span ng-if="list[keyItems.id]">{# list[keyItems.id] | number #}</span>
                         </span>
-                        <span ng-switch-when="published_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
-                        <span ng-switch-when="created_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
-                        <span ng-switch-when="updated_at"><span ng-if="!list[keyItems.id]" class="na">-NA-</span>{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        <span ng-switch-when="published_at">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        </span>
+                        <span ng-switch-when="created_at">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span></span>
+                        <span ng-switch-when="updated_at">
+                            <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
+                            <span ng-if="list[keyItems.id]">{# list[keyItems.id] | date:'LLLL d, yyyy' #}</span>
+                        </span>
                         <span ng-switch-when="written">
                                 <span class="tag tag-pill " ng-class="{ 'tag-success': list[keyItems.id].sass, 'tag-default': !list[keyItems.id].sass }">Sass</span>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list[keyItems.id].less, 'tag-default': !list[keyItems.id].less }">Less</span>
@@ -121,7 +135,7 @@ layout: home
                         <span ng-switch-when="homepage">
                         <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
                         <span ng-if="list[keyItems.id]">
-                            <a class="btn btn-primary m-1" ng-href="{# list[keyItems.id] #}" role="button" target="_blank">Visit Page <i class="fa fa-external-link" aria-hidden="true"></i></a>    
+                            <a class="btn btn-primary m-1" ng-href="{# list[keyItems.id] #}" role="button" target="_blank">Visit Page <i class="fa fa-external-link" aria-hidden="true"></i></a>   
                         </span>
                         </span>
                         <span ng-switch-when="url">
