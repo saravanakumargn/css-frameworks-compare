@@ -10,80 +10,116 @@
             <div class="form-group row">
                 <label class="col-sm-4">Framework design</label>
                 <div class="col-sm-8">
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.design" value=""> All
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.design" value="plain"> Plain
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.design" value="material"> Material
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.design" value="metro"> Metro
-                    </label>
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.design" value="">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">All</span>
+</label>                   
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.design" value="plain">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Plain</span>
+</label>                   
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.design" value="material">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Material</span>
+</label>                   
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.design" value="metro">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Metro</span>
+</label>                   
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-4">Startup templates</label>
                 <div class="col-sm-8">
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.templates" value=""> All
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.templates" value="true"> Yes
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.templates" value="false"> No
-                    </label>
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.templates" value="">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">All</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.templates" value="true">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Yes</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.templates" value="false">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">No</span>
+</label>                      
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-4">Written</label>
                 <div class="col-sm-8">
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.written" value=""> All
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.written" value="sass"> Sass
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.written" value="less"> Less
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.written" value="js"> JS
-                    </label>
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.written" value="">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">All</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.written" value="sass">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Sass</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.written" value="less">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Less</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.written" value="js">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">JS</span>
+</label>                      
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-4">Feature type</label>
                 <div class="col-sm-8">
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.feature" value=""> All
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.feature" value="full"> Full
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.feature" value="prototype"> Prototype
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.feature" value="grid"> Grid
-                    </label>
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.feature" value="">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">All</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.feature" value="full">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Full</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.feature" value="prototype">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Prototype</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.feature" value="grid">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Grid</span>
+</label>                      
                 </div>
             </div>
             <div class="form-group row">
                 <label class="col-sm-4">Project type</label>
                 <div class="col-sm-8">
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value=""> All
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value="Organization"> Organization
-                    </label>
-                    <label class="form-check-inline">
-                        <input class="form-check-input" type="radio" ng-model="search.projType" value="User"> User
-                    </label>
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.projType" value="">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">All</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.projType" value="Organization">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">Organization</span>
+</label>                      
+<label class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" ng-model="search.projType" value="User">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">User</span>
+</label>                      
                 </div>
             </div>
             
@@ -101,7 +137,11 @@
                 <div class="card-block text-xs-left">
                     <section class="sa-filter">
                         <label ng-repeat="role in filtered">
-                            <input type="checkbox" checklist-model="css.compare" checklist-value="role" ng-disabled="!checked && isReachLimit"> {# role.label #}
+<label class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" checklist-model="css.compare" checklist-value="role" ng-disabled="!checked && isReachLimit">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">{# role.label #}</span>
+</label>                          
                         </label>
                     </section>
                 </div>
