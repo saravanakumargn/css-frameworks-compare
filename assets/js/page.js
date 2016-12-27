@@ -168,7 +168,6 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
                 {id:'has_templates',text:'Templates'},
                 {id:'doc_rating',text:'Document rating'},
                 {id:'published_at',text:'Latest release'},
-                {id:'releases_prerelease',text:'Production ready'},
                 {id:'latest_size',text:'Release size'},
                 {id:'download_count',text:'Total downloads'},
                 {id:'pushed_at',text:'Last commit'},
