@@ -26,11 +26,22 @@
                 <hr>
             </div>
             {% endif %}
+    <p>
+        <small>In this page you can compare and find Frontend framework for your development in the following caregoties. Best css frameworks to use 2017(based on current maintenance), skeleton framework to start the project immediately, grid support frameworks, material design framework, AngularJS 1 supported frontend framework, Angular 2 supported CSS framework, ReactJs supported frendend framework, metro design framework, etc...</small>
+    </p>            
+    <p>
+        <small>Framewoks can compare based on filesize, current maintained by contributors, documentation supports and etc...</small>
+    </p>            
         </div>
     </main>
     {% include all-links.html %}
     {% include footer.html %} {% if jekyll.environment == 'production' %} {% include google-analytics.html %} {% endif %}
-
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="{{ "/assets/js/tether.min.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	<script src="{{ "/assets/js/script.js" | relative_url }}?{{site.time | date: '%s%N'}}"></script>
 </body>
 
 </html>

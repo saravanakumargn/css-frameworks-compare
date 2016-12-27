@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CSS Frameworks
+title: CSS Frameworks compare
 email: saravanakumargn@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  CSS Frameworks compare - Collection of best and latest Responsive CSS Frameworks with comparison
+  Collection of best and latest Responsive CSS Frameworks with comparison. 
+  Framewoks can compare based on filesize, current maintained by contributors, documentation supports and etc...
 baseurl: "/css-frameworks-compare" # the subpath of your site, e.g. /blog
 url: "http://saravanakumar.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: saravanakumargn

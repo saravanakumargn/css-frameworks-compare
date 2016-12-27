@@ -41,6 +41,7 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
             $scope.search.templates = '';
             $scope.search.design = '';
             $scope.search.feature = '';
+            $scope.search.supports = '';
             $scope.css.compare = [];
         };
     
@@ -60,6 +61,9 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
             if ($scope.search.design == '') {
                 return true;
             }
+            if(!tag.hasOwnProperty('design')) {
+                return false;
+            }        
             for(var i=0;i<tag.design.length;i++) {
                 if(tag.design[i] == $scope.search.design) {
                     isFilterd = true;
@@ -92,6 +96,29 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
             }
             return feature;
         };
+        $scope.supports = function (tag) {   
+            var supports = true;
+            if ($scope.search.supports == '') {
+                return true;
+            }
+            if(!tag.hasOwnProperty('supports')) {
+                return false;
+            }
+            for(var i=0;i<tag.supports.length;i++) {
+                if(tag.supports[i] == $scope.search.supports) {
+                    supports = true;
+                    return supports;
+                    break;
+                }
+                else {
+                    supports = false;
+                }
+            }
+            return supports;
+        };
+    
+    
+    
 
         function getDataJSON() {
             $http.get('assets/data.json?' + window.pageTime).then(successData, errorData);
@@ -141,16 +168,16 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
                 {id:'has_templates',text:'Templates'},
                 {id:'doc_rating',text:'Document rating'},
                 {id:'published_at',text:'Latest release'},
+                {id:'releases_prerelease',text:'Production ready'},
                 {id:'latest_size',text:'Release size'},
                 {id:'download_count',text:'Total downloads'},
-                {id:'updated_at',text:'Last commit'},
+                {id:'pushed_at',text:'Last commit'},
                 {id:'created_at',text:'Created at'},
                 {id:'size',text:'Branch size'},
                 {id:'stargazers_count',text:'Star'},
                 {id:'forks_count',text:'Forks'},
                 {id:'open_issues_count',text:'Open issues'},
                 {id:'type',text:'Project type'},
-                {id:'prerelease',text:'production ready'},
                 {id:'url',text:'More'}
             ];
 

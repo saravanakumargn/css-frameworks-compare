@@ -72,7 +72,8 @@
 }
 
 .#{$site-class-prefix}filter {
-    max-height: 150px;
+    max-height: 200px;
+    min-height: 200px;
     padding: $spacer/3;
     overflow-y: auto;
     background-color: $white-color;

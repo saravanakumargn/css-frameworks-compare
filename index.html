@@ -72,6 +72,11 @@ layout: home
                         <span class="sortorder" ng-show="cssPage.sortType === 'size'" ng-class="{reverse: cssPage.reverse}"></span>
                         <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'size'"></span>
                     </th>
+                    <th ng-click="cssPage.sortBy('commit_last_at')">
+                        <span>Last commit</span>
+                        <span class="sortorder" ng-show="cssPage.sortType === 'size'" ng-class="{reverse: cssPage.reverse}"></span>
+                        <span class="sortorder sortorder-disabled" ng-show="cssPage.sortType !== 'size'"></span>
+                    </th>
                     <th ng-click="cssPage.sortBy('open_issues_count')">
                         <span>Open issues</span>
                         <span class="sortorder" ng-show="cssPage.sortType === 'open_issues_count'" ng-class="{reverse: cssPage.reverse}"></span>
@@ -80,9 +85,9 @@ layout: home
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="list in filtered = (cssPage.listData | filter:{label:searchName,type:search.projType} | filter:written | filter:design | filter:feature | filter:{has_templates: search.templates} | orderBy:cssPage.sortType:cssPage.reverse)">
+                <tr ng-repeat="list in filtered = (cssPage.listData | filter:{label:searchName,type:search.projType} | filter:written | filter:design | filter:feature | filter:supports | filter:{has_templates: search.templates} | orderBy:cssPage.sortType:cssPage.reverse)">
                     <td>
-                        <a ng-href="{# list.url #}">{# list.label #}</a>
+                        <a ng-href="{# list.url #}">{# list.label #}</a><span ng-show="list.releases_prerelease"  class="tag tag-pill tag-danger ml-1" data-toggle="tooltip" data-html="true" title="<em>Not ready for production</em>-<b>Prerelease vesion</b>">Pre</span>
                     </td>
                     <td>
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.sass, 'tag-default': !list.written.sass }">Sass</span>
@@ -90,7 +95,7 @@ layout: home
                         <span class="tag tag-pill " ng-class="{ 'tag-success': list.written.js, 'tag-default': !list.written.js }">JS</span>
                     </td>
                     <td>
-                        {# list.published_at | date:'LLLL d, yyyy' #}
+                        {# list.published_at | date:'MMM d, yyyy' #}
                     </td>
                     <td>
                         {# list.stargazers_count | number #}
@@ -98,6 +103,9 @@ layout: home
                     <td>
                         {# list.size | byteFmt: 2 #}
                     </td>
+                    <td>
+                        {# list.commit_last_at | date:'MMM d, yyyy' #}
+                    </td>                    
                     <td>
                         {# list.open_issues_count | number #}
                     </td>
