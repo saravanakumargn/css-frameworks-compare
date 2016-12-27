@@ -170,7 +170,7 @@ angular.module('cssApp', ['angular.filter', 'checklist-model'])
                 {id:'published_at',text:'Latest release'},
                 {id:'latest_size',text:'Release size'},
                 {id:'download_count',text:'Total downloads'},
-                {id:'pushed_at',text:'Last commit'},
+                {id:'commit_last_at',text:'Last commit'},
                 {id:'created_at',text:'Created at'},
                 {id:'size',text:'Branch size'},
                 {id:'stargazers_count',text:'Star'},

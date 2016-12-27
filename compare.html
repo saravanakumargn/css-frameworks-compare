@@ -109,7 +109,7 @@ layout: home
                         <span ng-switch-when="created_at">
                             <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
                             <span ng-if="list[keyItems.id]">{# list[keyItems.id] | date:'MMM d, yyyy' #}</span></span>
-                        <span ng-switch-when="pushed_at">
+                        <span ng-switch-when="commit_last_at">
                             <span ng-if="!list[keyItems.id]" class="na">-NA-</span>
                             <span ng-if="list[keyItems.id]">{# list[keyItems.id] | date:'MMM d, yyyy' #}</span>
                         </span>
