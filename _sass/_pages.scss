@@ -96,3 +96,44 @@
         color: $gray-light;
     }
 }
+
+.#{$site-class-prefix}na {
+	color: $gray-light;
+}
+
+.#{$site-class-prefix}card-aqua {
+    background-color: $aqua;
+    border-color: $aqua;	
+}
+.#{$site-class-prefix}card-yellow {
+    background-color: $yellow;
+    border-color: $yellow;	
+}
+.#{$site-class-prefix}card-blue {
+    background-color: $blue;
+    border-color: $blue;	
+}
+.#{$site-class-prefix}card-navy {
+    background-color: $navy;
+    border-color: $navy;	
+}
+.#{$site-class-prefix}card-brown {
+    background-color: $brown;
+    border-color: $brown;	
+}
+.#{$site-class-prefix}card-orange {
+    background-color: $orange;
+    border-color: $orange;	
+}
+.#{$site-class-prefix}card-fuchsia {
+    background-color: $fuchsia;
+    border-color: $fuchsia;	
+}
+.#{$site-class-prefix}card-purple {
+    background-color: $purple;
+    border-color: $purple;	
+}
+.#{$site-class-prefix}card-maroon {
+    background-color: $maroon;
+    border-color: $maroon;	
+}
