@@ -9,7 +9,7 @@
   <div class="media-body">
     <p>Simple CSS library for semantic HTML markup</p>
     <p>Developed by User:igoradamenko</p>
-    <p><small>Used languages: HTML(29.91 kB), CSS(9.21 kB), JavaScript(2.22 kB)</small></p>
+    <p><small>Used languages: HTML(28.61 kB), CSS(8.61 kB), JavaScript(2.74 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -62,20 +62,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v.1.2</h2>
+                <h2 class="card-title">v2.0.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Apr 3, 2016</h2>
+                <h2 class="card-title">Jan 7, 2017</h2>
                 <p class="card-text"><small>Created at Sep 12, 2015</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Dec 18, 2016
+                <h2 class="card-title">Jan 8, 2017
                 </h2>
             </div>
         </div>
@@ -87,26 +87,26 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">9</h2>
+                <h2 class="card-title">-NA-</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">6</h2>
+                <h2 class="card-title">18</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">86
+                <h2 class="card-title">268
                 </h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">8</h2>
+                <h2 class="card-title">13</h2>
             </div>
         </div>
     </div>
@@ -132,17 +132,38 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on April 3, 2016 for v.1.2</small>
+        Release Notes <small>on January 7, 2017 for v2.0.0</small>
     </h1>
-        <p>Added:</p>
+        <p><img src="https://cloud.githubusercontent.com/assets/6537798/21742084/75741e1a-d4f8-11e6-9ec5-b29835b0409f.png" align="right"/>
+Added:</p>
 <ul>
-<li>#9 Adaptive fonts &amp; forms</li>
+<li>Fluid typography (#12).</li>
+<li>Scroll indicator for code blocks (there is dark border on a side if code overflows block).</li>
+<li>Support of <code>picture</code> tag.</li>
+<li>Background color for selection.</li>
+<li>Styles for spoiler (<code>details</code>, <code>summary</code>).</li>
+<li>More demos: blog, homepage (#14).</li>
+<li>PostCSS support.</li>
+<li>Stylelint (#10).</li>
+<li>Travis CI integration (#20). </li>
+<li>Separated task in Gulp for linter.</li>
+<li>Pug instead of HTML for development (#70).</li>
+<li>Editorconfig.</li>
+<li>Changelog (#16).</li>
 </ul>
-<p>Fixed:</p>
+<p>Changed:</p>
 <ul>
-<li>#7 Non-input element in a form does not have a margin-bottom</li>
-<li>#8 Checkbox element inside of label are blocks</li>
+<li>All library is refactored.</li>
+<li>More clearly styles for tables and code / code-blocks.</li>
+<li>Header styles.</li>
+<li>All headers (h1..h6) are bold now.</li>
+<li>Variables notation.</li>
+<li>Replaced <code>gulp-minify-css</code> with <code>gulp-csso</code>.</li>
 </ul>
-<p><img src="https://cloud.githubusercontent.com/assets/6537798/21297794/798d1350-c597-11e6-94f8-1c6a0834ee24.png" alt="3" /></p>
+<p>Removed:</p>
+<ul>
+<li>Forms support.</li>
+<li>Useless examples.</li>
+</ul>
     </section>
 </article>
