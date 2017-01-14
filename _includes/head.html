@@ -1,11 +1,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  {% seo %}
-
-  
+    <meta http-equiv="x-ua-compatible" content="ie=edge">{% seo %}
+  {% if page.url == '/' %}<script type="application/ld+json">
+     {"@context":"http:\/\/schema.org","@type":"NewsArticle","headline":"CSS Frameworks compare","url":"http:\/\/www.saravanakumar.org\/css-frameworks-compare\/","thumbnailUrl":"","publisher":["Person"],"articleId":"","datePublished":"{{ site.time }}","dateCreated":"{{ site.time }}","articleSection":"HTML &amp; CSS, Responsive CSS","author":["Saravanakumar"],"creator":["Saravanakumar"],"keywords":["Responsive CSS Frameworks","css frameworks","frameworks compared","frontend frameworks","Best CSS frameworks to use 2017","grid support frameworks","material design framework","AngularJS 1 supported frontend framework","Angular 2 supported CSS framework","ReactJs supported frontend framework","metro design framework"]}</script>{% endif %}
   <link rel="stylesheet" href="{{ "/assets/font-awesome/css/font-awesome.min.css" | relative_url }}?{{site.time | date: '%s%N'}}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}?{{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
