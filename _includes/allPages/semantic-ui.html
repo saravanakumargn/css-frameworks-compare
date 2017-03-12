@@ -4,7 +4,7 @@
   "@context" : "http://schema.org",
   "@type" : "SoftwareApplication",
   "name" : "Semantic UI",
-  "image" : "https://avatars.githubusercontent.com/u/5796209?v&#x3D;3",
+  "image" : "https://avatars3.githubusercontent.com/u/5796209?v&#x3D;3",
   "url" : "http://www.semantic-ui.com",
   "author" : {
     "@type" : "Organization",
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/Semantic-Org/Semantic-UI",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, CSS, HTML",
-  "softwareVersion" : "2.2.8",
+  "softwareVersion" : "2.2.9",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "31522"
+    "ratingCount" : "32013"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-02-21",
+    "datePublished" : "2017-03-12",
     "reviewBody" : "Written in  Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -42,7 +42,7 @@
 </header>
 <section class="media my-2">
   <div class="media-left">
-    <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars.githubusercontent.com/u/5796209?v&#x3D;3" alt="Semantic-Org">
+    <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars3.githubusercontent.com/u/5796209?v&#x3D;3" alt="Semantic-Org">
   </div>
   <div class="media-body">
     <p>Semantic is a UI component framework based around useful principles from natural language.</p>
@@ -101,7 +101,7 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">2.2.8</h2>
+                <h2 class="card-title">2.2.9</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
@@ -114,7 +114,7 @@
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Feb 21, 2017
+                <h2 class="card-title">Feb 22, 2017
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">948</h2>
+                <h2 class="card-title">964</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">3,556</h2>
+                <h2 class="card-title">3,599</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">31,522</h2>
+                <h2 class="card-title">32,013</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,316</h2>
+                <h2 class="card-title">1,327</h2>
             </div>
         </div>
     </div>
@@ -170,69 +170,11 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on February 21, 2017 for 2.2.8</small>
+        Release Notes <small>on February 21, 2017 for 2.2.9</small>
     </h1>
-        <h3 id="importantnote">Important Note</h3>
-<blockquote>
-  <p>Some quirks have been resolved that may cause changes for upgrading users who were expecting these behaviors</p>
-</blockquote>
-<h4 id="formvalidation">Form Validation</h4>
-<p>If you are using form validation, previous to <code>2.2.8</code> calling <code>is valid</code> would trigger UI updates. This behavior now <strong>no longer triggers UI updates</strong>, and will only return a <code>boolean</code> whether form is valid,</p>
-<p>To trigger UI updates you can call <code>validate form</code>. Additional form behaviors have been added as well. <a href="http://semantic-ui.com/behaviors/form.html#validating-programmatically">See the new documentation on programmatic validation</a> for more examples.</p>
-<h4 id="dropdown">Dropdown</h4>
-<p><code>multiple selection dropdown</code> no longer automatically adds the currently selected value when you "alt-tab" or blur the field, even when <code>forceSelection: true</code> is set.</p>
-<hr />
-<p><strong>Major Enhancements</strong></p>
+        <p><strong>Build Tools</strong></p>
 <ul>
-<li><strong>Icons</strong> - Updates Font Awesome to <code>4.7.0</code> <strong>Always the man @BreadMaker</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4766">#4766</a></li>
-<li><strong>Dropdown</strong> - Added new setting <code>filterAPIResults</code>, when set to <code>true</code> API will be expected to return the complete result set, which will then be filtered clientside to only display matching results. <strong>Thanks @enix223</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4815">#4815</a></li>
-<li><strong>Dropdown</strong> - Fixed issue where using some usage of special characters like <code>\</code> could cause dropdowns to not work. <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4688">#4688</a> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4692">#4692</a></li>
-<li><strong>Tab</strong> - Added setting <code>loadOnce</code>, which when enabled only calls remote endpoint for tab data on first load and leaves the DOM undisturbed afterwards. <a href="https://github.com/Semantic-Org/Semantic-UI/pull/2534">#2534</a></li>
-</ul>
-<p><strong>Critical Bugs</strong></p>
-<ul>
-<li><strong>Dropdown</strong> - <code>forceSelection</code> setting will no longer cause highlighted value in multiselect to be selected on blur when using a <code>multiple selection dropdown</code> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4041">#4041</a> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4516">#4516</a></li>
-<li><strong>Dropdown</strong> - Dropdown using search input inside of menu are now tabbable <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4490">#4490</a></li>
-<li><strong>Search</strong> - Fixes issue where empty results message can still appear when using setting <code>showNoResults: false</code> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4616">#4616</a></li>
-<li><strong>Sidebar</strong> - Fixed bug where sidebar in <code>iOS</code> would show incorrect background when opening sidebar if page is less than 100% height <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4264">#4264</a></li>
-</ul>
-<p><strong>Critical Doc Fixes</strong></p>
-<ul>
-<li><strong>Visibility</strong> - Added documentation for <code>onOnscreen</code> and <code>onOffScreen</code>, two very important callbacks that occur when an element is or isn't in currently scrolled view.</li>
-</ul>
-<p><strong>Enhancements</strong></p>
-<ul>
-<li><strong>Items</strong> - Added <code>unstackable</code> variation to prevent items from stacking on mobile <a href="https://github.com/Semantic-Org/Semantic-UI/pull/2901">#2901</a></li>
-<li><strong>Search</strong> - Added new parameter <code>callback</code> to behaviors <code>query</code>, <code>show results</code>, <code>hide results</code>, and <code>search remote</code> to allow a function to be called after completion.</li>
-<li><strong>Form Validation</strong> - Rules now properly supports identifiers with special characters like brackets, e.g. <code>name="user[name]"</code> <strong>Thanks @mzygmunt</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4163">#4163</a></li>
-<li><strong>Search</strong> - <code>esc</code> key now hides results and prevents them from being displayed again until form field is blurred</li>
-</ul>
-<p><strong>Build Tools</strong></p>
-<ul>
-<li><strong>NPM</strong> - Removed dependency on tarball, packaged new patched WrenchJS under Semantic-org <a href="http://github.com/semantic-org/wrench-js">as a new package</a>.</li>
-</ul>
-<p><strong>Bugs</strong></p>
-<ul>
-<li><strong>Button</strong> - Fixed issue where css specificity caused <code>icon buttons</code> to not center correctly <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4487">#4487</a></li>
-<li><strong>Dropdown</strong> - Fixed bug where clicking on a dropdown's <code>dropdown icon</code> when using remote data would not open menu <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4041">#4041</a></li>
-<li><strong>Dropdown/Search/Checkbox</strong> - Removes use of deprecated <code>dispatchEvent</code> DOM APIs for generating simulated events</li>
-<li><strong>Dropdown</strong> - Fixes issue where <code>left pointing dropdown</code> and <code>right pointing dropdown</code> appear styled incorrectly when opening <code>upward</code> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4896">#4896</a></li>
-<li><strong>Dropdown</strong> - Fixed issue where using <code>fullTextSearch: 'exact'</code> would still fuzzy search on value <strong>Thanks @ rminnett</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4651">#4651</a> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/3424">#3424</a></li>
-<li><strong>Dropdown</strong> - Fix bug where <code>scrolling menu</code> or <code>scrolling dropdown</code> would have excessive right padding by removing scrollbar width from calculation (no longer necessary in modern browsers)</li>
-<li><strong>Comments</strong> - <code>small</code>, <code>large</code> and other comment sizes now default to global size variables.</li>
-<li><strong>Dropdown</strong> - Fixed issue where <code>selectOnKeydown</code> with <code>html</code> content would cause only non html content to display in <code>text</code> until blur</li>
-<li><strong>Form Validation</strong> - Fixes issue where decimal validation would allow multiple <code>.</code> in value</li>
-<li><strong>Form Validation</strong> - Fixes js error caused by revalidating inputs without validation rules <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4497">#4497</a> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4457">#4547</a> <strong>Thanks @cbxp</strong></li>
-<li><strong>Header</strong> - Fixed issue where using <code>image icon</code> or <code>image outline icon</code> would cause incorrect display within <code>ui header</code> due to namespace collision with <code>ui image</code> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4145">#4145</a></li>
-<li><strong>Input/Dropdown</strong> - Fixed rounding error causing vertical alignment of <code>dropdown</code>, <code>search</code>, <code>input</code> to sometimes appear off by 1 pixel <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4279">#4279</a></li>
-<li><strong>Segment</strong> - Fixed <code>padded vertical segment</code> <code>very padded vertical segment</code> mistakenly receives horizontal padding <a href="https://github.com/Semantic-Org/Semantic-UI/pull/3012">#3012</a></li>
-<li><strong>Visibility</strong> - Images that use <code>$('img').visibility({ type: 'image'})</code> will no longer animate a second time if re-initialized.</li>
-<li><strong>Form Validation</strong> - Fixed issue where using bracketed values, or other special characters could cause errors with selectors <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4163">#4163</a> <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4164">#4164</a></li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li><strong>Comments</strong> - Added missing <code>size</code> variations to comments docs <a href="https://github.com/Semantic-Org/Semantic-UI/pull/4450">#4450</a></li>
-<li><strong>Typos</strong> - Thanks to everyone who has submitted typo/grammatical PRs, much appreciated</li>
+<li>Fixes <code>2.2.8</code> npm install script failing due to incorrect path in <code>require</code> statement</li>
 </ul>
     </section>
 </article>
