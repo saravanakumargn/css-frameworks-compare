@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "Semantic-Org"
   },
-  "datePublished" : "2017-02-21",
+  "datePublished" : "2017-03-28",
   "publisher" : {
     "@type" : "Organization",
     "name" : "Semantic-Org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/Semantic-Org/Semantic-UI",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, CSS, HTML",
-  "softwareVersion" : "2.2.9",
+  "softwareVersion" : "2.2.10",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "32354"
+    "ratingCount" : "32428"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-03-26",
+    "datePublished" : "2017-03-29",
     "reviewBody" : "Written in  Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">2.2.9</h2>
+                <h2 class="card-title">2.2.10</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Feb 21, 2017</h2>
+                <h2 class="card-title">Mar 28, 2017</h2>
                 <p class="card-text"><small>Created at Apr 9, 2013</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Feb 22, 2017
+                <h2 class="card-title">Mar 28, 2017
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">954</h2>
+                <h2 class="card-title">953</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">3,646</h2>
+                <h2 class="card-title">3,651</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">32,354</h2>
+                <h2 class="card-title">32,428</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,334</h2>
+                <h2 class="card-title">1,337</h2>
             </div>
         </div>
     </div>
@@ -170,11 +170,26 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on February 21, 2017 for 2.2.9</small>
+        Release Notes <small>on March 28, 2017 for 2.2.10</small>
     </h1>
-        <p><strong>Build Tools</strong></p>
+        <p><strong>Critical Bugs</strong></p>
 <ul>
-<li>Fixes <code>2.2.8</code> npm install script failing due to incorrect path in <code>require</code> statement</li>
+<li><strong>Dropdown</strong> - Fix search input inside dropdown menu causing dropdown to close before selection when selecting an item #5113</li>
+<li><strong>Dropdown</strong> - (IE11 Only) Fixed issue where dropdown re-opens immediately after closing when using a <code>search</code> inside menu. #4237</li>
+</ul>
+<p><strong>Bugs</strong></p>
+<ul>
+<li><strong>Button</strong> - Fixes <code>@basicActiveBoxShadow</code> being used incorrectly in basic button variables</li>
+<li><strong>Visibility</strong> - Visibility events now fire correctly when using <code>context</code> other than body that has <code>overflow-x</code> or <code>overflow-y</code> set to <code>auto</code> or <code>scroll</code></li>
+<li><strong>Dropdown</strong> - Fixes an issue where dropdown would not correctly open <code>upward</code> at bottom edge of the screen when using a <code>context</code> with <code>overflow-x</code> or <code>overflow-y</code> set to <code>auto</code></li>
+<li><strong>Modal</strong> - <code>onDeny</code> and <code>onApprove</code> callbacks can no longer occur multiple times if you rapidly click a approve/deny button in a. #4479</li>
+</ul>
+<p><strong>Enhancements</strong>
+-<strong>Form</strong> - Credit card validation now no longer fails validation with dashed credit card values #5122 <strong>Thanks @neokio</strong></p>
+<p><strong>Bugs</strong></p>
+<ul>
+<li><strong>Visibility</strong> - Fixed bug where using visibility with <code>context</code> setting on a scrollable context (with overflow) would cause callbacks to fire incorrectly</li>
+<li><strong>Visibility</strong> - Fixed bug where <code>top passed</code> and <code>bottom passed</code> would appear as incorrect values if using settings from <code>get element calculations</code> when element is off screen.</li>
 </ul>
     </section>
 </article>
