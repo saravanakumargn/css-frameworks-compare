@@ -4,22 +4,22 @@
   "@context" : "http://schema.org",
   "@type" : "SoftwareApplication",
   "name" : "Turret",
-  "image" : "https://avatars3.githubusercontent.com/u/6046577?v&#x3D;3",
+  "image" : "https://avatars2.githubusercontent.com/u/23046454?v&#x3D;3",
   "url" : "http://turretcss.com/",
   "author" : {
     "@type" : "Organization",
-    "name" : "bigfishtv"
+    "name" : "turretcss"
   },
-  "datePublished" : "2016-04-05",
+  "datePublished" : "2017-04-01",
   "publisher" : {
     "@type" : "Organization",
-    "name" : "bigfishtv"
+    "name" : "turretcss"
   },
   "applicationCategory" : "frontend framework",
-  "downloadUrl" : "https://github.com/bigfishtv/turret",
+  "downloadUrl" : "https://github.com/turretcss/turretcss",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
-  "requirements" : "CSS, Ruby",
-  "softwareVersion" : "v3.3.1",
+  "requirements" : "CSS, JavaScript",
+  "softwareVersion" : "v4.0.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
     "ratingCount" : "264"
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-03-29",
+    "datePublished" : "2017-04-03",
     "reviewBody" : "Written in  Less . Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -42,19 +42,19 @@
 </header>
 <section class="media my-2">
   <div class="media-left">
-    <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars3.githubusercontent.com/u/6046577?v&#x3D;3" alt="bigfishtv">
+    <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars2.githubusercontent.com/u/23046454?v&#x3D;3" alt="turretcss">
   </div>
   <div class="media-body">
     <p>Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.</p>
-    <p>Developed by Organization:bigfishtv</p>
-    <p><small>Used languages: CSS(309.43 kB), Ruby(3.08 kB)</small></p>
+    <p>Developed by Organization:turretcss</p>
+    <p><small>Used languages: CSS(128.83 kB), JavaScript(213.00 bytes)</small></p>
   </div>
 </section>
 <hr>
 <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="my-2 text-xs-center">
-          <a class="btn btn-primary" href="https://github.com/bigfishtv/turret" role="button" target="_blank">Visit Github page</a>
+          <a class="btn btn-primary" href="https://github.com/turretcss/turretcss" role="button" target="_blank">Visit Github page</a>
           <a class="btn btn-primary m-1" href="http://turretcss.com/" role="button" target="_blank">Visit Turret Page</a>
       </div>
     </div>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.3.1</h2>
+                <h2 class="card-title">v4.0.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Apr 5, 2016</h2>
+                <h2 class="card-title">Apr 1, 2017</h2>
                 <p class="card-text"><small>Created at Jan 29, 2015</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jun 14, 2016
+                <h2 class="card-title">Apr 1, 2017
                 </h2>
             </div>
         </div>
@@ -170,12 +170,58 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on April 5, 2016 for v3.3.1</small>
+        Release Notes <small>on April 1, 2017 for v4.0.0</small>
     </h1>
-        <h2 id="fixes">Fixes</h2>
+        <p>turretcss v4.0.0 is here! Farewell Less and hello 👋 modern CSS custom properties with PostCSS and PostCSS-cssnext post-processing for browser support.</p>
+<h2 id="breakingchanges">Breaking Changes</h2>
 <ul>
-<li>Fixed margins on <code>.table-responsive</code> wrapping <code>&lt;div&gt;</code> on tables with margins</li>
-<li>Fixed transitions on <code>&lt;textarea&gt;</code> for <code>color</code>, <code>background</code>, and <code>border</code></li>
+<li>Moved from Less to PostCSS-cssnext</li>
+<li>Removed support for IE9, default support extends to IE10 and the latest two versions of all modern browsers</li>
+<li>Removed support for Bower</li>
+<li>Removed columns from the grid</li>
+<li>Removed <code>.pullout</code> typography element</li>
+<li>Removed mixin logic for element styles, using standard CSS cascade and lowering specifity</li>
+<li>Removed <code>light-grey</code> and 'dark-grey` color definitions</li>
+<li>Renamed <code>.text-</code> color utility classes to <code>.color-</code></li>
+<li>Mixins for browser vender prefixing have been removed in preference of Autoprefixer</li>
+<li>Default values for element variables are removed where possible to inherit global scope styles by default</li>
+</ul>
+<h2 id="additions">Additions</h2>
+<ul>
+<li>Added <code>--font-family-system</code> as the default font-family</li>
+<li>Added color scales for shades, palette, and indicator colors</li>
+<li>Added <code>.field</code> wrapper for  <code>label</code> and <code>input</code> combinations</li>
+<li>Added responsive scaling large format text with <code>.big</code> class</li>
+<li>Added <code>.display-title</code> class for stylised heading style</li>
+<li>Added <code>.small-caps</code> class for formatting a small title</li>
+<li>Updated <code>font-weight</code> variables to be inline with weight scale (200-800)</li>
+<li>Added utility classes for <code>line-height</code></li>
+<li>Added utility classes for <code>font-weight</code></li>
+<li>Added utility classes for <code>padding-vertical</code> and <code>padding-horizontal</code></li>
+<li>Added utility classes for <code>margin-vertical</code> and <code>margin-horizontal</code></li>
+<li>Extended <code>.background-</code> utility classes for color scales</li>
+<li>Extended <code>.color-</code> utility classes for color scales</li>
+<li>Added <code>.border-color-</code> utility classes for color scales</li>
+<li>Added <code>.fill-</code> utility classes for color scales on SVG elements</li>
+<li>Added <code>.stroke-</code> utility classes for color scales on SVG elements</li>
+<li>Added <code>.border-</code> utility classes</li>
+<li>Added <code>.spinner</code> class for loading indicator to <code>::before</code> pseudo element, for use with <code>.media</code> and <code>.button</code></li>
+<li>Added <code>--font-smoothing</code> mixins for text rendering</li>
+<li>Added default <code>:focus</code> state styles options</li>
+<li>Added more documentation for running documentation locally with Jekyll</li>
+<li>Added documentation to describe default reset behaviours including: text rendering, font smoothing, body and html min-heights, and typography margin resets for first and last children</li>
+<li>Split out global variables to <code>_globals.css</code> these are CSS custom property values that are set globally on elements and are not necessarily tied to a property selector</li>
+<li>Added CHANGELOG.md, CONTRIBUTING.md, and ISSUE_TEMPLATE.md to repo</li>
+</ul>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Include the <code>canvas</code> element in <code>.media</code> for ratio scaling</li>
+<li>Refactored <code>SVG</code> inheriting styles in <code>.button</code> elements</li>
+<li>Fixed typo in flex display utility classes</li>
+<li>Fixed wrong default property value being set for <code>--headings-text-transform</code></li>
+<li><code>.button</code> now have vertical padding calculated from <code>font-size</code>, <code>padding</code>, and <code>border-width</code>. Horizontal padding is defaulted to <code>1.5em</code>.</li>
+<li>Docs now running through GitHub pages natively without build step</li>
+<li>Using PostCSS-cli for CSS compilation</li>
 </ul>
     </section>
 </article>
