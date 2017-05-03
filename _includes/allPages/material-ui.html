@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "callemall"
   },
-  "datePublished" : "2017-04-14",
+  "datePublished" : "2017-05-01",
   "publisher" : {
     "@type" : "Organization",
     "name" : "callemall"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/callemall/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, Shell",
-  "softwareVersion" : "v0.17.4",
+  "softwareVersion" : "v0.18.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "24955"
+    "ratingCount" : "25234"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-04-24",
+    "datePublished" : "2017-05-03",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v0.17.4</h2>
+                <h2 class="card-title">v0.18.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Apr 14, 2017</h2>
+                <h2 class="card-title">May 1, 2017</h2>
                 <p class="card-text"><small>Created at Aug 19, 2014</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Apr 22, 2017
+                <h2 class="card-title">May 2, 2017
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">702</h2>
+                <h2 class="card-title">718</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">4,465</h2>
+                <h2 class="card-title">4,515</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">24,955</h2>
+                <h2 class="card-title">25,234</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">960</h2>
+                <h2 class="card-title">973</h2>
             </div>
         </div>
     </div>
@@ -169,21 +169,33 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on April 14, 2017 for v0.17.4</small>
+        Release Notes <small>on May 1, 2017 for v0.18.0</small>
     </h1>
-        <h6 id="_apr142017_"><em>Apr 14, 2017</em></h6>
-<p>Big thanks to the 5 contributors who made this release possible.
-Following <a href="https://facebook.github.io/react/blog/2017/04/07/react-v15.5.0.html">React's announcement</a> that includes the deprecation of some pattern, we have updated the codebase in order to support the latest v15.5.4 release of React.
-Thanks @rsolomon for taking care of it!</p>
+        <h6 id="_apr302017_"><em>Apr 30, 2017</em></h6>
+<p>Big thanks to the 8 contributors who made this release possible.
+This release almost exclusively contains bug fixes.</p>
+<h5 id="breakingchanges">Breaking Changes</h5>
+<ul>
+<li>[Table] Fix controlled behavior (#6638) @oliviertassinari</li>
+</ul>
+<p>This PR is introducing a breaking change by removing the ambiguity between default state and controlled state. Now, as soon as the selected property is used, the row selection of the component is controlled, hence fully implementing what's documented:</p>
+<blockquote>
+  <p><code>selected</code>: This property can be used to programmatically select rows.</p>
+</blockquote>
 <h5 id="componentfixesenhancements">Component Fixes / Enhancements</h5>
 <ul>
-<li>[SelectField] Add dropDownMenuProps property (c3ee8e88d1a8abb399d44b73bd3214883ccccd7a) @viniciusdcc</li>
-<li>[CardActions] Fix showExpandableButton bug (#6578) @akshaynanavati</li>
-<li>[DatePicker] Customizable calendar system (#6565) @alitaheri</li>
+<li>[AutoComplete] Fix overriding TextField value and onChange prop (#6642) @umidbekkarimov</li>
+<li>[AutoComplete] Fix undesired behaviour with controlled searchText (#6621) @NickMalt</li>
+<li>[Stepper] Allow single Step child (#6707) @StephanBijzitter</li>
+<li>[style] Use 'default' cursor for disabled component states (#6700) @demigor</li>
+<li>[DropDownMenu] Pass autoWidth property to Menu component (#6632) @BamaBoy</li>
+<li>[Menu] Fix focus index when multiselect is used (#6717) @jony89</li>
+<li>[Tabs] Fix transition when isRtl is used (#6737) @jony89</li>
 </ul>
-<h4 id="core">Core</h4>
+<h5 id="docs">Docs</h5>
 <ul>
-<li>[react] Use React 15.5 and prop-types lib (#6577) @rsolomon</li>
+<li>[docs] Upgrade react-docgen (#6635) @mbrookes</li>
+<li>[Slider] Add a logarithmic scale example (#6672) @idoco</li>
 </ul>
     </section>
 </article>
