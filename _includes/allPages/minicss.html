@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "Chalarangelo"
   },
-  "datePublished" : "2017-05-12",
+  "datePublished" : "2017-06-09",
   "publisher" : {
     "@type" : "Person",
     "name" : "Chalarangelo"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/Chalarangelo/mini.css",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS",
-  "softwareVersion" : "v2.2.0",
+  "softwareVersion" : "v2.3.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "1448"
+    "ratingCount" : "1579"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-06-02",
+    "datePublished" : "2017-06-13",
     "reviewBody" : "Written in Sass   This is frameworks design for plain. This framework Feature types are prototype"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>A minimal, responsive, style-agnostic CSS framework!</p>
     <p>Developed by User:Chalarangelo</p>
-    <p><small>Used languages: CSS(346.09 kB)</small></p>
+    <p><small>Used languages: CSS(376.45 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v2.2.0</h2>
+                <h2 class="card-title">v2.3.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">May 12, 2017</h2>
+                <h2 class="card-title">Jun 9, 2017</h2>
                 <p class="card-text"><small>Created at Aug 22, 2016</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">May 30, 2017
+                <h2 class="card-title">Jun 9, 2017
                 </h2>
             </div>
         </div>
@@ -131,19 +131,19 @@
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">48</h2>
+                <h2 class="card-title">53</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">1,448</h2>
+                <h2 class="card-title">1,579</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">39</h2>
+                <h2 class="card-title">45</h2>
             </div>
         </div>
     </div>
@@ -169,27 +169,25 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on May 12, 2017 for v2.2.0</small>
+        Release Notes <small>on June 9, 2017 for v2.3.0</small>
     </h1>
-        <p><img src="/docs/page_thumb.png" alt="Logo" /></p>
-<p>The <strong>v2.2.0</strong> release of <strong>mini.css</strong> marks a crucial milestone in the framework's life due to the sheer amount of things that have been added, changed and removed. This version will be the base for the first LTS (Long Term Support) release, after patching certain things in subsequent releases. </p>
+        <p>The <strong>v2.3.0</strong> release of <strong>mini.css</strong> adds some features that have been requested by the community multiple times, such as modals, switches, vertical layout for forms and scrollable tables. Everything has been polished up and updated in order to deliver the best <strong>mini.css</strong> experience yet!</p>
+<p><img src="/docs/page_thumb.png" alt="Logo" /></p>
 <h2 id="changes">Changes</h2>
 <ul>
-<li>Replaced old classes for generic shadows with one class (<code>.shadowed</code>).</li>
-<li>Removed the <code>.nano</code> progress style variant.</li>
-<li>Responsive visibility helpers now properly utilize <code>!important</code>.</li>
-<li>Updated the styling of the <code>.close</code> icon.</li>
-<li>Fixed a bug where the <code>&lt;header&gt;</code> element could not be a <code>.row</code>.</li>
-<li>Removed <code>.alert</code> and all its variants. Alerts are now deprecated.</li>
-<li>Added a <code>.toast</code> message to contextual module, along with variants.</li>
-<li>Removed <code>.inverse</code> card color variant, added <code>.warning</code> and <code>.error</code> variants to replace the old alerts.</li>
-<li>Swapped the order of the input_control and naviation modules.</li>
-<li>Added a fluid typography mode (currently disabled by default on all flavors).</li>
-<li>Added a <code>.drawer</code> component in navigation module, along with variants.</li>
-<li>Updated documentation and customization documentation to reflect latest changes.</li>
-<li>Updated all flavors to utilize the latest features.</li>
+<li>Added a new <code>.modal</code> component, which allows you to show modal dialogs (<code>contextual</code>).</li>
+<li>Added a new <code>.switch</code> component for displaying on/off switches (<code>input_control</code>).</li>
+<li>Added <code>.scrollable</code> tables, allowing for long tables to be displayed in an alternate way (<code>table</code>).</li>
+<li>Added <code>.vertical</code> input groups, allowing vertical forms to be created more easily (<code>input_control</code>).</li>
+<li>Updated <strong>mini-default</strong> color palette. The new palette should now display better on screens with uncommon contrast settings.</li>
+<li>Slightly tweaked the styling of various elements to improve their look.</li>
+<li>Various under-the-hood updates to make everything work better, load faster and be lighter.</li>
+<li>Updated the styling of borders and other elements to use <code>rem</code> instead of <code>px</code> in all <code>rem</code>-based flavors.</li>
+<li>Added a color highlight for the selected tab in <code>.tabs</code>.</li>
+<li>Added styling for <code>disabled</code> elements in <code>input_control</code> that were wrongly omitted in the past.</li>
+<li>Fixed some bugs and improved overall stability, updated all flavors accordingly.</li>
 </ul>
-<h2 id="compatibilitywitholderversions">Compatibility with older versions</h2>
-<p>Due to some of the changes described above, <strong>v2.2.0</strong> is not compatible with some of the previous versions of the framework, however it's possible to enable those disabled or deprecated features manually.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>This release is fully compatible with previous versions, however, you should check if anything added breaks or alters any of your older layouts etc., especially if you are using your own flavor.</p>
     </section>
 </article>
