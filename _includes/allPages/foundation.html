@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "zurb"
   },
-  "datePublished" : "2017-07-01",
+  "datePublished" : "2017-08-11",
   "publisher" : {
     "@type" : "Organization",
     "name" : "zurb"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/zurb/foundation-sites",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, HTML, CSS, Shell",
-  "softwareVersion" : "v6.4.1",
+  "softwareVersion" : "v6.4.2",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "26026"
+    "ratingCount" : "26047"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-08-08",
+    "datePublished" : "2017-08-11",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.</p>
     <p>Developed by Organization:zurb</p>
-    <p><small>Used languages: JavaScript(791.69 kB), HTML(634.57 kB), CSS(343.25 kB), Shell(139.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(791.69 kB), HTML(634.57 kB), CSS(343.39 kB), Shell(139.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v6.4.1</h2>
+                <h2 class="card-title">v6.4.2</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Jul 1, 2017</h2>
+                <h2 class="card-title">Aug 11, 2017</h2>
                 <p class="card-text"><small>Created at Oct 14, 2011</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Aug 7, 2017
+                <h2 class="card-title">Aug 11, 2017
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">567</h2>
+                <h2 class="card-title">561</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">5,662</h2>
+                <h2 class="card-title">5,663</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">26,026</h2>
+                <h2 class="card-title">26,047</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,504</h2>
+                <h2 class="card-title">1,507</h2>
             </div>
         </div>
     </div>
@@ -170,16 +170,48 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on July 1, 2017 for v6.4.1</small>
+        Release Notes <small>on August 11, 2017 for v6.4.2</small>
     </h1>
-        <p>Contains a few quick fixes and iterations from Foundation 6.4.0</p>
+        <p>The 6.4.2 release contains both a series of bugfixes and some incremental improvements, particularly focused on the new XY Grid as we get more and more folks using it in the wild. Big shoutout to our @hikouki as one of our newer contributors who jumped in with quite a few different bug fixes, docs updates, and improvements!</p>
+<p>Migration Notes:</p>
 <ul>
-<li>Fix issue with ruby-sass in menus: https://github.com/zurb/foundation-sites/pull/10288</li>
-<li>Fix issue with ruby-sass in xy-grid: https://github.com/zurb/foundation-sites/pull/10286</li>
-<li>Fix interchange on background images with parenthesis in url: https://github.com/zurb/foundation-sites/pull/10264</li>
-<li>Add support for new Mastercard BIN numbers: https://github.com/zurb/foundation-sites/pull/10241</li>
-<li>Fix a few vars that were missing from _settings.scss: https://github.com/zurb/foundation-sites/pull/10311</li>
-<li>Fix a global variable reference in <code>foundation.core.js</code>: https://github.com/zurb/foundation-sites/pull/10292</li>
+<li>Grid containers for the XY grid have been reworked based on issues and feed back. This is a big one, and a big improvement. Check out the docs for more: http://foundation.zurb.com/sites/docs/xy-grid.html</li>
+<li>There was a naming conflict between the <code>$block-grid-max</code> variable for xy and regular grids, meaning you could not have both in with different values. The xy-grid setting has been separated out to <code>$xy-block-grid-max</code>. If you have changed the value of <code>$block-grid-max</code> and are using the xy-grid, you should update <code>$xy-block-grid-max</code>.</li>
+</ul>
+<p>Updates and Improvements</p>
+<ul>
+<li>Rework grid container: https://github.com/zurb/foundation-sites/pull/10371</li>
+<li>Button cursors are now configurable via settings: https://github.com/zurb/foundation-sites/pull/10367</li>
+<li>Abide options now merge recursively, fixing issues adding validators: https://github.com/zurb/foundation-sites/pull/10377</li>
+<li>Enable defining different off-canvas sizes by breakpoint: https://github.com/zurb/foundation-sites/pull/10428</li>
+</ul>
+<p>Bugfixes:</p>
+<ul>
+<li>Fix rounded prototype when breakpoint enabled: https://github.com/zurb/foundation-sites/pull/10335</li>
+<li>Remove duplicate max-width: https://github.com/zurb/foundation-sites/pull/10341</li>
+<li>Fix dropdown arrow position issues when using responsive nav: https://github.com/zurb/foundation-sites/pull/10345</li>
+<li>Fix typescale issues building with ruby-sass: https://github.com/zurb/foundation-sites/pull/10351</li>
+<li>Fix bug on Orbit resize during transition: https://github.com/zurb/foundation-sites/pull/9881</li>
+<li>Fix boundary values for vertical two-handle sliders: https://github.com/zurb/foundation-sites/pull/10355</li>
+<li>Fix distributed version of media query to automatically initialize: https://github.com/zurb/foundation-sites/pull/10369</li>
+<li>Fix off-canvas reveal classes not working properly in 6.4.x: https://github.com/zurb/foundation-sites/pull/10421</li>
+<li>Fix cell() sass mixin gutter output: https://github.com/zurb/foundation-sites/pull/10437</li>
+<li>Rename $block-grid-max variable to get rid of duplicate name problem: https://github.com/zurb/foundation-sites/pull/10433</li>
+<li>Drilldown aria attribute fixed from ‘menu-item’ to correct ‘menu item’: https://github.com/zurb/foundation-sites/pull/10434</li>
+<li>Add missing 7th argument to xy-cell mixing within xy-grid-layout: https://github.com/zurb/foundation-sites/pull/10435</li>
+<li>Fix responsive shrink and full classes in xy-grid: https://github.com/zurb/foundation-sites/pull/10370</li>
+<li>Fix scrolling bug when using keyboard nav in dropdown menus: https://github.com/zurb/foundation-sites/pull/10445</li>
+<li>Fix reinitialization of menus: https://github.com/zurb/foundation-sites/pull/10439</li>
+<li>Fix use of dropdown with multiple anchors: https://github.com/zurb/foundation-sites/pull/10360</li>
+<li>Fix use of margin grids with grid frames: https://github.com/zurb/foundation-sites/pull/10448</li>
+<li>Fix JSPM Entry Point: https://github.com/zurb/foundation-sites/pull/10465</li>
+<li>Fix medium-up breakpoint class bug introduced in 6.4: https://github.com/zurb/foundation-sites/pull/10491</li>
+<li>Fix collapse responsive sizing bug in xy grid: https://github.com/zurb/foundation-sites/pull/10492</li>
+<li>Remove text-decoration from link buttons: https://github.com/zurb/foundation-sites/pull/10471</li>
+<li>Fix sizing of input-group buttons: https://github.com/zurb/foundation-sites/pull/10456</li>
+<li>Fix triggers initialization in customizer builds: https://github.com/zurb/foundation-sites/pull/10507</li>
+<li>Fix no-wrap issue in menus with very long items introduced in 6.4 menu rework: https://github.com/zurb/foundation-sites/pull/10512</li>
+<li>Fix vertical grid auto and shrink classes trumping size classes: https://github.com/zurb/foundation-sites/pull/10513</li>
 </ul>
     </section>
 </article>
