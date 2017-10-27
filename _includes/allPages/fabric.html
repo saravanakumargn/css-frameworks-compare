@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "OfficeDev"
   },
-  "datePublished" : "2017-09-29",
+  "datePublished" : "2017-10-27",
   "publisher" : {
     "@type" : "Organization",
     "name" : "OfficeDev"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/OfficeDev/office-ui-fabric-core",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript, HTML, TypeScript",
-  "softwareVersion" : "8.0.0",
+  "softwareVersion" : "9.1.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "2750"
+    "ratingCount" : "2763"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-10-05",
+    "datePublished" : "2017-10-27",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for metro. This framework Feature types are full"
   }
 }
@@ -45,9 +45,9 @@
     <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars2.githubusercontent.com/u/6789362?v&#x3D;4" alt="OfficeDev">
   </div>
   <div class="media-body">
-    <p>The front-end framework for building experiences for Office and Office 365.</p>
+    <p>The front-end CSS framework for building experiences for Office and Office 365.</p>
     <p>Developed by Organization:OfficeDev</p>
-    <p><small>Used languages: CSS(310.88 kB), JavaScript(60.33 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
+    <p><small>Used languages: CSS(326.79 kB), JavaScript(60.33 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">8.0.0</h2>
-                <p class="card-text"><small>198.05 kB</small></p>
+                <h2 class="card-title">9.1.0</h2>
+                <p class="card-text"><small>205.78 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2017 M09 29</h2>
+                <h2 class="card-title">2017 M10 27</h2>
                 <p class="card-text"><small>Created at 2015 M05 20</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2017 M10 4
+                <h2 class="card-title">2017 M10 27
                 </h2>
             </div>
         </div>
@@ -127,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">13</h2>
+                <h2 class="card-title">11</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">380</h2>
+                <h2 class="card-title">381</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">2,750</h2>
+                <h2 class="card-title">2,763</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">247</h2>
+                <h2 class="card-title">249</h2>
             </div>
         </div>
     </div>
@@ -171,17 +171,22 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2017 M09 29 for 8.0.0</small>
+        Release Notes <small>on 2017 M10 27 for 9.1.0</small>
     </h1>
-        <h2 id="breakingchanges">Breaking Changes</h2>
-<h1 id="1029removesfabricrtlcsstheseparaterighttoleftrtlstylesheetandplacesthosestylesalongsidethelefttorightltrstylesforthecorrectstylestoapplyyoumustsetadirectionontheparentelementofanyfabricclassesthemostcommonplacetodothisisonthehtmlelementlikeso">1029 Removes <code>fabric.rtl.css</code>, the separate right-to-left (RTL) stylesheet, and places those styles alongside the left-to-right (LTR) styles. For the correct styles to apply, you <strong>must set a direction on the parent element of any Fabric classes</strong>. The most common place to do this is on the <code>html</code> element, like so:</h1>
-<pre><code>&lt;html dir='ltr' ... &gt;
-</code></pre>
-<p>or </p>
-<pre><code>&lt;html dir='rtl' ... &gt;
-</code></pre>
-<p>This is all that is required to switch modes between LTR and RTL. Fabric will automatically update "flip" the grid layout, directional icons (e.g. arrows), animations, and more. If your application supports multiple languages/locales, please consider making this small change to improve the experience for users reading <a href="https://en.wikipedia.org/wiki/Right-to-left">right-to-left scripts</a>.</p>
-<h2 id="documentation">Documentation</h2>
-<h1 id="1026improvedthemarkdownformattingofthebuildingdocumentationhttpsgithubcomofficedevofficeuifabriccoreblobmasterghdocsbuildingmd">1026 Improved the Markdown formatting of the <a href="https://github.com/OfficeDev/office-ui-fabric-core/blob/master/ghdocs/BUILDING.md">building documentation</a>.</h1>
+        <h2 id="new">New</h2>
+<ul>
+<li>#1046: Adds background and border hover color classes that were missing in previous releases, such as <code>.ms-bgColor-orange--hover</code>.</li>
+<li>#1049: Updates the icons, adding a new <code>WaffleOffice365</code> icon.</li>
+<li>#1050: Updates the icons, adding 80 news icons.</li>
+<li>#1052: Adds a <strong>bold</strong> font weight for Segoe UI.</li>
+</ul>
+<h2 id="changed">Changed</h2>
+<ul>
+<li>#1047: Removes two translucent color variables. This is not considered a breaking change as the variables were never used within Fabric or documented for use.</li>
+</ul>
+<h2 id="removeddeprecated">Removed/Deprecated</h2>
+<ul>
+<li>#1050: Renames two icons: <code>StoreLogo</code> to <code>StoreLogo16</code> and <code>StoreLogoMed</code> to <code>StoreLogoMed20</code>. The previous names are supported in this version but will be removed in a future release.</li>
+</ul>
     </section>
 </article>

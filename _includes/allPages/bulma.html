@@ -5,12 +5,12 @@
   "@type" : "SoftwareApplication",
   "name" : "Bulma",
   "image" : "https://avatars1.githubusercontent.com/u/1254808?v&#x3D;4",
-  "url" : "http://bulma.io",
+  "url" : "https://bulma.io",
   "author" : {
     "@type" : "Person",
     "name" : "jgthms"
   },
-  "datePublished" : "",
+  "datePublished" : "2017-10-10",
   "publisher" : {
     "@type" : "Person",
     "name" : "jgthms"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/jgthms/bulma",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, Shell",
-  "softwareVersion" : "",
+  "softwareVersion" : "0.6.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "19788"
+    "ratingCount" : "21086"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-10-05",
+    "datePublished" : "2017-10-27",
     "reviewBody" : "Written in Sass   This is frameworks design for plain, metro. This framework Feature types are prototype"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Modern CSS framework based on Flexbox</p>
     <p>Developed by User:jgthms</p>
-    <p><small>Used languages: CSS(306.05 kB), Shell(1.22 kB)</small></p>
+    <p><small>Used languages: CSS(303.52 kB), Shell(1.22 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -55,7 +55,7 @@
     <div class="col-xs-12 col-sm-6">
       <div class="my-2 text-xs-center">
           <a class="btn btn-primary" href="https://github.com/jgthms/bulma" role="button" target="_blank">Visit Github page</a>
-          <a class="btn btn-primary m-1" href="http://bulma.io" role="button" target="_blank">Visit Bulma Page</a>
+          <a class="btn btn-primary m-1" href="https://bulma.io" role="button" target="_blank">Visit Bulma Page</a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -100,20 +100,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">0.6.0</h2>
+                <p class="card-text"><small>85.86 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">2017 M10 10</h2>
                 <p class="card-text"><small>Created at 2016 M01 24</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2017 M10 4
+                <h2 class="card-title">2017 M10 26
                 </h2>
             </div>
         </div>
@@ -125,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">206</h2>
+                <h2 class="card-title">213</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">1,459</h2>
+                <h2 class="card-title">1,553</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">19,788</h2>
+                <h2 class="card-title">21,086</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">495</h2>
+                <h2 class="card-title">531</h2>
             </div>
         </div>
     </div>
@@ -167,4 +168,91 @@
 </div>
 {% endif %}
 
+    <section class="my-2">
+    <h1>
+        Release Notes <small>on 2017 M10 10 for 0.6.0</small>
+    </h1>
+        <h3 id="breakingchanges">Breaking changes</h3>
+<ul>
+<li>The new <code>$link</code> color is part of the <code>$colors</code> map. As a result, <code>.button.is-link</code> is a colored button now. Use <code>.button.is-text</code> if you want the underlined button.</li>
+<li>The deprecated <code>variables.sass</code> file has been removed.</li>
+<li>The deprecated <code>nav.sass</code> file has been removed.</li>
+</ul>
+<h3 id="newfeatures">New features</h3>
+<ul>
+<li>#1236 <code>.table</code> hover effect is opt-in, by using the <code>.is-hoverable</code> modifier class</li>
+<li>#1254 <code>.dropdown</code> now supports <code>.is-up</code> modifier</li>
+</ul>
+<h3 id="improvements">Improvements</h3>
+<ul>
+<li>#1257 Include placeholder mixin in <code>=input</code></li>
+</ul>
+<p>The <code>$link</code> color is used instead of <code>$primary</code> in the following components:</p>
+<table>
+  <tr>
+    <th>Variable</th>
+    <th>Old value</th>
+    <th>New value</th>
+  </tr>
+  <tr>
+    <td><code>$dropdown-item-active-color</code></td>
+    <td><code>$primary-invert</code></td>
+    <td><code>$link-invert</code></td>
+  </tr>
+  <tr>
+    <td><code>$dropdown-item-active-background-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$navbar-tab-hover-border-bottom-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$navbar-tab-active-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$navbar-tab-active-border-bottom-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$navbar-dropdown-item-active-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$tabs-link-active-border-bottom-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$tabs-link-active-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$tabs-toggle-link-active-background-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$tabs-toggle-link-active-border-color</code></td>
+    <td><code>$primary</code></td>
+    <td><code>$link</code></td>
+  </tr>
+  <tr>
+    <td><code>$tabs-toggle-link-active-color</code></td>
+    <td><code>$primary-invert</code></td>
+    <td><code>$link-invert</code></td>
+  </tr>
+</table>
+<h3 id="issuesclosed">Issues closed</h3>
+<ul>
+<li>#708 Import variables in mixins</li>
+</ul>
+    </section>
 </article>
