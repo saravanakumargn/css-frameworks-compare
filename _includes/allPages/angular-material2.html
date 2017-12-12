@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "angular"
   },
-  "datePublished" : "2017-11-07",
+  "datePublished" : "2017-12-12",
   "publisher" : {
     "@type" : "Organization",
     "name" : "angular"
@@ -18,11 +18,11 @@
   "applicationCategory" : "frontend framework",
   "downloadUrl" : "https://github.com/angular/material2",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
-  "requirements" : "TypeScript, HTML, CSS, Shell, JavaScript",
-  "softwareVersion" : "5.0.0-rc0",
+  "requirements" : "TypeScript, HTML, CSS, Shell, JavaScript, Python",
+  "softwareVersion" : "5.0.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "11705"
+    "ratingCount" : "12268"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-11-07",
+    "datePublished" : "2017-12-12",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Material Design components for Angular</p>
     <p>Developed by Organization:angular</p>
-    <p><small>Used languages: TypeScript(2.45 MB), HTML(288.70 kB), CSS(238.71 kB), Shell(25.05 kB), JavaScript(20.95 kB)</small></p>
+    <p><small>Used languages: TypeScript(2.56 MB), HTML(300.42 kB), CSS(244.37 kB), Shell(25.21 kB), JavaScript(21.00 kB), Python(1.08 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">5.0.0-rc0</h2>
+                <h2 class="card-title">5.0.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2017 M11 7</h2>
+                <h2 class="card-title">2017 M12 12</h2>
                 <p class="card-text"><small>Created at 2016 M01 5</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2017 M11 7
+                <h2 class="card-title">2017 M12 12
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">885</h2>
+                <h2 class="card-title">911</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">2,778</h2>
+                <h2 class="card-title">2,921</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">11,705</h2>
+                <h2 class="card-title">12,268</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,077</h2>
+                <h2 class="card-title">1,098</h2>
             </div>
         </div>
     </div>
@@ -170,171 +170,17 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2017 M11 7 for 5.0.0-rc0</small>
+        Release Notes <small>on 2017 M12 12 for 5.0.1</small>
     </h1>
-        <h3 id="highlights">Highlights</h3>
+        <h3 id="bugfixes">Bug Fixes</h3>
 <ul>
-<li>First release candidate for Angular Material and CDK! The team now believes that APIs and
-behaviors are stable and mature enough to exit beta. Please continue to file issues that
-help us eliminate more bugs from the forthcoming 5.0.0 release. Moving forward, the <em>major</em>
-version number of Angular Material and CDK will update alongside Angular itself.</li>
-<li>Based on Angular 5.0</li>
-<li>More consistent naming conventions across the board</li>
-<li>60+ bug fixes</li>
-</ul>
-<h3 id="breakingchanges">BREAKING CHANGES</h3>
-<ul>
-<li>Angular Material now requires Angular 5, which itself requires TypeScript 2.4+ and RxJS 5.5.2+</li>
-<li><code>mat-icon</code> now uses <code>HttpClient</code> from <code>@angular/common/http</code> instead of <code>Http</code> from
-<code>@angular/http</code>. Any unit tests that faked icon responses should be changed to use an
-<code>HttpInterceptor</code>.</li>
-<li><code>@angular/cdk/rxjs</code> has been removed in favor of <a href="https://github.com/ReactiveX/rxjs/blob/master/doc/lettable-operators.md">RxJS 5.5's lettable operators</a>.</li>
-<li><strong>toolbar:</strong> in previous versions, any content of <code>mat-toolbar</code> not wrapped in a
-<code>mat-toolbar-row</code> would be rendered inside of an implicitly created <code>mat-toolbar-row</code>. As of rc0,
-this implicit row will no longer be created. This means that any custom application CSS that
-targeted this implicitly created <code>mat-toolbar-row</code> will no longer apply. Users can re-add the
-<code>mat-toolbar-row</code> in their own templates to match the original output structure. This
-resolves a longstanding issue where <code>display: flex</code> styles were difficult to use on <code>mat-toolbar</code>.</li>
-<li><strong>accordion:</strong> move CdkAccordion to <code>@angular/cdk/accordion</code></li>
-<li><code>CdkAccordion</code> and associated classes live in <code>@angular/cdk/accordion</code></li>
-<li><code>AccordionChild</code> is renamed to <code>CdkAccordionChild</code></li>
-<li><code>CdkAccordion</code> no longer has displayMode and hideToggle <code>@Inputs</code></li>
-<li><code>CdkAccordionItem</code> is now a <code>@Directive</code></li>
-<li><strong>table</strong>:</li>
-<li>The argument order for the <code>when</code> property of <code>matRowDef</code> and <code>cdkRowDef</code> has been changed
-from <code>(rowData, index)</code> to <code>(index, rowData)</code> in order to match <code>trackBy</code>.</li>
-<li><strong>datepicker:</strong></li>
-<li><code>fromIso8601</code> method on <code>DateAdapter</code> removed in favor of <code>deserialize</code></li>
-<li><code>DateAdapter</code> will return an invalid date instead of throwing an error</li>
-<li>The <code>userSelection</code> <code>@Output</code> of <code>mat-calendar</code> has been made internal-only</li>
-<li><strong>cdk/scrolling:</strong></li>
-<li><code>ScrollDispatcher.getScrollContainers</code> has been renamed to <code>getAncestorScrollContainers</code> to
-better match its behavior.</li>
-<li>The <code>ScrollDispatcher.scrollableReferences</code> property has been renamed to <code>scrollContainers</code>.</li>
-<li>The <code>ScrollDispatcher.scrollableContainsElement</code> method has been removed.</li>
-<li>The <code>Scrollable</code> class has been renamed to <code>CdkScrollable</code> for consistency.</li>
-<li><strong>unique-selection:</strong> move UniqueSelectionDispatcher to <code>@angular/cdk/collections</code>
-(<code>UniqueSelectionDispatcher</code>, <code>UniqueSelectionDispatcherListener</code>, and
-<code>UNIQUE_SELECTION_DISPATCHER_PROVIDER</code>)</li>
-<li><code>MATERIAL_COMPATIBILITY_MODE</code>, <code>CompatibilityModule</code>, <code>NoConflictStyleCompatibilityMode</code>,
-<code>MatPrefixRejector</code>, <code>MdPrefixRejector</code> symbols have been removed.</li>
-<li><code>MAT_CONNECTED_OVERLAY_SCROLL_STRATEGY</code> is renamed to <code>CDK_CONNECTED_OVERLAY_SCROLL_STRATEGY</code></li>
-</ul>
-<h3 id="deprecations">Deprecations</h3>
-<ul>
-<li>The following classes have been renamed. The old names are still available as deprecated:
-<code>OverlayOrigin</code> -&gt; <code>CdkOverlayOrigin</code>
-<code>ConnectedOverlayDirective</code> -&gt; <code>CdkConnectedOverlay</code>
-<code>PortalDirective</code> -&gt; <code>CdkPortal</code>
-<code>PortalHostDirective</code> -&gt; <code>CdkPortalOutlet</code>
-<code>ObserveContent</code> -&gt; <code>CdkObserveContent</code></li>
-<li>The following <code>@Output</code> names have been renamed. The old names are still available as deprecated:</li>
-<li><code>mat-select</code></li>
-<li><code>onOpen</code> -&gt; <code>opened</code></li>
-<li><code>onClose</code> -&gt; <code>closed</code></li>
-<li><code>change</code> -&gt; <code>selectionChange</code></li>
-<li><code>mat-sidenav</code> / <code>mat-drawer</code></li>
-<li><code>open</code> -&gt; <code>opened</code></li>
-<li><code>close</code> -&gt; <code>closed</code></li>
-<li><code>mat-menu</code></li>
-<li><code>close</code> -&gt; <code>closed</code></li>
-<li><code>matMenuTriggerFor</code></li>
-<li><code>onMenuOpen</code> -&gt; <code>menuOpened</code></li>
-<li><code>onMenuClose</code> -&gt; <code>menuClosed</code></li>
-<li><code>mat-chip</code></li>
-<li><code>onSelectionChange</code> -&gt; <code>selectionChange</code></li>
-<li><code>remove</code> -&gt; <code>removed</code></li>
-<li><code>destroy</code> -&gt; <code>destroyed</code></li>
-<li><code>mat-tab-group</code></li>
-<li><code>selectChange</code> -&gt; <code>selectedTabChange</code></li>
-</ul>
-<h3 id="features">Features</h3>
-<ul>
-<li><strong>table:</strong> add MatTableDataSource (<a href="https://github.com/angular/material2/issues/6747">#6747</a>) (<a href="https://github.com/angular/material2/commit/a9600e7">a9600e7</a>)</li>
-<li><strong>dialog:</strong> support minWidth, minHeight, maxWidth and maxHeight (<a href="https://github.com/angular/material2/issues/7488">#7488</a>) (<a href="https://github.com/angular/material2/commit/57f19cd">57f19cd</a>)</li>
-<li><strong>overlay:</strong> new keyboard dispatcher for targeting correct overlay (<a href="https://github.com/angular/material2/issues/6682">#6682</a>) (<a href="https://github.com/angular/material2/commit/a2ca4d6">a2ca4d6</a>)</li>
-<li><strong>snack-bar:</strong> set snack bar to be responsive. (<a href="https://github.com/angular/material2/issues/7485">#7485</a>) (<a href="https://github.com/angular/material2/commit/5b7982f">5b7982f</a>)</li>
-<li><strong>sort:</strong> use existing intl provider if one exists (<a href="https://github.com/angular/material2/issues/7988">#7988</a>) (<a href="https://github.com/angular/material2/commit/c8df2c1">c8df2c1</a>)</li>
-<li><strong>dialog:</strong> add optional generic param for config data (<a href="https://github.com/angular/material2/issues/7447">#7447</a>) (<a href="https://github.com/angular/material2/commit/b29ac45">b29ac45</a>), closes <a href="https://github.com/angular/material2/issues/4398">#4398</a></li>
-<li>Most directives / components now define an <code>exportAs</code> name (<a href="https://github.com/angular/material2/issues/7554">#7554</a>) (<a href="https://github.com/angular/material2/commit/fa441bc">fa441bc</a>)</li>
-</ul>
-<h3 id="bugfixes">Bug Fixes</h3>
-<ul>
-<li><strong>block-scroll-strategy:</strong> disable smooth scrolling before restoring scroll position (<a href="https://github.com/angular/material2/issues/8132">#8132</a>) (<a href="https://github.com/angular/material2/commit/75bccde">75bccde</a>), closes <a href="https://github.com/angular/material2/issues/7139">#7139</a></li>
-<li><strong>button:</strong> focus styles not applied to programmatically focused buttons (<a href="https://github.com/angular/material2/issues/5966">#5966</a>) (<a href="https://github.com/angular/material2/commit/a0bb1a3">a0bb1a3</a>), closes <a href="https://github.com/angular/material2/issues/7510">#7510</a></li>
-<li><strong>button-toggle:</strong> support two-way binding of value (<a href="https://github.com/angular/material2/issues/7911">#7911</a>) (<a href="https://github.com/angular/material2/commit/ee4915c">ee4915c</a>)</li>
-<li><strong>card:</strong> change image path to https in example (<a href="https://github.com/angular/material2/issues/7800">#7800</a>) (<a href="https://github.com/angular/material2/commit/65d3630">65d3630</a>)</li>
-<li><strong>chip-list:</strong> use role = listbox only if chip list is not empty (<a href="https://github.com/angular/material2/issues/7664">#7664</a>) (<a href="https://github.com/angular/material2/commit/dc76c09">dc76c09</a>)</li>
-<li><strong>chips:</strong> programmatically selected chip stealing focus (<a href="https://github.com/angular/material2/issues/7978">#7978</a>) (<a href="https://github.com/angular/material2/commit/8168667">8168667</a>)</li>
-<li><strong>datepicker:</strong> allow <code>DateAdapter</code> authors to have more control ove… (<a href="https://github.com/angular/material2/issues/7346">#7346</a>) (<a href="https://github.com/angular/material2/commit/9fa075e">9fa075e</a>)</li>
-<li><strong>datepicker:</strong> use disabled state from FormControl (<a href="https://github.com/angular/material2/issues/7514">#7514</a>) (<a href="https://github.com/angular/material2/commit/66e71c8">66e71c8</a>)</li>
-<li><strong>dialog:</strong> don't block other dialogs from opening while animating (<a href="https://github.com/angular/material2/issues/8051">#8051</a>) (<a href="https://github.com/angular/material2/commit/cc4fc11">cc4fc11</a>), closes <a href="https://github.com/angular/material2/issues/6560">#6560</a></li>
-<li><strong>drawer:</strong> not restoring focus on close (<a href="https://github.com/angular/material2/issues/7668">#7668</a>) (<a href="https://github.com/angular/material2/commit/3041124">3041124</a>)</li>
-<li><strong>drawer:</strong> unable to toggle while drawer is animating (<a href="https://github.com/angular/material2/issues/6810">#6810</a>) (<a href="https://github.com/angular/material2/commit/085827f">085827f</a>), closes <a href="https://github.com/angular/material2/issues/6376">#6376</a></li>
-<li><strong>expansion-panel:</strong> prevent content from being clipped (<a href="https://github.com/angular/material2/issues/7617">#7617</a>) (<a href="https://github.com/angular/material2/commit/aa77aa1">aa77aa1</a>)</li>
-<li><strong>focus-trap:</strong> server-side rendering error (<a href="https://github.com/angular/material2/issues/7635">#7635</a>) (<a href="https://github.com/angular/material2/commit/f7a12b6">f7a12b6</a>), closes <a href="https://github.com/angular/material2/issues/7633">#7633</a></li>
-<li><strong>focus-trap:</strong> update focus trap attrs to camel case <a href="https://github.com/angular/material2/issues/6799">#6799</a> (<a href="https://github.com/angular/material2/issues/6960">#6960</a>) (<a href="https://github.com/angular/material2/commit/c663fad">c663fad</a>)</li>
-<li><strong>form-field:</strong> fix underline at different zoom levels (<a href="https://github.com/angular/material2/issues/7567">#7567</a>) (<a href="https://github.com/angular/material2/commit/5cffd7c">5cffd7c</a>)</li>
-<li><strong>form-field:</strong> remove 200px width since it messes up flex layouts (<a href="https://github.com/angular/material2/issues/7083">#7083</a>) (<a href="https://github.com/angular/material2/commit/160a511">160a511</a>)</li>
-<li><strong>form-field:</strong> remove specific mention of matInput in error (<a href="https://github.com/angular/material2/issues/7727">#7727</a>) (<a href="https://github.com/angular/material2/commit/f17cb99">f17cb99</a>)</li>
-<li><strong>icon:</strong> use SafeResourceUrl in getSvgIconFromUrl (<a href="https://github.com/angular/material2/issues/7535">#7535</a>) (<a href="https://github.com/angular/material2/commit/291a87c">291a87c</a>)</li>
-<li><strong>input:</strong> remove IE clear icon (<a href="https://github.com/angular/material2/issues/8095">#8095</a>) (<a href="https://github.com/angular/material2/commit/2fa679b">2fa679b</a>), closes <a href="https://github.com/angular/material2/issues/8076">#8076</a></li>
-<li><strong>menu:</strong> add typography mat-font-weight (<a href="https://github.com/angular/material2/commit/7fe1b81">7fe1b81</a>)</li>
-<li><strong>menu:</strong> make @Output names consistent <a href="https://github.com/angular/material2/issues/6677">#6677</a> (<a href="https://github.com/angular/material2/issues/8053">#8053</a>) (<a href="https://github.com/angular/material2/commit/b2dd17a">b2dd17a</a>)</li>
-<li><strong>menu:</strong> not handling keyboard events when opened by mouse (<a href="https://github.com/angular/material2/issues/4843">#4843</a>) (<a href="https://github.com/angular/material2/commit/d822a39">d822a39</a>), closes <a href="https://github.com/angular/material2/issues/4991">#4991</a></li>
-<li><strong>menu:</strong> wrong offset for nested menu in a fallback position (<a href="https://github.com/angular/material2/issues/7562">#7562</a>) (<a href="https://github.com/angular/material2/commit/074f6ce">074f6ce</a>), closes <a href="https://github.com/angular/material2/issues/7549">#7549</a></li>
-<li><strong>overlay:</strong> CloseScrollStrategy not triggering change detection on close (<a href="https://github.com/angular/material2/issues/7929">#7929</a>) (<a href="https://github.com/angular/material2/commit/c0ba25a">c0ba25a</a>), closes <a href="https://github.com/angular/material2/issues/7922">#7922</a></li>
-<li><strong>overlay:</strong> emitting to detachments stream when not attached (<a href="https://github.com/angular/material2/issues/7944">#7944</a>) (<a href="https://github.com/angular/material2/commit/6fdc237">6fdc237</a>)</li>
-<li><strong>overlay:</strong> import BidiModule in OverlayModule (<a href="https://github.com/angular/material2/issues/7566">#7566</a>) (<a href="https://github.com/angular/material2/commit/4321f32">4321f32</a>)</li>
-<li><strong>overlay:</strong> overlay class audits <a href="https://github.com/angular/material2/issues/6372">#6372</a> (<a href="https://github.com/angular/material2/issues/8056">#8056</a>) (<a href="https://github.com/angular/material2/commit/cd05b54">cd05b54</a>)</li>
-<li><strong>overlay:</strong> wait until after change detection to position overlays (<a href="https://github.com/angular/material2/issues/6527">#6527</a>) (<a href="https://github.com/angular/material2/commit/f299d25">f299d25</a>)</li>
-<li><strong>paginator:</strong> fix select baseline; support mobile (<a href="https://github.com/angular/material2/issues/7610">#7610</a>) (<a href="https://github.com/angular/material2/commit/c12e4b5">c12e4b5</a>)</li>
-<li><strong>progress-spinner:</strong> fallback animation not working (<a href="https://github.com/angular/material2/issues/7599">#7599</a>) (<a href="https://github.com/angular/material2/commit/4bb696e">4bb696e</a>)</li>
-<li><strong>progress-spinner:</strong> inaccurate stroke width on really small spinners (<a href="https://github.com/angular/material2/issues/7725">#7725</a>) (<a href="https://github.com/angular/material2/commit/f52f078">f52f078</a>), closes <a href="https://github.com/angular/material2/issues/7686">#7686</a></li>
-<li><strong>progress-spinner:</strong> spinner with narrower stroke not taking up entire element (<a href="https://github.com/angular/material2/issues/7686">#7686</a>) (<a href="https://github.com/angular/material2/commit/2361983">2361983</a>), closes <a href="https://github.com/angular/material2/issues/7674">#7674</a></li>
-<li><strong>scroll:</strong> Replace references to scrollableReferences (<a href="https://github.com/angular/material2/issues/7752">#7752</a>) (<a href="https://github.com/angular/material2/commit/9673f63">9673f63</a>)</li>
-<li><strong>select:</strong> errors not shown on submit (<a href="https://github.com/angular/material2/issues/7640">#7640</a>) (<a href="https://github.com/angular/material2/commit/d2f41a4">d2f41a4</a>), closes <a href="https://github.com/angular/material2/issues/7634">#7634</a></li>
-<li><strong>select:</strong> make @Output names consistent <a href="https://github.com/angular/material2/issues/6677">#6677</a> (<a href="https://github.com/angular/material2/issues/8052">#8052</a>) (<a href="https://github.com/angular/material2/commit/f59abdb">f59abdb</a>)</li>
-<li><strong>select:</strong> not scrolling active option into view when typing (<a href="https://github.com/angular/material2/issues/7620">#7620</a>) (<a href="https://github.com/angular/material2/commit/717f252">717f252</a>)</li>
-<li><strong>select:</strong> remove inert focus call (<a href="https://github.com/angular/material2/issues/7729">#7729</a>) (<a href="https://github.com/angular/material2/commit/70c349c">70c349c</a>)</li>
-<li><strong>select:</strong> support typing to select items on when closed (<a href="https://github.com/angular/material2/issues/7885">#7885</a>) (<a href="https://github.com/angular/material2/commit/8edb416">8edb416</a>)</li>
-<li><strong>select:</strong> unable to preselect array value in single selection mode (<a href="https://github.com/angular/material2/issues/7603">#7603</a>) (<a href="https://github.com/angular/material2/commit/d55aa0c">d55aa0c</a>), closes <a href="https://github.com/angular/material2/issues/7584">#7584</a></li>
-<li><strong>select:</strong> wrong cursor on disabled select (<a href="https://github.com/angular/material2/issues/7696">#7696</a>) (<a href="https://github.com/angular/material2/commit/9b4f435">9b4f435</a>), closes <a href="https://github.com/angular/material2/issues/7695">#7695</a></li>
-<li><strong>selection-list:</strong> fix option value coercion and selection events (<a href="https://github.com/angular/material2/issues/6901">#6901</a>) (<a href="https://github.com/angular/material2/commit/80671bf">80671bf</a>), closes <a href="https://github.com/angular/material2/issues/6864">#6864</a></li>
-<li><strong>snack-bar:</strong> add content fade in animation (<a href="https://github.com/angular/material2/issues/7504">#7504</a>) (<a href="https://github.com/angular/material2/commit/2b9c470">2b9c470</a>)</li>
-<li><strong>snackbar:</strong> swap enter and exit animation curves (<a href="https://github.com/angular/material2/issues/6791">#6791</a>) (<a href="https://github.com/angular/material2/commit/4f571b1">4f571b1</a>)</li>
-<li><strong>sort:</strong> fix arrow on width-constrained headers (<a href="https://github.com/angular/material2/issues/7569">#7569</a>) (<a href="https://github.com/angular/material2/commit/147ae46">147ae46</a>)</li>
-<li><strong>spinner:</strong> set initial value for spinner to 0. (<a href="https://github.com/angular/material2/issues/8139">#8139</a>) (<a href="https://github.com/angular/material2/commit/9e4c636">9e4c636</a>)</li>
-<li><strong>stepper:</strong> don't grey out non-linear steps (<a href="https://github.com/angular/material2/issues/7479">#7479</a>) (<a href="https://github.com/angular/material2/commit/60707b3">60707b3</a>), closes <a href="https://github.com/angular/material2/issues/7260">#7260</a></li>
-<li><strong>stepper:</strong> error when selectedIndex is pre-set (<a href="https://github.com/angular/material2/issues/8035">#8035</a>) (<a href="https://github.com/angular/material2/commit/cf11ff2">cf11ff2</a>), closes <a href="https://github.com/angular/material2/issues/8031">#8031</a></li>
-<li><strong>table:</strong> broaden abstraction for filtering (<a href="https://github.com/angular/material2/issues/8059">#8059</a>) (<a href="https://github.com/angular/material2/commit/d47b37a">d47b37a</a>)</li>
-<li><strong>table:</strong> cell content should not stretch width (<a href="https://github.com/angular/material2/issues/7666">#7666</a>) (<a href="https://github.com/angular/material2/commit/bb424e2">bb424e2</a>)</li>
-<li><strong>table:</strong> empty string should be sorted right (<a href="https://github.com/angular/material2/issues/8011">#8011</a>) (<a href="https://github.com/angular/material2/commit/58627c4">58627c4</a>)</li>
-<li><strong>table:</strong> render cells even if data is falsy (<a href="https://github.com/angular/material2/issues/7914">#7914</a>) (<a href="https://github.com/angular/material2/commit/f601e83">f601e83</a>)</li>
-<li><strong>table:</strong> switch when arguments (<a href="https://github.com/angular/material2/issues/7516">#7516</a>) (<a href="https://github.com/angular/material2/commit/a2129fc">a2129fc</a>)</li>
-<li><strong>table:</strong> Provide a provider if exists. (<a href="https://github.com/angular/material2/issues/7895">#7895</a>) (<a href="https://github.com/angular/material2/commit/9a05ecd">9a05ecd</a>), closes <a href="https://github.com/angular/material2/issues/7344">#7344</a></li>
-<li><strong>table:</strong> throw error when missing row defs (<a href="https://github.com/angular/material2/issues/7751">#7751</a>) (<a href="https://github.com/angular/material2/commit/55476e2">55476e2</a>)</li>
-<li><strong>table:</strong> update implicit when using trackby (<a href="https://github.com/angular/material2/issues/7893">#7893</a>) (<a href="https://github.com/angular/material2/commit/f806286">f806286</a>)</li>
-<li><strong>tabs:</strong> incorrect ripple color for tabs with background (<a href="https://github.com/angular/material2/issues/8123">#8123</a>) (<a href="https://github.com/angular/material2/commit/02d3eb6">02d3eb6</a>)</li>
-<li><strong>toolbar:</strong> no longer auto-generate toolbar rows (<a href="https://github.com/angular/material2/issues/6661">#6661</a>) (<a href="https://github.com/angular/material2/commit/c3405aa">c3405aa</a>), closes <a href="https://github.com/angular/material2/issues/6004">#6004</a> <a href="https://github.com/angular/material2/issues/1718">#1718</a></li>
-<li><strong>tooltip:</strong> don't open from programmatic focus (<a href="https://github.com/angular/material2/issues/7258">#7258</a>) (<a href="https://github.com/angular/material2/commit/90a55fa">90a55fa</a>), closes <a href="https://github.com/angular/material2/issues/7245">#7245</a></li>
-<li><strong>viewport-ruler:</strong> incorrectly caching viewport size (<a href="https://github.com/angular/material2/issues/7951">#7951</a>) (<a href="https://github.com/angular/material2/commit/0d6d9cc">0d6d9cc</a>)</li>
-<li>consistent names for all cdk directives (<a href="https://github.com/angular/material2/issues/8088">#8088</a>) (<a href="https://github.com/angular/material2/commit/f08b3f0">f08b3f0</a>)</li>
-<li>don't show sanity check messages in tests (<a href="https://github.com/angular/material2/issues/8080">#8080</a>) (<a href="https://github.com/angular/material2/commit/d17f9d2">d17f9d2</a>)</li>
-<li>user-select mixin ignores value (<a href="https://github.com/angular/material2/issues/7992">#7992</a>) (<a href="https://github.com/angular/material2/commit/eaa4a36">eaa4a36</a>)</li>
-</ul>
-<h3 id="performanceimprovements">Performance Improvements</h3>
-<ul>
-<li><strong>scroll</strong> remove persistent global scroll listener (<a href="https://github.com/angular/material2/issues/7560">#7560</a>) (<a href="https://github.com/angular/material2/commit/d6698e1">d6698e1</a>), closes <a href="https://github.com/angular/material2/issues/6882">#6882</a></li>
-<li><strong>drawer:</strong> drawer content repainting on scroll (<a href="https://github.com/angular/material2/issues/7719">#7719</a>) (<a href="https://github.com/angular/material2/commit/131e98f">131e98f</a>)</li>
-<li><strong>focus-monitor:</strong> use passive touch listener (<a href="https://github.com/angular/material2/issues/7957">#7957</a>) (<a href="https://github.com/angular/material2/commit/ff7a13b">ff7a13b</a>)</li>
-<li><strong>tabs:</strong> avoid repainting while scrolling (<a href="https://github.com/angular/material2/issues/7889">#7889</a>) (<a href="https://github.com/angular/material2/commit/943395e">943395e</a>)</li>
-</ul>
-<h3 id="coderefactoring">Code Refactoring</h3>
-<ul>
-<li><strong>accordion:</strong> move CdkAccordion to <a href="https://github.com/angular"><@S1DQE0YR5|@angular-core-eng></a>/cdk (<a href="https://github.com/angular/material2/issues/7530">#7530</a>) (<a href="https://github.com/angular/material2/commit/4d04472">4d04472</a>)</li>
-<li>remove compatibility mode (<a href="https://github.com/angular/material2/issues/7689">#7689</a>) (<a href="https://github.com/angular/material2/commit/dcef604">dcef604</a>)</li>
-<li>switch to HttpClient (<a href="https://github.com/angular/material2/issues/6702">#6702</a>) (<a href="https://github.com/angular/material2/commit/0ea4370">0ea4370</a>)</li>
+<li><strong>common:</strong> safety check for window in common module. (<a href="https://github.com/angular/material2/issues/8816">#8816</a>) (<a href="https://github.com/angular/material2/commit/fb9ea53">fb9ea53</a>), closes <a href="https://github.com/angular/material2/issues/8809">#8809</a></li>
+<li><strong>autosize:</strong> not updating when window is resized (<a href="https://github.com/angular/material2/issues/8619">#8619</a>) (<a href="https://github.com/angular/material2/commit/b8664b8">b8664b8</a>), closes <a href="https://github.com/angular/material2/issues/8610">#8610</a></li>
+<li><strong>autosize:</strong> remove resize handle (<a href="https://github.com/angular/material2/issues/8621">#8621</a>) (<a href="https://github.com/angular/material2/commit/0d2a419">0d2a419</a>)</li>
+<li><strong>overlay:</strong> export OverlaySizeConfig (<a href="https://github.com/angular/material2/issues/8932">#8932</a>) (<a href="https://github.com/angular/material2/commit/a626c8f">a626c8f</a>)</li>
+<li><strong>portal:</strong> inaccurate hasAttahed result and portal being cleared if attached too early (<a href="https://github.com/angular/material2/issues/8642">#8642</a>) (<a href="https://github.com/angular/material2/commit/b488b39">b488b39</a>), closes <a href="https://github.com//github.com/angular/material2/blob/master/src/lib/dialog/dialog-container.ts/issues/L118">/github.com/angular/material2/blob/master/src/lib/dialog/dialog-container.ts#L118</a> <a href="https://github.com/angular/material2/issues/8628">#8628</a></li>
+<li><strong>select,input:</strong> inconsistent disabled text color (<a href="https://github.com/angular/material2/issues/7794">#7794</a>) (<a href="https://github.com/angular/material2/commit/f31be6f">f31be6f</a>), closes <a href="https://github.com/angular/material2/issues/7793">#7793</a></li>
+<li><strong>tooltip:</strong> not closing when scrolling away (<a href="https://github.com/angular/material2/issues/8688">#8688</a>) (<a href="https://github.com/angular/material2/commit/d5a2fca">d5a2fca</a>)</li>
 </ul>
     </section>
 </article>

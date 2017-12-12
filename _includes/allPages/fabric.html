@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "OfficeDev"
   },
-  "datePublished" : "2017-10-27",
+  "datePublished" : "2017-12-05",
   "publisher" : {
     "@type" : "Organization",
     "name" : "OfficeDev"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/OfficeDev/office-ui-fabric-core",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript, HTML, TypeScript",
-  "softwareVersion" : "9.1.0",
+  "softwareVersion" : "9.3.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "2775"
+    "ratingCount" : "2811"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2017-11-07",
+    "datePublished" : "2017-12-12",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>The front-end CSS framework for building experiences for Office and Office 365.</p>
     <p>Developed by Organization:OfficeDev</p>
-    <p><small>Used languages: CSS(326.79 kB), JavaScript(60.33 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
+    <p><small>Used languages: CSS(339.97 kB), JavaScript(60.31 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">9.1.0</h2>
-                <p class="card-text"><small>205.78 kB</small></p>
+                <h2 class="card-title">9.3.0</h2>
+                <p class="card-text"><small>212.79 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2017 M10 27</h2>
+                <h2 class="card-title">2017 M12 5</h2>
                 <p class="card-text"><small>Created at 2015 M05 20</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2017 M10 31
+                <h2 class="card-title">2017 M12 5
                 </h2>
             </div>
         </div>
@@ -127,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">10</h2>
+                <h2 class="card-title">14</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">381</h2>
+                <h2 class="card-title">386</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">2,775</h2>
+                <h2 class="card-title">2,811</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">250</h2>
+                <h2 class="card-title">248</h2>
             </div>
         </div>
     </div>
@@ -171,22 +171,21 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2017 M10 27 for 9.1.0</small>
+        Release Notes <small>on 2017 M12 5 for 9.3.0</small>
     </h1>
         <h2 id="new">New</h2>
 <ul>
-<li>#1046: Adds background and border hover color classes that were missing in previous releases, such as <code>.ms-bgColor-orange--hover</code>.</li>
-<li>#1049: Updates the icons, adding a new <code>WaffleOffice365</code> icon.</li>
-<li>#1050: Updates the icons, adding 80 news icons.</li>
-<li>#1052: Adds a <strong>bold</strong> font weight for Segoe UI.</li>
+<li>#1069 Adds a new <code>ms-background-position()</code> mixin, which outputs left-to-right and right-to-left styles for the <code>background-position</code> property.</li>
+<li>#1071, #1074 Add 26 new icons. 🌶 </li>
+<li>#1070 Improves accessibility by wrapping animations in the <code>prefers-reduced-motion</code> media query. This allows users to opt-out of animations, which is especially important for those with vestibular disorders. You can read more about the media query on <a href="https://css-tricks.com/introduction-reduced-motion-media-query/">CSS-Tricks</a>.</li>
 </ul>
-<h2 id="changed">Changed</h2>
+<h2 id="deprecated">Deprecated</h2>
 <ul>
-<li>#1047: Removes two translucent color variables. This is not considered a breaking change as the variables were never used within Fabric or documented for use.</li>
+<li>#1074 Deprecates the <code>HumanResources</code> icon. This will be removed in an upcoming major release.</li>
 </ul>
-<h2 id="removeddeprecated">Removed/Deprecated</h2>
+<h2 id="documentation">Documentation</h2>
 <ul>
-<li>#1050: Renames two icons: <code>StoreLogo</code> to <code>StoreLogo16</code> and <code>StoreLogoMed</code> to <code>StoreLogoMed20</code>. The previous names are supported in this version but will be removed in a future release.</li>
+<li>#1065 Updates the NuGet package documentation to comply with Microsoft's new publishing policies.</li>
 </ul>
     </section>
 </article>
