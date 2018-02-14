@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "Semantic-Org"
   },
-  "datePublished" : "2017-08-07",
+  "datePublished" : "2018-01-29",
   "publisher" : {
     "@type" : "Organization",
     "name" : "Semantic-Org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/Semantic-Org/Semantic-UI",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, CSS, HTML",
-  "softwareVersion" : "2.2.13",
+  "softwareVersion" : "2.2.14",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "39202"
+    "ratingCount" : "39525"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-01-24",
+    "datePublished" : "2018-02-13",
     "reviewBody" : "Written in  Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Semantic is a UI component framework based around useful principles from natural language.</p>
     <p>Developed by Organization:Semantic-Org</p>
-    <p><small>Used languages: JavaScript(1.05 MB), CSS(588.42 kB), HTML(11.03 kB)</small></p>
+    <p><small>Used languages: JavaScript(1.05 MB), CSS(588.86 kB), HTML(11.03 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">2.2.13</h2>
+                <h2 class="card-title">2.2.14</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2017 M08 7</h2>
+                <h2 class="card-title">2018 M01 29</h2>
                 <p class="card-text"><small>Created at 2013 M04 9</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2017 M12 22
+                <h2 class="card-title">2018 M01 29
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">1,376</h2>
+                <h2 class="card-title">1,394</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">4,266</h2>
+                <h2 class="card-title">4,296</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">39,202</h2>
+                <h2 class="card-title">39,525</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,404</h2>
+                <h2 class="card-title">1,409</h2>
             </div>
         </div>
     </div>
@@ -170,12 +170,35 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2017 M08 7 for 2.2.13</small>
+        Release Notes <small>on 2018 M01 29 for 2.2.14</small>
     </h1>
-        <p><strong>Hotfix</strong> (2)</p>
+        <p><strong>Critical Bugs</strong></p>
 <ul>
-<li><strong>Install</strong> - Some interactive install script issues may be fixed. Forked <code>gulp-prompt</code> plugin to allow for updated <code>inquirer</code> version</li>
-<li><strong>Build Tools</strong> - Fixes typo causing fix for build tools to fail <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5391">#5391</a> </li>
+<li><strong>Form</strong> - Fixes issue where radio checkbox would not return correct value from <code>get values</code> <strong>Thanks @tincdev</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5713">#5713</a> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6043">#6043</a></li>
+<li><strong>Modal</strong> - Fixes issue where an oversized modal would appear behind an existing modal when using <code>allowMultiple: true</code> and a second modal that is larger than the screen height. <a href="https://github.com/Semantic-Org/Semantic-UI/issues/2423">#2423</a></li>
+</ul>
+<p><strong>Enhancements</strong></p>
+<ul>
+<li><strong>Button</strong> - YouTube's red color now matches their current brand guidelines <strong>Thanks @hammy2899</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6110">#6110</a></li>
+<li><strong>Flag</strong> - Adds missing flag for England <strong>Thanks @zyzniewski</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5944">#5944</a></li>
+<li><strong>Reveal</strong> - <code>ribbon label</code> can now work with <code>reveal</code> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5681">#5681</a></li>
+<li><strong>Dropdown</strong> - Added new setting <code>ignoreCase</code> (defaults to false) that will prevent values from being added that match existing values (case insensitive). This is particularly useful when using allowAdditions for tagging to not allow case insensitive matches.</li>
+<li><strong>Site</strong> - Site theme now includes <code>@customScrollbarHeight</code> and specifies a default horizontal scrollbar height <strong>Thanks @jayphelps</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5749">#5749</a></li>
+</ul>
+<p><strong>Bugs</strong></p>
+<ul>
+<li><strong>Checkbox</strong> - Fixes issue where <code>toggle checkbox</code> box shadow was missing <strong>Thanks @banandrew</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5096">#5096</a></li>
+<li><strong>Dropdown</strong> - Fixed issue where dropdowns could incorrectly open upward and leftward opening when using <code>context</code> setting due to an incorrect offset calculation. <strong>Thanks @dannyBies</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5974">#5974</a> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5366">#5366</a></li>
+<li><strong>Form Validation</strong> - Fixed issue where default prompts for <code>contain</code> and <code>doesntContain</code> rules were swapped. <strong>Thanks @xiongyu-git</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5530">#5530</a></li>
+<li><strong>Visibility</strong> - Fixes issue where <code>bottomPassed</code> and <code>topPassed</code> would not fire under some conditions</li>
+<li><strong>Dropdown</strong> - Fixes issue where dropdowns might accidentally animate closed two times when quickly tabbing through fields</li>
+<li><strong>Popup</strong> - Fixed an error which could cause popup not to move to right offset context when using a different target setting.</li>
+<li><strong>Dropdown</strong> - Fixed issue where using <code>ui input</code> in a dropdown menu could cause the input to be too wide in some cases <strong>Thanks @banandrew</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5085">#5085</a></li>
+<li><strong>Menu / Popup</strong> - Fixed issue where <code>inverted menu</code> rules would cause popup inside a menu to have incorrect link styling in <code>link list</code> <strong>Thanks @banandrew</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5585">#5585</a> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/5603">#5603</a></li>
+</ul>
+<p><strong>Build Tools</strong></p>
+<ul>
+<li><strong>CSS Build</strong> - Fixed issue where package <code>gulp-clone</code> was only set to use &gt; <code>1.0</code> causing issues with gulp builds due to upstream error <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6067">#6067</a></li>
 </ul>
     </section>
 </article>
