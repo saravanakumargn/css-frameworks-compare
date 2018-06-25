@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "uikit"
   },
-  "datePublished" : "2018-04-05",
+  "datePublished" : "2018-06-15",
   "publisher" : {
     "@type" : "Organization",
     "name" : "uikit"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/uikit/uikit",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, HTML, JavaScript",
-  "softwareVersion" : "v3.0.0-beta.42",
+  "softwareVersion" : "v3.0.0-rc.6",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "12251"
+    "ratingCount" : "12649"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-04-23",
+    "datePublished" : "2018-06-25",
     "reviewBody" : "Written in Sass Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>A lightweight and modular front-end framework for developing fast and powerful web interfaces</p>
     <p>Developed by Organization:uikit</p>
-    <p><small>Used languages: CSS(1.09 MB), HTML(1.02 MB), JavaScript(314.43 kB)</small></p>
+    <p><small>Used languages: CSS(1.11 MB), HTML(1.07 MB), JavaScript(315.33 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.0.0-beta.42</h2>
-                <p class="card-text"><small>338.70 kB</small></p>
+                <h2 class="card-title">v3.0.0-rc.6</h2>
+                <p class="card-text"><small>346.39 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M04 5</h2>
+                <h2 class="card-title">2018 M06 15</h2>
                 <p class="card-text"><small>Created at 2013 M07 18</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M04 18
+                <h2 class="card-title">2018 M06 18
                 </h2>
             </div>
         </div>
@@ -127,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">362</h2>
+                <h2 class="card-title">408</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">1,915</h2>
+                <h2 class="card-title">1,959</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">12,251</h2>
+                <h2 class="card-title">12,649</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">696</h2>
+                <h2 class="card-title">714</h2>
             </div>
         </div>
     </div>
@@ -171,11 +171,21 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M04 5 for v3.0.0-beta.42</small>
+        Release Notes <small>on 2018 M06 15 for v3.0.0-rc.6</small>
     </h1>
-        <h3 id="fixed">Fixed</h3>
+        <h3 id="added">Added</h3>
 <ul>
-<li>Fix regression in Offcanvas</li>
+<li>Add development builds to npm registry (<code>npm i uikit@dev</code> / <code>yarn add uikit@dev</code>)</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fix single components to auto-install only when UIkit is attached to window object</li>
+<li>Fix component naming (camelCase) in single component auto-install wrapper</li>
+<li>Fix active row style for striped table</li>
+<li>Fix height of Masonry Grid</li>
+<li>Fix attribute change listener</li>
+<li>Cover component updates on image load</li>
+<li>Fix Lightbox options handling </li>
 </ul>
     </section>
 </article>
