@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "twbs"
   },
-  "datePublished" : "2018-04-30",
+  "datePublished" : "2018-07-12",
   "publisher" : {
     "@type" : "Organization",
     "name" : "twbs"
@@ -18,11 +18,11 @@
   "applicationCategory" : "frontend framework",
   "downloadUrl" : "https://github.com/twbs/bootstrap",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
-  "requirements" : "JavaScript, CSS, HTML, Shell, Ruby, PowerShell",
-  "softwareVersion" : "v4.1.1",
+  "requirements" : "CSS, JavaScript, HTML, Shell, Ruby, PowerShell",
+  "softwareVersion" : "v4.1.2",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "125624"
+    "ratingCount" : "126026"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-06-27",
+    "datePublished" : "2018-07-13",
     "reviewBody" : "Written in Sass Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.</p>
     <p>Developed by Organization:twbs</p>
-    <p><small>Used languages: JavaScript(376.47 kB), CSS(375.80 kB), HTML(121.85 kB), Shell(2.77 kB), Ruby(2.05 kB), PowerShell(935.00 bytes)</small></p>
+    <p><small>Used languages: CSS(391.85 kB), JavaScript(374.79 kB), HTML(251.21 kB), Shell(2.77 kB), Ruby(2.05 kB), PowerShell(935.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.1.1</h2>
-                <p class="card-text"><small>604.41 kB</small></p>
+                <h2 class="card-title">v4.1.2</h2>
+                <p class="card-text"><small>608.17 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Apr 30, 2018</h2>
-                <p class="card-text"><small>Created at Jul 30, 2011</small></p>
+                <h2 class="card-title">2018 M07 12</h2>
+                <p class="card-text"><small>Created at 2011 M07 30</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Apr 30, 2018
+                <h2 class="card-title">2018 M07 12
                 </h2>
             </div>
         </div>
@@ -127,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">513</h2>
+                <h2 class="card-title">497</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">60,504</h2>
+                <h2 class="card-title">60,844</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">125,624</h2>
+                <h2 class="card-title">126,026</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">7,350</h2>
+                <h2 class="card-title">7,360</h2>
             </div>
         </div>
     </div>
@@ -171,17 +171,16 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on April 30, 2018 for v4.1.1</small>
+        Release Notes <small>on 2018 M07 12 for v4.1.2</small>
     </h1>
-        <p><strong>Our first patch release for Bootstrap 4!</strong> Here's a quick rundown of some of the changes:</p>
-<ul>
-<li>Added validation styles for file inputs</li>
-<li>Improved printing of dark tables</li>
-<li>Suppressed that <code>text-hide</code> deprecation notice by default</li>
-<li>Cleaned up some JS globals and improve coverage</li>
-<li>Bumped dependencies, namely Jekyll</li>
-<li>Fixed docs issue with incorrect name for our monospace font utility</li>
+        <ul>
+<li>Fixed an XSS vulnerability in tooltip, collapse, and scrollspy plugins</li>
+<li>Improved how we query elements in our JavaScript plugins</li>
+<li>Inline SVGs now have the same vertical alignment as images</li>
+<li>Fixed issues with double transitions on carousels</li>
+<li>Added Edge and IE10-11 fallbacks to our floating labels example</li>
+<li>Various improvements to form controls, including disabled states on file inputs and unified focus styles for selects</li>
 </ul>
-<p>Checkout the <a href="https://github.com/twbs/bootstrap/issues/25971">v4.1.1 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/13">GitHub project</a> for the full details.</p>
+<p>Checkout the <a href="https://github.com/twbs/bootstrap/issues/26423">v4.1.2 ship list</a> and <a href="https://github.com/twbs/bootstrap/projects/14">GitHub project</a> for the full details.</p>
     </section>
 </article>
