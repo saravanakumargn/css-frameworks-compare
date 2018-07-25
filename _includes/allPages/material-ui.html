@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2018-07-03",
+  "datePublished" : "2018-07-23",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v1.3.1",
+  "softwareVersion" : "v1.4.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "38521"
+    "ratingCount" : "38847"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-07-13",
+    "datePublished" : "2018-07-25",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components that implement Google&#x27;s Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(3.63 MB), TypeScript(33.58 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(3.81 MB), TypeScript(33.58 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v1.3.1</h2>
+                <h2 class="card-title">v1.4.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M07 3</h2>
+                <h2 class="card-title">2018 M07 23</h2>
                 <p class="card-text"><small>Created at 2014 M08 19</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M07 13
+                <h2 class="card-title">2018 M07 24
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">166</h2>
+                <h2 class="card-title">180</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">7,022</h2>
+                <h2 class="card-title">7,093</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">38,521</h2>
+                <h2 class="card-title">38,847</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,266</h2>
+                <h2 class="card-title">1,270</h2>
             </div>
         </div>
     </div>
@@ -169,48 +169,80 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M07 3 for v1.3.1</small>
+        Release Notes <small>on 2018 M07 23 for v1.4.1</small>
     </h1>
-        <h6 id="jul22018"><em>Jul 2, 2018</em></h6>
-<p>Big thanks to the 13 contributors who made this release possible.</p>
+        <h6 id="jul222018"><em>Jul 22, 2018</em></h6>
+<p>Big thanks to the 15 contributors who made this release possible!</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>Document the scroll property of the Dialog (#12025).</li>
-<li>Add a demo with Font Awesome (#12027).</li>
-<li>And many more bug fixes and documentation improvements.</li>
+<li>The CSS API is now fully documented (#12174) @mbrookes.</li>
+</ul>
+<p>| Name | Description |
+|:-----|:------------|
+| <span class="prop-name">root</span> | Styles applied to the root element.
+| <span class="prop-name">label</span> | Styles applied to the span element that wraps the children.
+| … | …</p>
+<ul>
+<li><p>After many iterations, we are happy to announce <code>@material-ui/icons</code> v2.0.0 💃.
+With this version, you can take advantage of all the icons recently released by Google:
+https://material.io/tools/icons/. There are more than 5,000 icons.
+(#12036, #12170, #12111, #12225)</p></li>
+<li><p>The 1.4.0 release of Material-UI has introduced a new implementation of the Tooltip and Popper component.
+This release fixes a lot of issues following the rewrite (#12168, #12161, #12194, #12223, #12218).
+Thank you for reporting all these problems 🐛. Hopefully, it's very stable now.</p></li>
+<li><p>Creative Tim has just completed <a href="https://www.creative-tim.com/product/material-kit-pro-react?partner=104080">their second Material-UI theme</a> 💅.
+It's an important milestone for the themability of Material-UI.
+We are going to keep working on adding more themes to the list.</p></li>
 </ul>
 <h3 id="breakingchange">Breaking change</h3>
 <p>N/A</p>
 <h4 id="componentfixesenhancements">Component Fixes / Enhancements</h4>
 <ul>
-<li>[Select] Fix some W3C issues (#11983) @oliviertassinari</li>
-<li>[Icon] Add a fontSize prop which accepts default and inherit (#11986) @sakulstra</li>
-<li>[Menu] Add prop to disable auto focus (#11984) @th317erd</li>
-<li>[SvgIcon] Add component property (#11987) @stephenway</li>
-<li>[GridList] Clean the rendering logic (#11998) @oliviertassinari</li>
-<li>[Snackbar] Add check for autoHideDuration if equals 0 (#12002) @C-Rodg</li>
-<li>[Menu] Fix scrolling issue (#12003) @stephenway</li>
-<li>[Stepper] Merge StepPositionIcon in StepIcon (#12026) @bousejin</li>
-<li>[Input] Add read only demo (#12024) @oliviertassinari</li>
-<li>[ExpansionPanelSummary] Add IconButtonProps property (#12035) @dakotamurphyucf</li>
-<li>[Dialog] Document the scroll property (#12025) @oliviertassinari</li>
+<li>[Tab] Fix maxWidth issue with fullWidth mode (#12158) @chenop</li>
+<li>[Popper] Update TypeScript definitions (#12161) @Slessi</li>
+<li>[CardHeader] Add typography/props controls like in ListItemText (#12166) @chenop</li>
+<li>[Tooltip] Fix some new issues (#12168) @oliviertassinari</li>
+<li>[icons] New iteration (#12170) @oliviertassinari</li>
+<li>[icons] Remove fill attribute from some icons (#12111) @ChristiaanScheermeijer</li>
+<li>[Popper] Fix the transition in the demos (#12194) @oliviertassinari</li>
+<li>[Modal] Ignore if the event prevent default is called (#12202) @oliviertassinari</li>
+<li>[Grid] Add "space-evenly" value for justify prop (#12213) @iain-b</li>
+<li>[Grow] Fix scroll on entered (#12199) @stephenway</li>
+<li>[Popper] Fix update logic (#12218) @oliviertassinari</li>
+<li>[Badge] Increase readability (#12221) @oliviertassinari</li>
+<li>[styles] Increase the class name lenght limit before raising (#12222) @oliviertassinari</li>
+<li>[icons] Fix SVG path precision issue (#12225) @ChristiaanScheermeijer</li>
+<li>[Popper] Typing and documentation (#12223) @dispix</li>
+<li>[Select] Simpler onChange event.target logic (#12231) @oliviertassinari</li>
+<li>[input] Forward required, readOnly and autoFocus (#12234) @sakulstra</li>
+<li>[HOC] Add <code>innerRef</code> to withWidth and withTheme (#12236) @itelo</li>
+<li>[Textarea] Simplification of the code (#12238) @oliviertassinari</li>
+<li>[Tabs] Small changes investigating #11624 (#12239) @oliviertassinari</li>
 </ul>
 <h4 id="docs">Docs</h4>
 <ul>
-<li>[docs] Use _app.js instead of wrapping every page by withRoot() (#11989) @NikitaVlaznev</li>
-<li>[docs] Link RootRef in the FAQ (#12005) @scottastrophic</li>
-<li>[docs] Add Core UI (#12015) @oliviertassinari</li>
-<li>[docs] Switch autosuggest highlighting (#12019) @TheRusskiy</li>
-<li>[docs] Small spelling fix (#12028) @danh293</li>
-<li>[docs] Add a demo with Font Awesome (#12027) @oliviertassinari</li>
+<li>[docs] Add Toggle Selection Control to 'Migration From v0.x' Document (#12149) @shabareesh</li>
+<li>[docs] Add Menu Item to 'Migration From v0.x' Document (#12150) @shabareesh</li>
+<li>[docs] New ISSUE_TEMPLATE (#12148) @oliviertassinari</li>
+<li>[docs] Add Font Icon to 'Migration From v0.x' Document (#12151) @shabareesh</li>
+<li>[docs] copyedit: typo in testing.md (#12155) @cldellow</li>
+<li>[docs] Document the CSS API (#12174) @mbrookes</li>
+<li>[docs] An iteration on the SSR Troubleshooting section (#12229) @oliviertassinari</li>
 </ul>
 <h4 id="core">Core</h4>
 <ul>
-<li>[typescript] [createMuiTheme] Fix typings &amp; deepmerge shape (#11993) @franklixuefei</li>
-<li>[core] Warn about Children.map &amp; Fragment (#12021) @oliviertassinari</li>
-<li>[core] Remove usage of theme.spacing.unit (#12022) @oliviertassinari</li>
+<li>[core] Upgrade dev dependencies (#12156) @oliviertassinari</li>
+<li>[core] Add missing unwrap export to test-utils type definition (#12184) @kallebornemark</li>
+<li>[test] Conditional tests (#12191) @oliviertassinari</li>
+<li>[core] Fix babel plugin name (#12209) @oliviertassinari</li>
+<li>[core] Upgrade the dev dependencies (#12220) @oliviertassinari</li>
+<li>[core] Rename node to ref (#12235) @oliviertassinari</li>
 </ul>
 <h4 id="lab">Lab</h4>
-<p>N/A</p>
+<ul>
+<li>[Slider] Fix typescript typings (#12173) @eps1lon</li>
+<li>[SpeedDial] Fix SpeedDialAction dark theme (#12230) @mbrookes</li>
+<li>[lab] Build and export fixes (#12233) @goto-bus-stop</li>
+</ul>
     </section>
 </article>
