@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "olton"
   },
-  "datePublished" : "2018-08-06",
+  "datePublished" : "2018-08-13",
   "publisher" : {
     "@type" : "Person",
     "name" : "olton"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/olton/Metro-UI-CSS",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript",
-  "softwareVersion" : "v4.2.17",
+  "softwareVersion" : "v4.2.18",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "5763"
+    "ratingCount" : "5772"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-08-09",
+    "datePublished" : "2018-08-22",
     "reviewBody" : "Written in  Less Javascript This is frameworks design for plain, metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.</p>
     <p>Developed by User:olton</p>
-    <p><small>Used languages: CSS(2.55 MB), JavaScript(1.21 MB)</small></p>
+    <p><small>Used languages: CSS(2.58 MB), JavaScript(1.22 MB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.2.17</h2>
+                <h2 class="card-title">v4.2.18</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M08 6</h2>
+                <h2 class="card-title">2018 M08 13</h2>
                 <p class="card-text"><small>Created at 2012 M03 9</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M08 6
+                <h2 class="card-title">2018 M08 13
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">11</h2>
+                <h2 class="card-title">14</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">1,872</h2>
+                <h2 class="card-title">1,879</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">5,763</h2>
+                <h2 class="card-title">5,772</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">586</h2>
+                <h2 class="card-title">588</h2>
             </div>
         </div>
     </div>
@@ -169,17 +169,27 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M08 6 for v4.2.17</small>
+        Release Notes <small>on 2018 M08 13 for v4.2.18</small>
     </h1>
-        <h3 id="4217">4.2.17</h3>
+        <h3 id="4218">4.2.18</h3>
 <ul>
-<li>[x] Tabs: change behavior and attribute. For details, read the docs</li>
-<li>[x] Table: add second parameter <code>review</code> to methods <code>reload</code> and <code>loadData</code>. If <code>true</code>, table view will be recreated from init values.</li>
-<li>[x] Table: add head parameter <code>show</code></li>
-<li>[x] Input: add attribute <code>data-default-value="..."</code> for set default if val is empty and set to this when click clear button</li>
-<li>[x] Table: add class <code>.subcompact</code> to pair to <code>.compact</code></li>
-<li>[x] Table: add attribute <code>data-cell-wrapper</code>. This class add wrapper to cell data with <code>no wrap</code> and <code>no overflow</code> props.</li>
-<li>[x] Sidebar: add classes <code>.compact</code> and <code>.subcompact</code></li>
+<li>[x] Table: fix work attributes <code>showTableInfo</code>, <code>showPagination</code> when wrappers defined</li>
+<li>[x] Table: fix pagination behavior when no items for table</li>
+<li>[x] Table: add observing attributes <code>data-check</code> and <code>data-rownnum</code></li>
+<li>[x] Tabs: fix tab click behavior when <code>&lt;a&gt;</code> have a link in <code>href</code> attribute </li>
+<li>[x] Calendar: add method <code>clearSelected()</code></li>
+<li>[x] Calendar: add method <code>toDay()</code></li>
+<li>[x] Table: add exception when data for table is not a object</li>
+<li>[x] Table: add class <code>fixed-layout</code></li>
+<li>[x] Table: add <code>data-filter-threshold</code> attribute, this is a timeout before searching start</li>
+<li>[x] Select: add attribute <code>data-template</code> for <code>option</code>. You can use this attribute to define html wrapper for option text in format <code>...any...$1</code>. Where <code>$1</code> used for replace by option text.</li>
+<li>[x] Select: add attribute <code>data-cls-drop-list</code> to add additional class to drop down list.   </li>
+<li>[x] Select: add attribute <code>data-append</code> and minor css fixes</li>
+<li>[x] Select: add multiple functionality</li>
+<li>[x] Inputs: refactor inputs.less to specific files <code>select.less</code>, <code>input.less</code>, <code>textarea.less</code>, <code>input-file.less</code></li>
+<li>[x] Radio: add additional style for radio component. To use it, add attribute <code>data-style="2"</code> to your radio component.</li>
+<li>[x] Checkbox: add additional style for checkbox component. To use it, add attribute <code>data-style="2"</code> to your checkbox component.</li>
+<li>[x] Tag input: add new component</li>
 </ul>
 <p><strong><em>Help the project, become a backer</em></strong>
 https://github.com/olton/Metro-UI-CSS/blob/master/BACKERS.md</p>
