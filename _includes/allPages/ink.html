@@ -4,25 +4,25 @@
   "@context" : "http://schema.org",
   "@type" : "SoftwareApplication",
   "name" : "Ink",
-  "image" : "",
-  "url" : "",
+  "image" : "https://avatars3.githubusercontent.com/u/13458?v&#x3D;4",
+  "url" : "http://ink.sapo.pt",
   "author" : {
-    "@type" : "Person",
-    "name" : ""
+    "@type" : "Organization",
+    "name" : "sapo"
   },
-  "datePublished" : "",
+  "datePublished" : "2015-08-06",
   "publisher" : {
-    "@type" : "Person",
-    "name" : ""
+    "@type" : "Organization",
+    "name" : "sapo"
   },
   "applicationCategory" : "frontend framework",
-  "downloadUrl" : "",
+  "downloadUrl" : "https://github.com/sapo/Ink",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
-  "requirements" : "",
-  "softwareVersion" : "",
+  "requirements" : "JavaScript, CSS, HTML, Roff, PHP",
+  "softwareVersion" : "3.1.10",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "0"
+    "ratingCount" : "1921"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-09-03",
+    "datePublished" : "2018-09-05",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -42,18 +42,20 @@
 </header>
 <section class="media my-2">
   <div class="media-left">
-    <img class="media-object img-thumbnail" width="100" height="100" src="" alt="">
+    <img class="media-object img-thumbnail" width="100" height="100" src="https://avatars3.githubusercontent.com/u/13458?v&#x3D;4" alt="sapo">
   </div>
   <div class="media-body">
-    <p></p>
-    <p>Developed by </p>
-    <p><small>Used languages: </small></p>
+    <p>An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping</p>
+    <p>Developed by Organization:sapo</p>
+    <p><small>Used languages: JavaScript(1.38 MB), CSS(367.68 kB), HTML(289.89 kB), Roff(15.04 kB), PHP(1014.00 bytes)</small></p>
   </div>
 </section>
 <hr>
 <div class="row">
     <div class="col-xs-12 col-sm-6">
       <div class="my-2 text-xs-center">
+          <a class="btn btn-primary" href="https://github.com/sapo/Ink" role="button" target="_blank">Visit Github page</a>
+          <a class="btn btn-primary m-1" href="http://ink.sapo.pt" role="button" target="_blank">Visit Ink Page</a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-6">
@@ -99,19 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">3.1.10</h2>
+                <p class="card-text"><small>7.35 MB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">2015 M08 6</h2>
+                <p class="card-text"><small>Created at 2011 M11 16</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">-NA-
+                <h2 class="card-title">2017 M05 9
                 </h2>
             </div>
         </div>
@@ -123,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">11</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">282</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">1,921</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">-NA-</h2>
+                <h2 class="card-title">149</h2>
             </div>
         </div>
     </div>
@@ -165,4 +169,18 @@
 </div>
 {% endif %}
 
+    <section class="my-2">
+    <h1>
+        Release Notes <small>on 2015 M08 6 for 3.1.10</small>
+    </h1>
+        <h2 id="js">JS</h2>
+<ul>
+<li>Ink.Dom.Browser no longer detects some IE11 mobile browsers as Safari</li>
+<li>Fix a bug in Modal when <code>open()</code> is called with no arguments and there's an <code>onShow</code> callback present.</li>
+<li>When a Carousel does not have a stage, the error message now makes some more sense than "a is not defined".</li>
+<li>Do not crash with <code>&lt;option&gt;</code> elements in FormValidator_2</li>
+<li>Do a better feature detection of the vh/vw units, for old IOS safari.</li>
+<li>Fix SmoothScroller adding "active" classes in <code>&lt;li&gt;</code> elements, but never removing them</li>
+</ul>
+    </section>
 </article>
