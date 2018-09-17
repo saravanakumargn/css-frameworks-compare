@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2018-09-04",
+  "datePublished" : "2018-09-17",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v3.0.2",
+  "softwareVersion" : "v3.1.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "40023"
+    "ratingCount" : "40378"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-09-05",
+    "datePublished" : "2018-09-17",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components that implement Google&#x27;s Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(3.85 MB), TypeScript(34.28 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(3.90 MB), TypeScript(36.33 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.0.2</h2>
+                <h2 class="card-title">v3.1.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M09 4</h2>
+                <h2 class="card-title">2018 M09 17</h2>
                 <p class="card-text"><small>Created at 2014 M08 19</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M09 4
+                <h2 class="card-title">2018 M09 17
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">208</h2>
+                <h2 class="card-title">202</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">7,468</h2>
+                <h2 class="card-title">7,591</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">40,023</h2>
+                <h2 class="card-title">40,378</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,304</h2>
+                <h2 class="card-title">1,300</h2>
             </div>
         </div>
     </div>
@@ -169,56 +169,67 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M09 4 for v3.0.2</small>
+        Release Notes <small>on 2018 M09 17 for v3.1.0</small>
     </h1>
-        <h6 id="sep32018"><em>Sep 3, 2018</em></h6>
-<p>Big thanks to the 16 contributors who made this release possible!</p>
+        <h6 id="sep162018"><em>Sep 16, 2018</em></h6>
+<p>Big thanks to the 24 contributors who made this release possible!</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>A documented release strategy (#12752).</li>
+<li>💅 Add outlined and filled text field variants (#12076) @enagy27.</li>
+<li>♿️ Document how to make the icons accessible (#12822).</li>
+<li>🐛 Fix a class name generation regression (#12844).</li>
 <li>And many more bug fixes 🐛 and documentation improvements 📝.</li>
 </ul>
-<h3 id="materialuicorev302"><code>@material-ui/core@v3.0.2</code></h3>
+<h3 id="materialuicorev310"><code>@material-ui/core@v3.1.0</code></h3>
 <ul>
-<li>[Tab] Ability change font size of tab (#12706) @adeelibr</li>
-<li>[typescript] Set default for withStyles' Options generic (#12698) @nmchaves</li>
-<li>[Dialog] Remove dialog margin when fullScreen=true and scroll=body (#12718) @akaxiaok</li>
-<li>[Table] Improved sorting in table for demo EnhancedTable (#12736) @adeelibr</li>
-<li>[Snackbar] Add <code>ClickAwayListenerProps</code> property (#12735) @tendermario</li>
-<li>[IconButton] Fix border radius cutting of badges on IE11 (#12743) @novascreen</li>
-<li>[Select] Pass child to onChange handler (#12747) @akaxiaok</li>
-<li>[Input] Fix Input passing inputRef to intrinsic elements (#12719) @eps1lon</li>
-<li>[withStyles] Better theme.props support (#12750) @oliviertassinari</li>
-<li>[SwipeableDrawer] Add hysteresis and velocity property (#12722) @jniclas</li>
+<li>[Checkbox] Add indeterminateIcon type definition (#12815) @cvanem</li>
+<li>[Popover] Change to offsetWidth and offsetHeight (#12816) @akaxiaok</li>
+<li>[styles] Use the same class name generator (#12818) @oliviertassinari</li>
+<li>[styles] Revert packageId as default option (#12823) @oliviertassinari</li>
+<li>[withStyles] Fix JSS issues in IE11 in development (#12826) @novascreen</li>
+<li>[autocomplete] Fix incorrect input font in react-select autocomplete demo (#12828) @wijwoj</li>
+<li>[withWidth] Prevent Rerendering (#12825) @junhyukee</li>
+<li>[SvgIcon] Improve accessibility (#12822) @oliviertassinari</li>
+<li>[CircularProgress] Update missing type definitions (#12835) @gsalisi</li>
+<li>[styles] Remove the packageId (#12844) @oliviertassinari</li>
+<li>[Typography] Add inherit and screen reader only (#12837) @oliviertassinari</li>
+<li>[Select] Test if child passed to onChange handler (#12852) @akaxiaok</li>
+<li>[TableSortLabel] Remove sort icon when not active (#12874) @markselby9</li>
+<li>[icons] Add <code>fontSize</code> small and large (#12865) @JoshuaLicense</li>
+<li>[Chip] Add an icon property (#12881) @aretheregods</li>
+<li>[TextField] Add outlined and filled variants (#12076) @enagy27</li>
 </ul>
-<h3 id="materialuilabv300alpha14"><code>@material-ui/lab@v3.0.0-alpha.14</code></h3>
-<h4 id="breakingchanges">Breaking changes</h4>
+<h3 id="materialuilabv300alpha16"><code>@material-ui/lab@v3.0.0-alpha.16</code></h3>
 <ul>
-<li>[ToggleButton] Fix ToggleButtonGroup exports (#12733) @mbrookes</li>
-</ul>
-<pre><code class="diff language-diff">-import { ToggleButtonGroup } from '@material-ui/lab/ToggleButton';
-+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
-</code></pre>
-<h4 id="componentfixesenhancements">Component Fixes / Enhancements</h4>
-<ul>
-<li>[SpeedDialAction] Update tooltipPlacement propTypes (#12730) @Primajin</li>
-<li>[Slider] Add missing packages (#12745) @GermanBluefox</li>
-<li>[SpeedDial] Allow tooltip to always be displayed (#12590) @hashwin</li>
+<li>[Slider] Don't pass component props down to root div (#12842) @mbrookes</li>
+<li>[Slider] Faster transitions (#12843) @mbrookes</li>
+<li>[SpeedDial] Fix ARIA &amp; fix duplicate id in docs example (#12846) @mbrookes</li>
+<li>[SpeedDial] Remove redundant aria-labelledby (#12847) @mbrookes</li>
+<li>[SpeedDial] Fix not opening on first tap in mobile (#12771) @hashwin</li>
+<li>[Slider] Feature Custom Icon (#12600) @adeelibr</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Fix typo in Overrides chapter (#12705) @sanderpost</li>
-<li>[docs] Improve the Downshift demo (#12703) @oliviertassinari</li>
-<li>[examples] Fix typing of <code>withRoot</code> to accept props (#12712) @mattmccutchen</li>
-<li>[docs] Fix class name in overrides example (#12717) @manuelkiessling</li>
-<li>[examples] Fix withRoot accepting any props (#12713) @eps1lon</li>
-<li>[typescript] Illustrate issue with ambiguous css class names (#12724) @eps1lon</li>
-<li>[docs] Fix Typo in Page Layout Examples (#12734) @mblodorn</li>
-<li>[docs] Explain how to pass props down to overridden components (#12716) @manuelkiessling</li>
-<li>[docs] Generate import examples in API docs (#12720) @jedwards1211</li>
-<li>[docs] More transparency around the release strategy (#12752) @oliviertassinari</li>
+<li>[docs] Fix the gatsby example (#12817) @oliviertassinari</li>
+<li>[docs] Fix Typo in Pricing.js (#12821) @enducker</li>
+<li>[docs] Fix Typo in Checkout.js (#12820) @enducker</li>
+<li>[docs] Fix typo in popover.md (#12832) @amacleay</li>
+<li>[docs] Add documentation for css-to-mui-loader (#12841) @mcdougal</li>
+<li>[docs] Fix ToggleButtons example typography variant (#12845) @mbrookes</li>
+<li>[docs] Fix very minor typo (Docs - page layout examples) (#12849) @bcapinski</li>
+<li>[SvgIcon] Fix minor typo in docs (#12848) @iamhosseindhv</li>
+<li>[docs] Fix typo in blog page layout README (#12868) @sethduncan</li>
+<li>[docs] Update comparison.md (#12877) @GideonShils</li>
+<li>[docs] Split test ad networks (#12878) @mbrookes</li>
+<li>[docs] Customize LinearProgress color (#12883) @mbrn</li>
 </ul>
 <h3 id="core">Core</h3>
-<p>N/A</p>
+<ul>
+<li>[typescript] Update createGenerateClassName.d.ts (#12824) @Qeneke</li>
+<li>[github] Make issue templates version agnostic (#12839) @mbrookes</li>
+<li>[typescript] Fix with* injectors ignoring defaultProps (#12673) @eps1lon</li>
+<li>[core] Set required yarn version (#12864) @eps1lon</li>
+<li>[core] Upgrade dev dependencies (#12884) @oliviertassinari</li>
+</ul>
     </section>
 </article>
