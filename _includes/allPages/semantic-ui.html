@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "Semantic-Org"
   },
-  "datePublished" : "2018-09-17",
+  "datePublished" : "2018-10-14",
   "publisher" : {
     "@type" : "Organization",
     "name" : "Semantic-Org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/Semantic-Org/Semantic-UI",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, CSS, HTML",
-  "softwareVersion" : "2.4.0",
+  "softwareVersion" : "2.4.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "43121"
+    "ratingCount" : "43236"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-10-12",
+    "datePublished" : "2018-10-22",
     "reviewBody" : "Written in  Less Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Semantic is a UI component framework based around useful principles from natural language.</p>
     <p>Developed by Organization:Semantic-Org</p>
-    <p><small>Used languages: JavaScript(1.02 MB), CSS(602.57 kB), HTML(11.03 kB)</small></p>
+    <p><small>Used languages: JavaScript(1.02 MB), CSS(602.51 kB), HTML(11.03 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">2.4.0</h2>
+                <h2 class="card-title">2.4.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M09 17</h2>
+                <h2 class="card-title">2018 M10 14</h2>
                 <p class="card-text"><small>Created at 2013 M04 9</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M09 17
+                <h2 class="card-title">2018 M10 22
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">746</h2>
+                <h2 class="card-title">751</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">4,626</h2>
+                <h2 class="card-title">4,641</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">43,121</h2>
+                <h2 class="card-title">43,236</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,477</h2>
+                <h2 class="card-title">1,473</h2>
             </div>
         </div>
     </div>
@@ -170,44 +170,24 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M09 17 for 2.4.0</small>
+        Release Notes <small>on 2018 M10 14 for 2.4.1</small>
     </h1>
-        <blockquote>
-  <p><code>2.4.0</code> includes a new component <code>placeholder</code>. To use this component in your existing SUI site, be sure to add <code>@placeholder: 'default';</code> to your <code>theme.config</code>. You can see an example in <code>theme.config.example</code></p>
+        <p><strong>Note</strong></p>
+<blockquote>
+  <p>If you are using the <code>semantic-ui-less</code> package with versions of LESS before 3.5 some <code>calc</code> values will not be computed correctly due to changes in variable interpolation. It is recommended that you upgrade to at least 3.5 to continue using new versions of SUI. For more information see <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6512">#6512</a></p>
 </blockquote>
-<p><strong>New Components</strong></p>
+<p><strong>Build</strong></p>
 <ul>
-<li><strong>Placeholder</strong> - Added <code>ui placeholder</code> that can be used to show where content will soon appear.</li>
+<li><strong>LESS</strong> - SUI now supports less versions greater than <code>3.5.0</code> <strong>Thanks @sciyoshi</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6512">#6512</a></li>
+<li><strong>Gulp</strong> - Migrated deprecated <code>gulp-util</code> to <code>replace-ext</code> <strong>Thanks @stevelacy</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6322">#6322</a></li>
+<li><strong>Gulp</strong> - Updated all gulp dependencies to most recent released versions with modifications to tasks as necessary.</li>
 </ul>
-<p><strong>New UI Type</strong></p>
+<p><strong>Bug Fixes</strong></p>
 <ul>
-<li><strong>Segment</strong> - Added new <code>ui placeholder segment</code> used to reserve space for UI when content is missing or empty.</li>
-</ul>
-<p><strong>Major Enhancements</strong></p>
-<ul>
-<li><strong>Dropdown</strong> - Added <code>clearable</code> dropdowns. When <code>clearable: true</code> is specified an (X) will appear to clear dropdown selection <a href="https://github.com/Semantic-Org/Semantic-UI/issues/2072">#2072</a></li>
-<li><strong>Modal/Dimmer</strong> - Modals and dimmers now include a new setting <code>useFlex</code> which defaults to <code>auto</code>. Modals and dimmers will automatically revert to using non-flex layouts when there may be layout issues with using flexbox. Modals will fall back to JS position when <code>detachable: false</code> is used or with IE11/Edge (Absolutely positioned elements inside flex containers in IE behave differently).</li>
-</ul>
-<p><strong>Critical Bugs</strong></p>
-<ul>
-<li><strong>Modal</strong> - Fixed issue where <code>scrolling modal</code> would not allow for scrolling with touch devices. <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6449">#6449</a></li>
-<li><strong>Label</strong> - Fixed issue where <code>basic label</code> were appearing incorrectly <strong>Thanks @lasley / @ColinFrick</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6582">#6582</a> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6440">#6440</a></li>
-<li><strong>Menu/Dropdown</strong> - Fixed <code>left menu</code> inside <code>ui menu</code> would display horizontally as <code>flex</code> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6359">#6359</a></li>
-</ul>
-<p><strong>Bugs</strong></p>
-<ul>
-<li><strong>Dimmer</strong> - Dimmer now sets <code>variation</code> at runtime, to support run-time swapping between <code>top aligned</code> and <code>middle aligned</code> using <code>.dimmer('setting', 'variation', 'top aligned')</code></li>
-<li><strong>Dropdown</strong> - Fixed issue where <code>onChange</code> when used with <code>action: hide</code> would be missing the third param <code>$item</code> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6555">#6555</a></li>
-<li><strong>Flag</strong> - Add <code>uk</code> alias for <code>united kingdom</code> <strong>Thanks @PhilipGarnero</strong> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6531">#6531</a></li>
-<li><strong>Icon</strong> - Fixes missing <code>disk outline icon</code> alias <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6556">#6556</a></li>
-<li><strong>List</strong> - Fixed issue where list <code>content</code> would not take up 100% width when used alongside <code>img</code> or <code>icon</code></li>
-<li><strong>Menu/Dropdown</strong> - Fixes dropdown item margin not obeyed inside <code>labeled icon menu</code> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6557">#6557</a></li>
-<li><strong>Modal</strong> - Fixes <code>@mobileTopAlignedMargin</code> theming variable was not implemented</li>
-<li><strong>Modal</strong> - Modal now will remove <code>blurring</code> after undimming, to prevent issues with <code>position: fixed</code> <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6520">#6520</a></li>
-</ul>
-<p><strong>Minor Changes</strong></p>
-<ul>
-<li><strong>Dropdown</strong> - <code>inline dropdown</code> <code>close icon</code> default right margin default spacing slightly modified.</li>
+<li><strong>Dropdown</strong> - <code>clearable</code> dropdown now works with dropdown that arent <code>on:click</code>, like <code>hover</code> or <code>manual</code> triggers. <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6594">#6594</a></li>
+<li><strong>Modal</strong> - Fixed <code>fullscreen modal</code> having incorrect left offset with flex modals <a href="https://github.com/Semantic-Org/Semantic-UI/issues/6587">#6587</a></li>
+<li><strong>Embed</strong> - Embed will now correctly remove DOM metadata on <code>destroy</code></li>
+<li><strong>Grid</strong> - Fix issue with <code>very relaxed vertically divided grid</code> having wrong margins on dividers</li>
 </ul>
     </section>
 </article>
