@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "angular"
   },
-  "datePublished" : "2018-10-19",
+  "datePublished" : "2018-10-22",
   "publisher" : {
     "@type" : "Organization",
     "name" : "angular"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/angular/material2",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "TypeScript, HTML, CSS, Python, JavaScript, Shell",
-  "softwareVersion" : "7.0.0",
+  "softwareVersion" : "7.0.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "16154"
+    "ratingCount" : "16224"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-10-22",
+    "datePublished" : "2018-10-26",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Material Design components for Angular</p>
     <p>Developed by Organization:angular</p>
-    <p><small>Used languages: TypeScript(4.51 MB), HTML(420.14 kB), CSS(352.90 kB), Python(76.37 kB), JavaScript(40.52 kB), Shell(30.57 kB)</small></p>
+    <p><small>Used languages: TypeScript(4.52 MB), HTML(421.24 kB), CSS(355.78 kB), Python(91.59 kB), JavaScript(40.95 kB), Shell(27.85 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">7.0.0</h2>
+                <h2 class="card-title">7.0.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M10 19</h2>
+                <h2 class="card-title">2018 M10 22</h2>
                 <p class="card-text"><small>Created at 2016 M01 5</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M10 22
+                <h2 class="card-title">2018 M10 26
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">1,307</h2>
+                <h2 class="card-title">1,320</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">4,094</h2>
+                <h2 class="card-title">4,108</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">16,154</h2>
+                <h2 class="card-title">16,224</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,183</h2>
+                <h2 class="card-title">1,191</h2>
             </div>
         </div>
     </div>
@@ -170,94 +170,35 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M10 19 for 7.0.0</small>
+        Release Notes <small>on 2018 M10 22 for 7.0.1</small>
     </h1>
-        <h3 id="highlights">Highlights</h3>
+        <h3 id="bugfixes">Bug Fixes</h3>
 <ul>
-<li>Support for <a href="https://material.angular.io/cdk/drag-drop/overview">Drag and Drop</a> in <code>@angular/cdk/drag-drop</code>.</li>
-<li>Support for <a href="https://material.angular.io/cdk/scrolling/overview">Virtual Scrolling</a> in <code>@angular/cdk/scrolling</code>.</li>
-<li>Support for native <code>&lt;select&gt;</code> element in <code>&lt;mat-form-field&gt;</code> .</li>
-<li>Added <code>&lt;mat-action-list&gt;</code>, a list where each item is a <code>&lt;button&gt;</code>.</li>
-<li>Updated component styles throughout the library matching the 2018 Material Design Spec refresh.</li>
-<li>Added more schematics, with schematics now available for table, drag and drop, tree, address form and more.</li>
-<li>Added CLI prompts when using <code>ng add</code> to assist in setting up HammerJS support, application theming and animations.</li>
-<li>250+ bug/performance fixes</li>
+<li><strong>autocomplete:</strong> not propagating same model value when reset while open (<a href="https://github.com/angular/material2/issues/13634">#13634</a>) (<a href="https://github.com/angular/material2/commit/2006144">2006144</a>)</li>
+<li><strong>button-toggle:</strong> content shifting in IE11 (<a href="https://github.com/angular/material2/issues/13492">#13492</a>) (<a href="https://github.com/angular/material2/commit/7f5cbe3">7f5cbe3</a>)</li>
+<li><strong>datepicker:</strong> don't allow clicks on disabled cells in year and multi-year views (<a href="https://github.com/angular/material2/issues/13448">#13448</a>) (<a href="https://github.com/angular/material2/commit/85741e0">85741e0</a>)</li>
+<li><strong>drag-drop:</strong> not picking up handle that isn't a direct descendant (<a href="https://github.com/angular/material2/issues/13360">#13360</a>) (<a href="https://github.com/angular/material2/commit/0f05d99">0f05d99</a>)</li>
+<li><strong>drag-drop:</strong> preserve previous inline transform (<a href="https://github.com/angular/material2/issues/13529">#13529</a>) (<a href="https://github.com/angular/material2/commit/2a8da45">2a8da45</a>)</li>
+<li><strong>drag-drop:</strong> use passive event listeners for start events (<a href="https://github.com/angular/material2/issues/13526">#13526</a>) (<a href="https://github.com/angular/material2/commit/5d5fba5">5d5fba5</a>)</li>
+<li><strong>expansion-panel:</strong> emitting events twice on some browsers (<a href="https://github.com/angular/material2/issues/13600">#13600</a>) (<a href="https://github.com/angular/material2/commit/85a3ae0">85a3ae0</a>)</li>
+<li><strong>form-field:</strong> native select options blending in with dropdown background on a dark theme (<a href="https://github.com/angular/material2/issues/13201">#13201</a>) (<a href="https://github.com/angular/material2/commit/b8a6294">b8a6294</a>)</li>
+<li><strong>grid-list:</strong> unable to assign numeric zero as gutter size (<a href="https://github.com/angular/material2/issues/13652">#13652</a>) (<a href="https://github.com/angular/material2/commit/4ffcf74">4ffcf74</a>)</li>
+<li><strong>list:</strong> selection list moving focus when an option is destroyed (<a href="https://github.com/angular/material2/issues/13531">#13531</a>) (<a href="https://github.com/angular/material2/commit/2c4c5ba">2c4c5ba</a>)</li>
+<li><strong>menu:</strong> closing parent overlay when pressing escape (<a href="https://github.com/angular/material2/issues/13442">#13442</a>) (<a href="https://github.com/angular/material2/commit/c3ae922">c3ae922</a>)</li>
+<li><strong>menu:</strong> proper focus styling when opened by tap on a touch device (<a href="https://github.com/angular/material2/issues/13599">#13599</a>) (<a href="https://github.com/angular/material2/commit/c271167">c271167</a>)</li>
+<li><strong>progress-bar:</strong> not taking current path after first initialization (<a href="https://github.com/angular/material2/issues/13628">#13628</a>) (<a href="https://github.com/angular/material2/commit/8e331a7">8e331a7</a>)</li>
+<li><strong>radio:</strong> improved alignment for native validation messages (<a href="https://github.com/angular/material2/issues/13570">#13570</a>) (<a href="https://github.com/angular/material2/commit/dbf5164">dbf5164</a>)</li>
+<li><strong>sidenav:</strong> opened and closed events emitting twice on IE and Edge (<a href="https://github.com/angular/material2/issues/13649">#13649</a>) (<a href="https://github.com/angular/material2/commit/5295e2f">5295e2f</a>)</li>
+<li><strong>slider:</strong> update value on mousedown instead of click (<a href="https://github.com/angular/material2/issues/13020">#13020</a>) (<a href="https://github.com/angular/material2/commit/c995db7">c995db7</a>)</li>
+<li><strong>stepper:</strong> custom icons not centered inside circle (<a href="https://github.com/angular/material2/issues/12947">#12947</a>) (<a href="https://github.com/angular/material2/commit/45edf64">45edf64</a>)</li>
+<li><strong>stepper:</strong> emitting the animationDone event twice on some browsers (<a href="https://github.com/angular/material2/issues/13608">#13608</a>) (<a href="https://github.com/angular/material2/commit/a11ca21">a11ca21</a>), closes <a href="https://github.com/angular/material2/issues/13600">#13600</a> <a href="https://github.com/angular/material2/issues/13587">#13587</a></li>
+<li><strong>stepper:</strong> intl provider not being picked up in lazy-loaded modules (<a href="https://github.com/angular/material2/issues/12934">#12934</a>) (<a href="https://github.com/angular/material2/commit/00ce69b">00ce69b</a>)</li>
+<li><strong>table:</strong> delimit words when filtering (<a href="https://github.com/angular/material2/issues/13487">#13487</a>) (<a href="https://github.com/angular/material2/commit/1d87b4c">1d87b4c</a>)</li>
+<li><strong>text-field:</strong> autosize textarea not resizing on minRows decrease (<a href="https://github.com/angular/material2/issues/13437">#13437</a>) (<a href="https://github.com/angular/material2/commit/8bae5b4">8bae5b4</a>)</li>
 </ul>
-<h3 id="upgradingto70">Upgrading to 7.0</h3>
-<p>Using the Angular CLI, you can use the <code>ng update</code> command to automatically migrate to the new APIs in for Material and CDK.</p>
-<pre><code>ng update @angular/material
-</code></pre>
-<p><strong>NOTE:</strong> If you are <strong>using only the CDK</strong> you can automatically migrate using <code>ng update @angular/cdk</code> instead.</p>
-<h3 id="breakingchanges">Breaking Changes</h3>
+<h3 id="performanceimprovements">Performance Improvements</h3>
 <ul>
-<li><strong>ripple:</strong> deprecated <code>[matRippleSpeedFactor]</code> and <code>baseSpeedFactor</code> for the ripples have been removed. Use the new animation config instead.</li>
-<li><strong>overlay:</strong> The <code>flexibleDiemsions</code> property on <code>CdkConnectedOverlay</code> has been renamed to <code>flexibleDimensions</code></li>
-<li><strong>sidenav:</strong> the constructor signature of the <code>MatDrawerContent</code> and <code>MatSidenavContent</code> has changed.</li>
-<li><strong>elevation:</strong> Because <code>mat-elevation</code> usages have been moved out of component stylesheets, users who have
-not invoked a theme mixin will not see any elevation shadows on Material components.
-However, users that have created a custom theme which lacks the <code>elevation</code> property will
-still see the default black shadows.</li>
-</ul>
-<p>Additionally, users who want to use themed elevations in their custom components can create
-their own shorthand mixin:</p>
-<pre><code class="sass language-sass">@import '~@angular/material/theming';
-
-$myTheme: ...
-
-@mixin my-elevation($zValue) {
-  @include mat-theme-elevation($zValue, $myTheme);
-}
-</code></pre>
-<p>and then invoke <code>angular-material-theme</code> with the <code>$myTheme</code> variable.</p>
-<h3 id="markedfordeprecation">Marked for Deprecation</h3>
-<p>A number of items throughout the library have been deprecated and are expected to be removed in v8.</p>
-<h4 id="cdk">CDK</h4>
-<p>Collections</p>
-<ul>
-<li><code>SelectionModel.onChange</code> has been deprecated, use <code>SelectionModel.changed</code> instead.</li>
-</ul>
-<p>Scrolling</p>
-<ul>
-<li><code>ScrollDispatchModule</code> has been deprecated, use <code>ScrollingModule</code> instead.</li>
-</ul>
-<p>Table</p>
-<ul>
-<li><code>CdkTable.setFooterRowDef</code> has been deprecated, use <code>CdkTable.addFooterRowDef</code> and <code>CdkTable.removeFooterRowDef</code> instead.</li>
-<li><code>CdkTable.setHeaderRowDef</code> has been deprecated, use <code>CdkTable.addHeaderRowDef</code> and <code>CdkTable.removeHeaderRowDef</code> instead.</li>
-</ul>
-<h4 id="material">Material</h4>
-<p>Dialog</p>
-<ul>
-<li><code>matDialogAnimations.slideDialog</code> has been deprecated, use <code>matDialogAnimations.dialogContainer</code> instead.</li>
-<li><code>MatDialogRef.afterOpen</code> has been deprecated, use <code>MatDialogRef.afterOpened</code> instead.</li>
-<li><code>MatDialogRef.afterClose</code> has been deprecated, use <code>MatDialogRef.afterClosed</code> instead.</li>
-<li><code>MatDialog.afterOpen</code> has been deprecated, use <code>MatDialog.afterOpened</code> instead.</li>
-</ul>
-<p>Form Field</p>
-<ul>
-<li><code>&lt;mat-placeholder&gt;</code> has been deprecated, use <code>&lt;mat-label&gt;</code> instead.</li>
-<li><code>MatPlaceholder</code> has been deprecated, use <code>MatLabel</code> instead.</li>
-</ul>
-<p>Paginator</p>
-<ul>
-<li><code>$mat-paginator-selector-trigger-min-width</code> has been deprecated, use <code>$mat-paginator-selector-trigger-width</code> instead.</li>
-</ul>
-<p>Select</p>
-<ul>
-<li><code>matSelectAnimations.fadeInContent</code> has been deprecated and will be removed without replacement.</li>
-<li>The setter method for <code>MatSelect.focused</code> has been deprecated, <code>MatSelect.focused</code> will become readonly.</li>
-</ul>
-<p>Toolbar</p>
-<ul>
-<li><code>$mat-toolbar-height-mobile-portrait</code> has been deprecated and will be removed without replacement.</li>
-<li><code>$mat-toolbar-height-mobile-landscape</code> has been deprecated and will be removed without replacement.</li>
-</ul>
-<p><strong>NOTE:</strong> In addition to the specific deprecations listed above, many component constructor methods contain 
-optional parameters which are expected to become required in v8.</p>
-<h3 id="bugfixes">Bug Fixes</h3>
-<ul>
-<li><strong>icon:</strong> not taking current path after initialization  (<a href="https://github.com/angular/material2/issues/13641">#13641</a>) (<a href="https://github.com/angular/material2/commit/df9ec7">df9ec7</a>)</li>
-<li><strong>list:</strong> action list items clickable area not stretching the full width (<a href="https://github.com/angular/material2/issues/13099">#13099</a>) (<a href="https://github.com/angular/material2/commit/f3057fa">f3057fa</a>)</li>
+<li><strong>focus-monitor:</strong> mark event listeners as passive (<a href="https://github.com/angular/material2/issues/13532">#13532</a>) (<a href="https://github.com/angular/material2/commit/ba0c820">ba0c820</a>)</li>
 </ul>
     </section>
 </article>
