@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2018-10-28",
+  "datePublished" : "2018-11-13",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v3.3.2",
+  "softwareVersion" : "v3.5.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "41552"
+    "ratingCount" : "41995"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-10-30",
+    "datePublished" : "2018-11-16",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components that implement Google&#x27;s Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(3.92 MB), TypeScript(38.15 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(4.01 MB), TypeScript(38.15 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.3.2</h2>
+                <h2 class="card-title">v3.5.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M10 28</h2>
+                <h2 class="card-title">2018 M11 13</h2>
                 <p class="card-text"><small>Created at 2014 M08 19</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M10 30
+                <h2 class="card-title">2018 M11 15
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">228</h2>
+                <h2 class="card-title">250</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">8,035</h2>
+                <h2 class="card-title">8,203</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">41,552</h2>
+                <h2 class="card-title">41,995</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,330</h2>
+                <h2 class="card-title">1,340</h2>
             </div>
         </div>
     </div>
@@ -169,50 +169,106 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M10 28 for v3.3.2</small>
+        Release Notes <small>on 2018 M11 13 for v3.5.1</small>
     </h1>
-        <h6 id="oct272018"><em>Oct 27, 2018</em></h6>
-<p>Big thanks to the 17 contributors who made this release possible!</p>
+        <h6 id="nov132018"><em>Nov 13, 2018</em></h6>
+<p>Big thanks to the 13 contributors who made this release possible!</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>🐛 Fix some important issues with the Modal (#13378, #13389) @TomiCake.</li>
-<li>🐛 Fix a Dialog scroll issue (#13409) @Ang-YC.</li>
-<li>📝 Full IE 11 support (#13375, #13324) @eps1lon.</li>
-<li>And many more bug fixes and documentation improvements.</li>
+<li>Introduce a new <a href="https://material-ui.com/css-in-js/basics/"><code>@material-ui/styles</code> package</a> 💅 (#13503).</li>
 </ul>
-<h3 id="materialuicorev332"><code>@material-ui/core@v3.3.2</code></h3>
+<p>The Material-UI's styling solution has pretty much stayed the same <a href="https://github.com/oliviertassinari/a-journey-toward-better-style">for the last 12 months</a>.
+Some interesting CSS-in-JS libraries like styled-components, emotion or linaria have emerged.
+This new package is a significant step forward. Some of the key features:</p>
 <ul>
-<li>[Stepper] Fix visual issue on IE 11 (#13375) @oliviertassinari</li>
-<li>[Modal] Reuse the same reference (#13378) @oliviertassinari</li>
-<li>[MenuItem] Add disableGutters property (#13329) @adeelibr</li>
-<li>[FormControl] Issue 13246 revert (#13380) @drkohlipk</li>
-<li>[theme] Correct augmentColor TypeScript definition (#13376) @sveyret</li>
-<li>[Table] Change divider color in dark theme (#13395) @Krijovnick</li>
-<li>[TablePagination] Better color inheritance (#13393) @markselby9</li>
-<li>[Modal] Fix aria and focus logic (#13389) @TomiCake</li>
-<li>[Tooltip] Allow to interact with the tooltip (#13305) @jantimon</li>
-<li>[Dialog] Fix unable to drag scrollbar when scroll="body" (#13409) @Ang-YC</li>
+<li>Supports 4 different APIs: hooks, styled-components, higher-order components and render props.</li>
+<li>Allow accessing the component's props from within the style object.</li>
+<li>Replace the usage of the old React APIs with the new ones.</li>
+<li>15.0 KB gzipped.</li>
 </ul>
-<h3 id="materialuilabv300alpha22"><code>@material-ui/lab@v3.0.0-alpha.22</code></h3>
+<p>Here is an example: https://codesandbox.io/s/vjzn5z4k77.</p>
+<pre><code class="jsx language-jsx">import Button from '@material-ui/core/Button';
+import React from 'react';
+import { makeStyles } from '@material-ui/styles';
+
+// Like https://github.com/brunobertolini/styled-by
+const styledBy = (property, mapping) =&gt; props =&gt; mapping[props[property]];
+
+const useStyles = makeStyles({
+  root: {
+    background: styledBy('color', {
+      red: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+      blue: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+    }),
+    border: 0,
+    borderRadius: 3,
+    boxShadow: styledBy('color', {
+      red: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+      blue: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+    }),
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+  },
+});
+
+function MyButton(props) {
+  const { color, ...other } = props;
+  const classes = useStyles(props);
+  return &lt;Button className={classes.root} {...other} /&gt;;
+}
+
+function AdaptingHook() {
+  return (
+    &lt;div&gt;
+      &lt;MyButton color="red"&gt;Red&lt;/MyButton&gt;
+      &lt;br /&gt;
+      &lt;br /&gt;
+      &lt;MyButton color="blue"&gt;Blue&lt;/MyButton&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default AdaptingHook;
+</code></pre>
+<p><em>Powered by <a href="https://github.com/cssinjs/jss">JSS</a>.</em></p>
 <ul>
-<li>[Slider] Improve performance of slider (#13325) @Pajn</li>
+<li>Remove some usages of the old React's APIs (#13487, #13529, #13503) @eps1lon.</li>
+<li>Add a language menu in the documentation and persist states between repeated visits (#13544, #13567) @mbrookes</li>
+<li>And many more 🐛 bug fixes and 📝 documentation improvements.</li>
+</ul>
+<h3 id="materialuicorev351"><code>@material-ui/core@v3.5.1</code></h3>
+<ul>
+<li>[OutlinedInput] Remove Firefox workaround (#13519) @Studio384</li>
+<li>[TextField] Fix style focus issue on mobile (#13511) @ekoeditaa</li>
+<li>[InputBase] Remove legacy lifecycle methods (#13487) @eps1lon</li>
+<li>[Chip] Alignment fix (#13536) @izyb</li>
+<li>[Badge] Add invisible property (#13534) @joshwooding</li>
+<li>[Table] Use stable context API (#13529) @eps1lon</li>
+<li>[TablePagination] Allow more rows per pages (#13524) @oliviertassinari</li>
+<li>[LinearProgress] Fix TypeScript definition (#13562) @AdamMcquiff</li>
+<li>Add missing brcast dependency @oliviertassinari</li>
+</ul>
+<h3 id="materialuistylesv300alpha0"><code>@material-ui/styles@v3.0.0-alpha.0</code></h3>
+<ul>
+<li>@material-ui/styles (#13503) @oliviertassinari</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Fix some issue with i18n (#13342) @GFwer</li>
-<li>[docs] Add polyfill for IE 11 (#13324) @eps1lon</li>
-<li>[docs] Correct title attribute for Paella recipe card (#13398) @vixmorrigan-redseven</li>
-<li>[docs] CONTRIBUTING is not read by default (#13400) @eps1lon</li>
-<li>[docs] Add missing </span> for prop-type (#13401) @mvsmal</li>
-<li>[docs] aria-owns accepts 'string | undefined' but we feed it 'null' (#13396) @Primajin</li>
-<li>[docs] Let user know where <Icon /> coming from (#13405) @bekicot</li>
-<li>[docs] Update Workbox to v3.6.3 (#13392) @msiadak</li>
-<li>[docs] Better i18n capability (#13410) @oliviertassinari</li>
+<li>[docs] Advanced filter added to the documentation (#13528) @ashkank83</li>
+<li>[docs] Save one component in the demo (#13537) @levelingup</li>
+<li>[docs] Make the lab &gt; core dependency more explicit (#13542) @Robindiddams</li>
+<li>[docs] Remove redundant text (#13547) @EbiEbiEvidence</li>
+<li>[docs] Add language menu (#13544) @mbrookes</li>
+<li>[docs] Misc fixes (#13555) @oliviertassinari</li>
+<li>[docs] Add cookie for persistant colors (#13567) @mbrookes</li>
 </ul>
 <h3 id="core">Core</h3>
 <ul>
-<li>[core] Update overrides type declarations (#13379) @eps1lon</li>
-<li>[core] Misc of improvements (#13381) @oliviertassinari</li>
+<li>[test] Improve tests related to lists (#13517) @eps1lon</li>
+<li>[core] Remove recompose/wrapDisplayName usage (#13525) @oliviertassinari</li>
+<li>[core] Fix the CDN release (#13540) @oliviertassinari</li>
+<li>[core] Pass import filename through normalizePath function (#13565) @joshwooding</li>
 </ul>
     </section>
 </article>
