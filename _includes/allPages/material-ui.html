@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2018-11-13",
+  "datePublished" : "2018-11-27",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v3.5.1",
+  "softwareVersion" : "v3.6.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "41995"
+    "ratingCount" : "42307"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-11-16",
+    "datePublished" : "2018-11-29",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components that implement Google&#x27;s Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(4.01 MB), TypeScript(38.15 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(4.03 MB), TypeScript(53.30 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.5.1</h2>
+                <h2 class="card-title">v3.6.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M11 13</h2>
-                <p class="card-text"><small>Created at 2014 M08 19</small></p>
+                <h2 class="card-title">Nov 27, 2018</h2>
+                <p class="card-text"><small>Created at Aug 19, 2014</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M11 15
+                <h2 class="card-title">Nov 29, 2018
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">250</h2>
+                <h2 class="card-title">277</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">8,203</h2>
+                <h2 class="card-title">8,312</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">41,995</h2>
+                <h2 class="card-title">42,307</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,340</h2>
+                <h2 class="card-title">1,347</h2>
             </div>
         </div>
     </div>
@@ -169,106 +169,104 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M11 13 for v3.5.1</small>
+        Release Notes <small>on November 27, 2018 for v3.6.0</small>
     </h1>
-        <h6 id="nov132018"><em>Nov 13, 2018</em></h6>
-<p>Big thanks to the 13 contributors who made this release possible!</p>
+        <h6 id="nov262018"><em>Nov 26, 2018</em></h6>
+<p>Big thanks to the 28 contributors who made this release possible!</p>
+<p>The last release was two weeks ago.
+Last weekend, we have missed the release train 🚃.
+As a consequence, this is a dense release.</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>Introduce a new <a href="https://material-ui.com/css-in-js/basics/"><code>@material-ui/styles</code> package</a> 💅 (#13503).</li>
-</ul>
-<p>The Material-UI's styling solution has pretty much stayed the same <a href="https://github.com/oliviertassinari/a-journey-toward-better-style">for the last 12 months</a>.
-Some interesting CSS-in-JS libraries like styled-components, emotion or linaria have emerged.
-This new package is a significant step forward. Some of the key features:</p>
-<ul>
-<li>Supports 4 different APIs: hooks, styled-components, higher-order components and render props.</li>
-<li>Allow accessing the component's props from within the style object.</li>
-<li>Replace the usage of the old React APIs with the new ones.</li>
-<li>15.0 KB gzipped.</li>
-</ul>
-<p>Here is an example: https://codesandbox.io/s/vjzn5z4k77.</p>
-<pre><code class="jsx language-jsx">import Button from '@material-ui/core/Button';
-import React from 'react';
-import { makeStyles } from '@material-ui/styles';
-
-// Like https://github.com/brunobertolini/styled-by
-const styledBy = (property, mapping) =&gt; props =&gt; mapping[props[property]];
-
-const useStyles = makeStyles({
-  root: {
-    background: styledBy('color', {
-      red: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-      blue: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-    }),
-    border: 0,
-    borderRadius: 3,
-    boxShadow: styledBy('color', {
-      red: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-      blue: '0 3px 5px 2px rgba(33, 203, 243, .3)',
-    }),
-    color: 'white',
-    height: 48,
-    padding: '0 30px',
-  },
-});
-
-function MyButton(props) {
-  const { color, ...other } = props;
-  const classes = useStyles(props);
-  return &lt;Button className={classes.root} {...other} /&gt;;
-}
-
-function AdaptingHook() {
-  return (
-    &lt;div&gt;
-      &lt;MyButton color="red"&gt;Red&lt;/MyButton&gt;
-      &lt;br /&gt;
-      &lt;br /&gt;
-      &lt;MyButton color="blue"&gt;Blue&lt;/MyButton&gt;
-    &lt;/div&gt;
-  );
-}
-
-export default AdaptingHook;
-</code></pre>
-<p><em>Powered by <a href="https://github.com/cssinjs/jss">JSS</a>.</em></p>
-<ul>
-<li>Remove some usages of the old React's APIs (#13487, #13529, #13503) @eps1lon.</li>
-<li>Add a language menu in the documentation and persist states between repeated visits (#13544, #13567) @mbrookes</li>
+<li>🎨 Add a new Firebase theme demo (#13579) @siriwatknp.
+You can preview it following <a href="https://material-ui.com/premium-themes/paperbase/">this link</a>.</li>
+<li>⚛️ Introduce a new Fab component (#13573) @mbrookes.</li>
+<li>⛏ Fix more StrictMode warnings (#13590) @eps1lon.</li>
 <li>And many more 🐛 bug fixes and 📝 documentation improvements.</li>
 </ul>
-<h3 id="materialuicorev351"><code>@material-ui/core@v3.5.1</code></h3>
+<h3 id="materialuicorev360"><code>@material-ui/core@v3.6.0</code></h3>
+<h4 id="deprecations">Deprecations</h4>
 <ul>
-<li>[OutlinedInput] Remove Firefox workaround (#13519) @Studio384</li>
-<li>[TextField] Fix style focus issue on mobile (#13511) @ekoeditaa</li>
-<li>[InputBase] Remove legacy lifecycle methods (#13487) @eps1lon</li>
-<li>[Chip] Alignment fix (#13536) @izyb</li>
-<li>[Badge] Add invisible property (#13534) @joshwooding</li>
-<li>[Table] Use stable context API (#13529) @eps1lon</li>
-<li>[TablePagination] Allow more rows per pages (#13524) @oliviertassinari</li>
-<li>[LinearProgress] Fix TypeScript definition (#13562) @AdamMcquiff</li>
-<li>Add missing brcast dependency @oliviertassinari</li>
+<li>[Fab] Extract from Button as new component (#13573) @mbrookes</li>
 </ul>
-<h3 id="materialuistylesv300alpha0"><code>@material-ui/styles@v3.0.0-alpha.0</code></h3>
+<p>The floating action button doesn't share many styles with the default button component.
+We are extracting the variant into its own component.
+This way, we better isolate the concerns.
+We will remove the FAB styles from the button in v4, making the <code>Button</code> component more lightweight, a win for people overriding our styles.</p>
+<pre><code class="diff language-diff">-import Button from '@material-ui/core/Button';
++import Fab from '@material-ui/core/Fab';
+
+-&lt;Button variant="fab" color="primary"&gt;
++&lt;Fab color="primary"&gt;
+  &lt;AddIcon /&gt;
+-&lt;/Button&gt;
++&lt;/Fab&gt;
+</code></pre>
 <ul>
-<li>@material-ui/styles (#13503) @oliviertassinari</li>
+<li>[Divider] Add support for middle divider by introducing a <code>variant</code> prop (#13574) @joshwooding</li>
+</ul>
+<p>We are introducing a new variant to the divider component: middle. Following our API guideline, we can no longer use a boolean property, it needs to be an enum, hence the introduction of the variant property.</p>
+<pre><code class="diff language-diff">import Divider from '@material-ui/core/Divider';
+
+-&lt;Divider inset /&gt;
++&lt;Divider variant="inset" /&gt;
+</code></pre>
+<h4 id="changes">Changes</h4>
+<ul>
+<li>[FormControlLabel] Fix documentation warnings (#13583) @dsbrutha777</li>
+<li>[ExpansionPanelSummary] Fix event forwarding (#13582) @jmetev1</li>
+<li>[Button] Move deprecated variants to the end of the list (#13584) @avetisk</li>
+<li>[FormControl] Use stable context API (#13590) @eps1lon</li>
+<li>[TablePagination] Improve TypeScript definition (#13601) @xiaoyu-tamu</li>
+<li>[SwipeableDrawer] Add <code>SwipeAreaProps</code> property (#13592) @SerhiiBilyk</li>
+<li>[Divider] Add support for middle divider (#13574) @joshwooding</li>
+<li>[ListItem] Add three-line support (#13553) @ntorion</li>
+<li>[Grid] Fix the IE 11 issue in the demo (7d2070fb388295d38806ecc49717006f34393e74) @oliviertassinari</li>
+<li>[Zoom] Correct transition delay value of the example (#13645) @t49tran</li>
+<li>[Tabs] Improve the warning message (#13640) @oliviertassinari</li>
+<li>[Grow] Condense the demo (#13665) @Thyix</li>
+<li>[Tooltip] Fix the property forwarding priority (#13667) @oliviertassinari</li>
+<li>[Modal] Fix the close jump on Windows (#13674) @oliviertassinari</li>
+<li>[Select] Support object value (#13661) @yezhi780625</li>
+<li>[Menu] Fix wrong condition (#13675) @dolezel</li>
+</ul>
+<h3 id="materialuilabv300alpha24"><code>@material-ui/lab@v3.0.0-alpha.24</code></h3>
+<ul>
+<li>[Slider] Fix sticky slider when mousing off the window then back in (#13479) @gkjohnson</li>
+<li>[Slider] Fix visual hover state on disabled slider (#13638) @eps1lon</li>
+<li>[Slider] Add missing thumb TypeScript definition (#13650) @dhiroll</li>
+</ul>
+<h3 id="materialuistylesv300alpha1"><code>@material-ui/styles@v3.0.0-alpha.1</code></h3>
+<ul>
+<li>[styles] Add TypeScript declarations (#13612) @eps1lon</li>
+</ul>
+<h3 id="materialuidocsv300alpha8"><code>@material-ui/docs@v3.0.0-alpha.8</code></h3>
+<ul>
+<li>Fix the @material-ui/utils require error.</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Advanced filter added to the documentation (#13528) @ashkank83</li>
-<li>[docs] Save one component in the demo (#13537) @levelingup</li>
-<li>[docs] Make the lab &gt; core dependency more explicit (#13542) @Robindiddams</li>
-<li>[docs] Remove redundant text (#13547) @EbiEbiEvidence</li>
-<li>[docs] Add language menu (#13544) @mbrookes</li>
-<li>[docs] Misc fixes (#13555) @oliviertassinari</li>
-<li>[docs] Add cookie for persistant colors (#13567) @mbrookes</li>
+<li>[docs] Add redirect rule for moved page layout examples (#13588) @mbrookes</li>
+<li>[docs] Add the selfeducation.app showcase (#13620) @kulakowka</li>
+<li>[docs] Warn about the Dynamic CSS alpha state (#13619) @WebDeg-Brian</li>
+<li>[docs] Learn Material-UI (#13624) @oliviertassinari</li>
+<li>[docs] Add a Firebase example in the premium-theme section (#13579) @siriwatknp</li>
+<li>[docs] Increase clarity around the usage of font icons (#13628) @JosephMart</li>
+<li>[docs] Add swimmy.io to showcase page (#13637) @uufish</li>
+<li>[docs] Correct typo in comment of snackbar, children (#13651) @kobi</li>
+<li>[docs] Improve Grid limitation description (#13668) @sshevlyagin</li>
+<li>[docs] Fix theme menu link (#13669) @iamhosseindhv</li>
+<li>[docs] Change &quote; to &apos; (#13678) @wiktoriatomzik</li>
+<li>[docs] Restructure the demo based on usage analytics (#13684) @oliviertassinari</li>
+<li>[docs] Fix typo in URL (#13688) @Malvineous</li>
 </ul>
 <h3 id="core">Core</h3>
 <ul>
-<li>[test] Improve tests related to lists (#13517) @eps1lon</li>
-<li>[core] Remove recompose/wrapDisplayName usage (#13525) @oliviertassinari</li>
-<li>[core] Fix the CDN release (#13540) @oliviertassinari</li>
-<li>[core] Pass import filename through normalizePath function (#13565) @joshwooding</li>
+<li>[core] Update dev dependencies (#13626) @oliviertassinari</li>
+<li>[test] Fix codecov failing on merge commits (#13654) @eps1lon</li>
+<li>[core] Make prettier run programmatically (#13621) @joshwooding</li>
+<li>[test] Run unit/integration test on Chrome 41 (#13642) @eps1lon</li>
+<li>[core] Move unit test commands to their package (#13604) @eps1lon</li>
 </ul>
     </section>
 </article>

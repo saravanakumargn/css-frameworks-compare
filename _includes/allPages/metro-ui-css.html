@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "olton"
   },
-  "datePublished" : "2018-11-11",
+  "datePublished" : "2018-11-26",
   "publisher" : {
     "@type" : "Person",
     "name" : "olton"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/olton/Metro-UI-CSS",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript",
-  "softwareVersion" : "v4.2.28",
+  "softwareVersion" : "v4.2.30",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "5886"
+    "ratingCount" : "5934"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2018-11-16",
+    "datePublished" : "2018-11-29",
     "reviewBody" : "Written in  Less Javascript This is frameworks design for plain, metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.</p>
     <p>Developed by User:olton</p>
-    <p><small>Used languages: CSS(2.68 MB), JavaScript(1.47 MB)</small></p>
+    <p><small>Used languages: CSS(2.71 MB), JavaScript(1.47 MB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.2.28</h2>
+                <h2 class="card-title">v4.2.30</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">2018 M11 11</h2>
-                <p class="card-text"><small>Created at 2012 M03 9</small></p>
+                <h2 class="card-title">Nov 26, 2018</h2>
+                <p class="card-text"><small>Created at Mar 9, 2012</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">2018 M11 11
+                <h2 class="card-title">Nov 26, 2018
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">18</h2>
+                <h2 class="card-title">16</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">1,915</h2>
+                <h2 class="card-title">1,922</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">5,886</h2>
+                <h2 class="card-title">5,934</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">580</h2>
+                <h2 class="card-title">585</h2>
             </div>
         </div>
     </div>
@@ -169,21 +169,24 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on 2018 M11 11 for v4.2.28</small>
+        Release Notes <small>on November 26, 2018 for v4.2.30</small>
     </h1>
-        <h3 id="4228">4.2.28</h3>
+        <h3 id="4230">4.2.30</h3>
 <ul>
-<li>[x] Sidebar: fix z-index</li>
-<li>[x] Docs: fix mistakes in table options</li>
-<li>[x] Utils css: fix class <code>m4-cloak</code> </li>
-<li>[x] Validator: add argument <code>data</code> to events <code>data-on-validate-form</code>, <code>data-on-error-form</code>, <code>data-on-submit</code>. Data is a <code>object</code> and contains pairs: <code>input-name: input-value</code> for form elements.</li>
-<li>[x] Popover: fix close popover</li>
-<li>[x] v-menu: fix drop down for <code>v-menu</code> -&gt; <code>v-menu</code> </li>
-<li>[x] Validator: fix for issue #1254</li>
-<li>[x] Utils: add functions <code>parseCard(val)</code>, <code>parsePhone(val)</code>. Functions remove all not numeric chars from value</li>
-<li>[x] Table: add data formats <code>card</code>, <code>phone</code></li>
-<li>[x] List: add data formats <code>card</code>, <code>phone</code></li>
-<li>[x] Sorter: add data formats <code>card</code>, <code>phone</code></li>
+<li>[x] Toast: add function <code>init(options)</code>, now you can set toast <code>top</code> position and <code>distance</code>. See docs for details.</li>
+<li>[x] t-menu: less code moved to separate file</li>
+<li>[x] h-menu: less code moved to separate file</li>
+<li>[x] drop-utils: now contains classes for drop-down: <code>dropdown-toggle</code>, <code>drop-up</code>, <code>drop-left</code>, <code>drop-right</code></li>
+<li>[x] sidenav-m3: fix icon position for submenu, issue #1266</li>
+<li>[x] Splitter: fix gutter for nested splitters</li>
+<li>[x] Splitter: fix calc min size if value for attribute <code>data-min-sizes</code> comma separated value</li>
+<li>[x] Docs: fix mistake in docs for <code>sidenav-counter-expand-*</code>, issue #1269</li>
+<li>[x] Docs: fix mistake in docs for <code>spacing</code></li>
+<li>[x] Command button: set <code>font-weight</code> to override it when use in wordpress</li>
+<li>[x] Command button: set <code>line-height</code> to override it when use in wordpress</li>
+<li>[x] Inline-form: change behavior for <code>.form-group</code></li>
+<li>[x] Carousel: add events <code>onSlideShow(HTMLElement slide)</code>, <code>onSlideHide(HTMLElement slide)</code> </li>
+<li>[x] Examples: fix <code>start-screen</code> for scroll on mobile devices </li>
 </ul>
     </section>
 </article>
