@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "turretcss"
   },
-  "datePublished" : "2018-12-11",
+  "datePublished" : "2019-01-09",
   "publisher" : {
     "@type" : "Organization",
     "name" : "turretcss"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/turretcss/turretcss",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript",
-  "softwareVersion" : "v5.0.0",
+  "softwareVersion" : "v5.1.2",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "558"
+    "ratingCount" : "564"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-01-05",
+    "datePublished" : "2019-01-16",
     "reviewBody" : "Written in  Less . Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Turret is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.</p>
     <p>Developed by Organization:turretcss</p>
-    <p><small>Used languages: CSS(159.77 kB), JavaScript(382.00 bytes)</small></p>
+    <p><small>Used languages: CSS(163.12 kB), JavaScript(382.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -101,20 +101,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v5.0.0</h2>
+                <h2 class="card-title">v5.1.2</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Dec 11, 2018</h2>
+                <h2 class="card-title">Jan 9, 2019</h2>
                 <p class="card-text"><small>Created at Jan 29, 2015</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Dec 11, 2018
+                <h2 class="card-title">Jan 10, 2019
                 </h2>
             </div>
         </div>
@@ -126,7 +126,7 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">4</h2>
+                <h2 class="card-title">-NA-</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
@@ -138,13 +138,13 @@
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">558</h2>
+                <h2 class="card-title">564</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">28</h2>
+                <h2 class="card-title">27</h2>
             </div>
         </div>
     </div>
@@ -170,86 +170,11 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on December 11, 2018 for v5.0.0</small>
+        Release Notes <small>on January 9, 2019 for v5.1.2</small>
     </h1>
-        <h2 id="upgrades">Upgrades</h2>
+        <h2 id="fixes">Fixes</h2>
 <ul>
-<li>Upgrade <code>normalize.css</code> to <code>v8.0.0</code></li>
-<li>Change PostCSS dependancy from <code>postcss-cssnext</code> to <code>postcss-preset-env</code>.</li>
-<li>Update dependencies to latest compatible major versions</li>
-<li>Commit package-lock.json</li>
-<li>Updated <code>color()</code> function to <a href="https://www.w3.org/TR/css-color-4/#funcdef-color-mod"><code>color-mod()</code> (stage 2) CSS spec</a></li>
-</ul>
-<h2 id="breakingchanges">Breaking Changes</h2>
-<ul>
-<li>Removed <code>@apply</code> rules and remove <code>_mixins.css</code> definitions along with documentation</li>
-<li>Removed <code>--gutter</code> and utity classes in preference for <code>--container-gutter</code> being set on the container element only</li>
-<li>Removed <code>--margin-*</code> and <code>--padding-*</code> custom property definitions in preference for <code>--space</code> avoiding duplicate values</li>
-<li>Removed font size responsive declarations for <code>:root</code> element, it's not being used, has no real benefit and is easy to update manually</li>
-<li>Removed <code>--input-*-padding</code> and <code>--select-*-padding</code> custom property definitions as <code>input</code> and <code>select</code> sizes already use relative padding size (<code>em</code>) and this is not required</li>
-<li>Removed <code>@apply</code> from <code>progress</code> and <code>input[type="range"]</code> elements</li>
-<li>Removed <code>.big</code> typography styles</li>
-<li>Removed <code>.small-caps</code> typography styles, rplaced with <code>all-caps</code> with size variants</li>
-<li>Removed <code>left-*</code> and <code>right-*</code> float utility classes (along with responsive breakpoint classes)</li>
-<li>Renamed <code>text-*</code> utility alignment classes to <code>.text-align-*</code> and text-transform utility classes to <code>.text-transform-*</code></li>
-<li>Refactored <code>button-icon</code> sizing to add sizing for each size under <code>--button-icon-*-size</code> variable definitions, these sizes are inhertited by the <code>&lt;svg&gt;</code> element within a <code>.button-icon</code> element without the need for an <code>icon-*</code> class</li>
-</ul>
-<h2 id="additions">Additions</h2>
-<ul>
-<li>Added <code>xxs</code>, and <code>xxl</code> variants for all global classes (<code>font-size</code>, <code>line-height</code>, etc.) elements (<code>input</code>, <code>button</code>, etc.) and <code>@media</code> query breakpoints</li>
-<li>Added support for <code>control-reversed</code> modifier</li>
-<li>Added support for <code>[disabled]</code> attribute on <code>&lt;a class="button ..."&gt;</code></li>
-<li>Added space utility classes to add <code>width</code> and <code>height</code> to an element based on <code>--space-*</code> custom property defintions</li>
-<li>Added <code>.all-caps</code> as a replacement for <code>.small-caps</code> with size variants for greater flexibility</li>
-<li>Extended <code>.display-title</code> with size variants for greater flexibility</li>
-<li>Extended <code>.lead</code> with size variants for greater flexibility</li>
-<li>Added <code>.group</code> base class with alignment and size variants to be placed on wrappers of <code>&lt;ul&gt;</code> lists with margins applied to <code>&lt;li&gt;</code> elements within</li>
-<li>Added <code>--spinner-width</code> to control the thickness of the <code>.spinner</code> element</li>
-<li>Added support for <code>.spinner-*</code> sizes</li>
-<li>Added <code>.box-shadow-*</code> sizes and utility classes</li>
-<li>Add <code>margin-negative-*</code> utility classes for all sizes</li>
-<li>Add <code>margin-vertical-*</code> utility classes for relative sizes (em) including 1, 3-4, 1-2, 1-4</li>
-<li>Add <code>min-height-*</code> utility classes <code>vh</code> based <code>min-height</code> settings</li>
-<li>Add <code>order-*</code> utility classes for 1, 2, 3 and aliases first, middle, last</li>
-<li>Added <code>.button-text</code> modifier class</li>
-<li>Added <code>.font-family</code>, <code>.font-weight</code>, <code>.font-size</code>, <code>.line-height</code>, <code>.letter-spacing</code>, and <code>.box-shadow</code> utility classes for base settings</li>
-<li>Added <code>--link-text-decoration-skip</code> and <code>--link-hover-text-decoration-skip</code> for links</li>
-<li>Added <code>--all-caps-color</code> variable definition</li>
-<li>Added <code>--label-text-transform</code> and <code>--label-letter-spacing</code> variable definitions</li>
-<li>Added <code>--control-text-transform</code>, <code>--control-letter-spacing</code> variable definitions</li>
-<li>Added <code>--definition-term-line-height</code> and <code>--definition-description-line-height</code> variable definitions</li>
-<li>Added <code>text-decoration-underline</code> and <code>text-decoration-none</code> utility classes</li>
-</ul>
-<h2 id="fixes">Fixes</h2>
-<ul>
-<li>Added <code>.table-responsive</code> to margin reset</li>
-<li>Fixed <code>.button-group</code> not resetting <code>border-radius</code> for direct decendants</li>
-<li>Removed <code>height</code> from being set on <code>input[type="range"]</code> with <code>height: auto</code></li>
-<li>Updated <code>package.json</code> scripts to be more descriptive and meaningful</li>
-<li>Fixed <code>.control</code> check indicator border color to default to checked background color</li>
-<li>Updated <code>.control:checked</code> indicator SVG glyph, no longer <code>base64</code> but rather <code>utf-8</code> encoding for editing and scaling purposes</li>
-<li>Removed <code>:not(:disabled)</code> from <code>input</code>, <code>.field-float-label</code>, <code>select</code>, and <code>button</code> styles</li>
-<li>Fix direct child <code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> of <code>&lt;li&gt;</code> recieving styles to avoid nested markup inheriting styles</li>
-<li>Add <code>px</code> affix to <code>flex-1</code> utility class flex property value: <code>flex: 1 1 0px</code> for IE support</li>
-<li>Fixes to links <code>text-decoration-skip-ink</code> property value adding <code>text-decoration-skip-ink: auto;</code> to links by default</li>
-</ul>
-<h2 id="stylechanges">Style Changes</h2>
-<ul>
-<li>Tighten global <code>--space-*</code> sizes</li>
-<li>Increase default global <code>--border-radius</code> custom property definition to <code>0.125rem</code> (<code>4px</code>)</li>
-<li>Update default global <code>--max-width</code> and <code>--letter-spacing</code> custom property definitions to have generic scales</li>
-<li>Tightened <code>progress</code> and <code>input[type="range"]</code> heights</li>
-<li>Tightened <code>.control</code> size scale</li>
-<li>Decrease default global <code>--label-magin</code> custom property definition</li>
-<li>Update default global <code>--field-magin</code> and <code>--range-magin</code> custom property definition</li>
-<li>Updated default <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> styles</li>
-<li>Updated default <code>-icon-*</code> sizes</li>
-</ul>
-<h2 id="documentation">Documentation</h2>
-<ul>
-<li>Removed <code>&lt;mark&gt;</code> indicator variants</li>
-<li>Add prettier formatter for <code>.md</code> markdown files</li>
-<li>Docs move quick start to getting started</li>
+<li>Fix control checkbox tick rendering error</li>
 </ul>
     </section>
 </article>
