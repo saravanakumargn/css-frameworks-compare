@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "zurb"
   },
-  "datePublished" : "2018-11-16",
+  "datePublished" : "2019-01-28",
   "publisher" : {
     "@type" : "Organization",
     "name" : "zurb"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/zurb/foundation-sites",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "HTML, CSS, JavaScript, Shell",
-  "softwareVersion" : "v6.5.1",
+  "softwareVersion" : "v6.5.3",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "27921"
+    "ratingCount" : "27930"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-01-22",
+    "datePublished" : "2019-01-30",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for plain. This framework Feature types are full"
   }
 }
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v6.5.1</h2>
-                <p class="card-text"><small>154.07 kB</small></p>
+                <h2 class="card-title">v6.5.3</h2>
+                <p class="card-text"><small>154.10 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Nov 16, 2018</h2>
+                <h2 class="card-title">Jan 28, 2019</h2>
                 <p class="card-text"><small>Created at Oct 14, 2011</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jan 17, 2019
+                <h2 class="card-title">Jan 29, 2019
                 </h2>
             </div>
         </div>
@@ -127,25 +127,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">404</h2>
+                <h2 class="card-title">402</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">5,814</h2>
+                <h2 class="card-title">5,817</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">27,921</h2>
+                <h2 class="card-title">27,930</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,449</h2>
+                <h2 class="card-title">1,450</h2>
             </div>
         </div>
     </div>
@@ -171,29 +171,13 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on November 16, 2018 for v6.5.1</small>
+        Release Notes <small>on January 28, 2019 for v6.5.3</small>
     </h1>
-        <h2 id="foundationv65120181115">Foundation v6.5.1 (2018-11-15)</h2>
-<p>This version fixes the distribution files for the JavaScript plugins that were generated for the wrong version (ongoing v6.6.0 instead of released v6.5.0) and provide various bug fixes and documentation updates.</p>
-<h3 id="changesfromv650httpsgithubcomzurbfoundationsitesreleasestagv650">Changes from <a href="https://github.com/zurb/foundation-sites/releases/tag/v6.5.0">v6.5.0</a></h3>
+        <h2 id="foundationv65320190127">Foundation v6.5.3 (2019-01-27)</h2>
+<p>This version fixes the invalid sourcemap files that were shipped in <a href="https://github.com/zurb/foundation-sites/releases/tag/v6.5.2">v6.5.2</a> (https://github.com/zurb/foundation-sites/pull/11647).</p>
+<h3 id="changesfromv652httpsgithubcomzurbfoundationsitesreleasestagv652">Changes from <a href="https://github.com/zurb/foundation-sites/releases/tag/v6.5.2">v6.5.2</a></h3>
 <ul>
-<li>🐛  <samp>#11573</samp> - Ensure Dropdown label to have an ID for a11y (@ncoden, #11572)</li>
-<li>🐛  <samp>#11579</samp> - Cleanup "is-active" class in AccordionMenu when closed (@ncoden, #11383)</li>
-<li>🐛  <samp>#11581</samp> - Fix arrow color in clear dropdown Button (@ncoden, #11581)</li>
-<li>📖  <samp>#11562</samp> - Cleanup an invalid beacon in Grid docs (@xeptore)</li>
-<li>📖  <samp>#11564</samp> - Add missing doc for the "$print-hrefs" setting (@ncoden)</li>
-<li>🚚  Reimport incorrectly imported patch for #11418 (16b8e38, previously 55e60ee).</li>
-<li>🚚  Regenerate JavaScript plugins distribution files to reflect the new version.</li>
-</ul>
-<h3 id="contributors">Contributors</h3>
-<ul>
-<li>mbehboodian (<a href="https://github.com/xeptore">@xeptore</a>) [1]</li>
-<li>Nicolas Coden (<a href="https://github.com/ncoden">@ncoden</a>) [7]</li>
-</ul>
-<p>Special thanks to:</p>
-<ul>
-<li>Daniel Ruf (<a href="https://github.com/DanielRuf">@DanielRuf</a>) for his assistance in issues and his reviews of pull requests.</li>
-<li>Jeremy Englert (<a href="https://github.com/JeremyEnglert">@JeremyEnglert</a>) for his assistance in issues.</li>
+<li>🚚  Regenerate distribution files with valid sourcemaps</li>
 </ul>
     </section>
 </article>

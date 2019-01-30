@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2019-01-15",
+  "datePublished" : "2019-01-26",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v3.9.0",
+  "softwareVersion" : "v3.9.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "43805"
+    "ratingCount" : "44015"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-01-22",
+    "datePublished" : "2019-01-30",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components that implement Google&#x27;s Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(4.08 MB), TypeScript(55.85 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(4.09 MB), TypeScript(56.48 kB), HTML(302.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.9.0</h2>
+                <h2 class="card-title">v3.9.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Jan 15, 2019</h2>
+                <h2 class="card-title">Jan 26, 2019</h2>
                 <p class="card-text"><small>Created at Aug 19, 2014</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jan 21, 2019
+                <h2 class="card-title">Jan 30, 2019
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">291</h2>
+                <h2 class="card-title">299</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">8,857</h2>
+                <h2 class="card-title">8,943</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">43,805</h2>
+                <h2 class="card-title">44,015</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,325</h2>
+                <h2 class="card-title">1,324</h2>
             </div>
         </div>
     </div>
@@ -169,55 +169,80 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on January 15, 2019 for v3.9.0</small>
+        Release Notes <small>on January 26, 2019 for v3.9.1</small>
     </h1>
-        <h6 id="jan142019"><em>Jan 14, 2019</em></h6>
-<p>Big thanks to the 17 contributors who made this release possible!</p>
+        <h6 id="jan262019"><em>Jan 26, 2019</em></h6>
+<p>Big thanks to the 30 contributors who made this release possible!</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>💄 Add a new Link component (#14093) @joshwooding</li>
-<li>💄 Important update of the Badge component (#14121) @joshwooding</li>
+<li>🐛 Fix many Dialog issues (#13789, #14240, #14288) @joshwooding, @zharris6</li>
+<li>📝 Promote material-ui-pickers (#14277)</li>
+<li>🚀 Remove the keycode dependency (#14248)</li>
 <li>And many more 🐛 bug fixes and 📝 documentation improvements.</li>
 </ul>
-<h3 id="materialuicorev390"><code>@material-ui/core@v3.9.0</code></h3>
+<h3 id="materialuicorev391"><code>@material-ui/core@v3.9.1</code></h3>
 <ul>
-<li>[ButtonBase] Reduce keyup timeout interval to 500ms (#14120) @rfbotto</li>
-<li>[InputAdornment] Add disablePointerEvents prop (#14123) @rfbotto</li>
-<li>[Chip] Fix wrong font color for default variant with secondary color (#14125) @bjm904</li>
-<li>[IconButton] Warn when providing onClick to a child of a button (#14160) @oliviertassinari</li>
-<li>[Link] Refinement (#14162) @oliviertassinari</li>
-<li>[Modal] Change keydown handling to use synthetic event (#14134) @rfbotto</li>
-<li>[Badge] Give Badge dynamic width and other improvements (#14121) @joshwooding</li>
+<li>[Tooltip] Add example using node (#14182) @Varad25</li>
+<li>[Badge] Make badgeContent optional in ts too (#14186) @kLabz</li>
+<li>[CircularProgress] Fix animation jumps on indeterminate variant (#14198) @rfbotto</li>
+<li>[Textarea] Fix line height visibility issue on SSR (#14197) @rfbotto</li>
+<li>[Link] Fix type declaration for props (#14193) @lunaryorn</li>
+<li>[useMediaQuery] Synchronize typescript definition with js one (#14214) @sthenault</li>
+<li>[MenuList] Add <code>home</code> and <code>end</code> key support (#14212) @dallin-christensen</li>
+<li>[InputAdornment] Automatically inherit the variant (#14023) @joshwooding</li>
+<li>[Dialog] Add missing PaperComponent property in the definition (#14240) @zharris6</li>
+<li>[Dialog] Check target has not changed before closing (#13789) @joshwooding</li>
+<li>[TextField] Fix to expose helperText for accessibility (#14266) @mlenser</li>
+<li>[Modal] Hide the manager property (#14273) @oliviertassinari</li>
+<li>[GridListTileBar] Add missing titleWrap key (#14275) @nroot86vml</li>
+<li>[Pickers] Promote material-ui-pickers (#14277) @oliviertassinari</li>
+<li>[Select] Add customization demo (#14281) @bemineni</li>
+<li>[ExpansionPanel] Fix square support (#14282) @brandonvilla21</li>
+<li>[Dialog] Fix scrollbar (#14288) @joshwooding</li>
+<li>[LinearProgress] Remove dead bar2Determinate CSS class (#14298) @lmcarreiro</li>
+<li>[Select] Help automated UI testing (#14289) @oumaima1234</li>
+<li>[MobileStepper] Fix typo CSS API (#14300) @DenrizSusam</li>
+<li>[Link] Add ts test and distinguish from react-router link test (#14304) @rosskevin</li>
 </ul>
-<h3 id="materialuistylesv300alpha8"><code>@material-ui/styles@v3.0.0-alpha.8</code></h3>
+<h3 id="materialuistylesv300alpha9"><code>@material-ui/styles@v3.0.0-alpha.9</code></h3>
 <ul>
-<li>[styles] Add test case for class extension with classes prop (#14127) @eps1lon</li>
-<li>[styles] Document the CSS prefixing strategy on the server (#14139) @eps1lon</li>
-<li>[styles] Add missing dependency hoist-non-react-statics (#14164) @joglr</li>
+<li>[styles] Better warning message (#14290) @oliviertassinari</li>
+<li>[styles] Document the right react-jss version for legacy style modules (#14237) @mrmedicine</li>
+</ul>
+<h3 id="materialuilabv300alpha29"><code>@material-ui/lab@v3.0.0-alpha.29</code></h3>
+<ul>
+<li>[Slider] Support multitouch for dragging multiple sliders (#13320) @Pajn</li>
+</ul>
+<h3 id="materialuisystemv300alpha2"><code>@material-ui/system@v3.0.0-alpha.2</code></h3>
+<ul>
+<li>[system] Add fractions support (#14209) @oliviertassinari</li>
+<li>[system] Better zindex documentation (#14229) @oliviertassinari</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Fix select multiple prop description (#13923) @AkselsLedins</li>
-<li>[docs] Reduce by /50 the website traffic (#14122) @oliviertassinari</li>
-<li>[docs] Handle the exactProp usage in the API generation (#14130) @tallpants</li>
-<li>[docs] Fix minor wording/typo issues (#14142) @eps1lon</li>
-<li>[docs] Add gadr.io in the showcase (#14128) @clabbeaf</li>
-<li>[docs] Fix deprecated Typography variants warning in demos (#14156) @joshwooding</li>
-<li>[docs] Add 5 sites to Showcase, simplify image paths (#14154) @mbrookes</li>
-<li>[docs] Add polyfill suggestion to ButtonBase (#14158) @ianschmitz</li>
-<li>[docs] Add a new site to showcase (#14163) @ValleyZw</li>
-<li>[docs] Update Tooltip info on prop spread (#14165) @e-x-wilson</li>
-<li>[docs] Fix typo in click-anyway-listener-zh.md (#14118) @Wu-Qijun</li>
-<li>[docs] Update example projects with Material Sense (#14168) @alexanmtz</li>
-<li>[docs] Icon name consistency (#14171) @harvey56</li>
-<li>[docs] Add notes about next branch (#14151) @eps1lon</li>
-<li>[docs] Add Yakaz to homepage, backers &amp; readme (#14180) @mbrookes</li>
+<li>[docs] Update supported components page (#13905) @MidnightDesign</li>
+<li>[docs] Fix componentPropType display (#14194) @eps1lon</li>
+<li>[docs] Fix fade transition visual bug on codesandbox (#14200) @rfbotto</li>
+<li>[docs] Handle missing errors more gracefully (#14210) @oliviertassinari</li>
+<li>[docs] Fix grammar in related-projects.md (#14227) @jasonkylefrank</li>
+<li>[docs] Add Portuguese translation notification (#14230) @mbrookes</li>
+<li>[docs] New Crowdin translations (#14223) @muibot</li>
+<li>[docs] Minor fix of selection control labels doc (#14238) @ccesare</li>
+<li>[docs] Correct Bethesda.net title in app list (#14242) @sbolel</li>
+<li>[docs] Change ponyfill to polyfill in use-media-query.md (#14215) @MathiasKandelborg</li>
+<li>[docs] Fix typos on the links for the JSS docs (#14235) @viniciusCamargo</li>
+<li>[docs] Improve the performance (#14250) @oliviertassinari</li>
+<li>[docs] Notification by locale (#14256) @oliviertassinari</li>
+<li>[docs] Add component prop and React Router usage to Typescript guide (#14170) @hedgerh</li>
+<li>[docs] Tiny fixes (#14259) @mbrookes</li>
+<li>[docs] Better server-side rendering example (#14269) @unalterable</li>
+<li>[docs] Add Misheneye to the showcase (#14262) @gdub01</li>
 </ul>
 <h3 id="core">Core</h3>
 <ul>
-<li>[core] Remove unnecessary plugins in .eslintrc (#14161) @WebDeg-Brian</li>
-<li>[core] Fix the CDN release (#14172) @oliviertassinari</li>
-<li>[core] Remove unnecessary rules in .eslintrc (#14173) @WebDeg-Brian</li>
+<li>[core] Upgrade the dependencies (#14196) @oliviertassinari</li>
+<li>[core] Remove keycode() (#14248) @oliviertassinari</li>
+<li>[core] Update the dev dependencies (#14261) @oliviertassinari</li>
 </ul>
     </section>
 </article>
