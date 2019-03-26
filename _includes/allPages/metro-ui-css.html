@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "olton"
   },
-  "datePublished" : "2019-03-04",
+  "datePublished" : "2019-03-17",
   "publisher" : {
     "@type" : "Person",
     "name" : "olton"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/olton/Metro-UI-CSS",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript, PHP",
-  "softwareVersion" : "v4.2.38",
+  "softwareVersion" : "v4.2.39",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "6048"
+    "ratingCount" : "6060"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-03-12",
+    "datePublished" : "2019-03-26",
     "reviewBody" : "Written in  Less Javascript This is frameworks design for plain, metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style.</p>
     <p>Developed by User:olton</p>
-    <p><small>Used languages: CSS(2.72 MB), JavaScript(1.49 MB), PHP(1.05 kB)</small></p>
+    <p><small>Used languages: CSS(2.73 MB), JavaScript(1.50 MB), PHP(1.05 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.2.38</h2>
+                <h2 class="card-title">v4.2.39</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Mar 4, 2019</h2>
+                <h2 class="card-title">Mar 17, 2019</h2>
                 <p class="card-text"><small>Created at Mar 9, 2012</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Mar 4, 2019
+                <h2 class="card-title">Mar 17, 2019
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">14</h2>
+                <h2 class="card-title">13</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">1,952</h2>
+                <h2 class="card-title">1,951</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">6,048</h2>
+                <h2 class="card-title">6,060</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">587</h2>
+                <h2 class="card-title">588</h2>
             </div>
         </div>
     </div>
@@ -169,14 +169,25 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on March 4, 2019 for v4.2.38</small>
+        Release Notes <small>on March 17, 2019 for v4.2.39</small>
     </h1>
-        <h3 id="4238">4.2.38</h3>
+        <h3 id="4239">4.2.39</h3>
 <ul>
-<li>[x] ListView: add class <code>.vertical-layout</code> for <code>icons-*</code> view mode</li>
-<li>[x] Windows: partial fixed behavior window when user click on min, max button in min, max state, issue #1331 </li>
-<li>[x] TreeView: fix wrong works node collapse, expand, issue #1332</li>
-<li>[x] NavView: fix calc main menu height </li>
+<li>[x] NavView: minor improve styling </li>
+<li>[x] NavView: add method <code>pullClick()</code> for emulate pull button click at runtime </li>
+<li>[x] NavView: add class <code>.focusableItems</code> to add focus state for items</li>
+<li>[x] NavView: add attribute <code>data-active-state="true|false"</code> to add active state for menu items</li>
+<li>[x] NavView: add <code>.badges</code> container for menu item for collect menu item badges</li>
+<li>[x] NavView: add <code>.data-box</code> container for navigation view pane</li>
+<li>[x] IconBox: new css component</li>
+<li>[x] Panel: fix draggable</li>
+<li>[x] Panel: add custom buttons to panel title</li>
+<li>[x] Table: fix assign classes from attribute <code>data-cls-head-cell</code></li>
+<li>[x] Breadcrumbs: add <code>.breadcrumb-item</code> class</li>
+<li>[x] Draggable: fix recreate element content when drag started</li>
+<li>[x] Table: fix implements custom class to custom wrappers (search, pagination, …), issue #1335</li>
+<li>[x] Select: fix error for validating required func for select with <code>multiple</code> option, issue #1338</li>
+<li>[x] Select: for validating added functions <code>length</code>, <code>minlength</code>, <code>maxlength</code> for select with <code>multiple</code> option </li>
 </ul>
     </section>
 </article>
