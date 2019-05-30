@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "jgthms"
   },
-  "datePublished" : "2019-02-08",
+  "datePublished" : "2019-05-19",
   "publisher" : {
     "@type" : "Person",
     "name" : "jgthms"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/jgthms/bulma",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, Shell",
-  "softwareVersion" : "0.7.4",
+  "softwareVersion" : "0.7.5",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "34533"
+    "ratingCount" : "34955"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-05-05",
+    "datePublished" : "2019-05-30",
     "reviewBody" : "Written in Sass   This is frameworks design for plain, metro. This framework Feature types are prototype"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Modern CSS framework based on Flexbox</p>
     <p>Developed by User:jgthms</p>
-    <p><small>Used languages: CSS(320.21 kB), Shell(1.22 kB)</small></p>
+    <p><small>Used languages: CSS(337.95 kB), Shell(1.22 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,21 +100,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">0.7.4</h2>
-                <p class="card-text"><small>126.01 kB</small></p>
+                <h2 class="card-title">0.7.5</h2>
+                <p class="card-text"><small>133.85 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Feb 8, 2019</h2>
+                <h2 class="card-title">May 19, 2019</h2>
                 <p class="card-text"><small>Created at Jan 24, 2016</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Apr 17, 2019
+                <h2 class="card-title">May 28, 2019
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">295</h2>
+                <h2 class="card-title">279</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">2,752</h2>
+                <h2 class="card-title">2,802</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">34,533</h2>
+                <h2 class="card-title">34,955</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">689</h2>
+                <h2 class="card-title">677</h2>
             </div>
         </div>
     </div>
@@ -170,8 +170,89 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on February 8, 2019 for 0.7.4</small>
+        Release Notes <small>on May 19, 2019 for 0.7.5</small>
     </h1>
-        <p>Same as <code>0.7.3</code> but with the CSS files attached.</p>
+        <h3 id="deprecationwarning">Deprecation warning</h3>
+<p>The <code>form.sass</code> file is <strong>deprecated</strong>. It has moved into its own <code>/form</code> folder. If you were importing <code>form.sass</code>, please import <code>sass/form/_all.sass</code> now.</p>
+<p>If you were simply importing the whole of Bulma with <code>@import "~/bulma/bulma.sass"</code> or similar, you won't have to change anything, and everything will work as before. 😃</p>
+<h3 id="newfeatures">New features</h3>
+<h4 id="supportforoverridingthefontfamily">Support for overriding the <code>font-family</code></h4>
+<p>You can now specify a different <code>font-family</code> for the <code>.title</code>, <code>.subtitle</code> and <code>.button</code> by using the variables <code>$title-family</code>, <code>$subtitle-family</code> and <code>$button-family</code> respectively.</p>
+<p>Simply set a value when importing Bulma:</p>
+<pre><code class="scss language-scss">$title-family: "Georgia", serif;
+</code></pre>
+<ul>
+<li>#2375 Add <code>.is-relative</code> helper</li>
+<li>#2321 Make <code>.navbar</code> focus behave like hover for the navigation</li>
+<li>#2290 Fix #1186 -&gt; Reset the offset on columns</li>
+<li>#2231 Add <code>.has-text-weight-medium</code> helper</li>
+<li>#2224 Add customizable border radius to progress bar</li>
+<li>#2480 Add <code>$footer-color</code> variable</li>
+</ul>
+<h3 id="improvements">Improvements</h3>
+<ul>
+<li>#2396 Update docs with webpack 4 example</li>
+<li>#2381 Make centered buttons have equal margin</li>
+<li>Fix #2297 -&gt; Remove <code>.container</code> fixed width values, use <code>flex-grow</code></li>
+<li>#2478 Move form.sass into its own folder</li>
+</ul>
+<h3 id="bugfixes">Bug fixes</h3>
+<ul>
+<li>#2420 Fix #2414 -&gt; Fix <code>align</code> attribute in <code>td/th</code> being ignored</li>
+<li>#2463 Remove duplicate <code>.has-addons</code> in <code>tag.sass</code></li>
+<li>#2253 Fix <code>$gap</code> variable default value</li>
+<li>#2273 Fix #2258 -&gt; Fix Indeterminate Progress Bar animation in Firefox</li>
+<li>#2175 Proper aligning for <code>.tabs</code> within <code>.content</code></li>
+<li>#2476 Fix #2441 -&gt; Correct active pagination link text colour on hero</li>
+</ul>
+<p>Fix #1979 -&gt; Correct loading spinner color when a button is:</p>
+<ul>
+<li>outlined and hovered/focused</li>
+<li>outlined, inverted and hovered/focused</li>
+</ul>
+<h3 id="newvariables">New variables</h3>
+<h4 id="initialvariables">Initial variables</h4>
+<ul>
+<li><code>$block-spacing</code></li>
+</ul>
+<h4 id="base">Base</h4>
+<ul>
+<li><code>$body-font-size</code></li>
+<li><code>$small-font-size</code></li>
+<li><code>$pre-font-size</code></li>
+<li><code>$pre-padding</code></li>
+<li><code>$pre-code-font-size</code></li>
+</ul>
+<h4 id="components">Components</h4>
+<ul>
+<li><code>$card-header-padding</code></li>
+<li><code>$card-content-padding</code></li>
+<li><code>$card-media-margin</code></li>
+<li><code>$dropdown-menu-min-width</code></li>
+<li><code>$dropdown-content-padding-bottom</code></li>
+<li><code>$dropdown-content-padding-top</code></li>
+<li><code>$level-item-spacing</code></li>
+<li><code>$menu-list-line-height</code></li>
+<li><code>$menu-list-link-padding</code></li>
+<li><code>$menu-nested-list-margin</code></li>
+<li><code>$menu-nested-list-padding-left</code></li>
+<li><code>$menu-label-font-size</code></li>
+<li><code>$menu-label-letter-spacing</code></li>
+<li><code>$menu-label-spacing</code></li>
+<li><code>$pagination-item-font-size</code></li>
+<li><code>$pagination-item-margin</code></li>
+<li><code>$pagination-item-padding-left</code></li>
+<li><code>$pagination-item-padding-right</code></li>
+<li><code>$panel-margin</code></li>
+<li><code>$panel-tabs-font-size</code></li>
+</ul>
+<h4 id="elements">Elements</h4>
+<ul>
+<li><code>$container-offset</code></li>
+</ul>
+<h4 id="grid">Grid</h4>
+<ul>
+<li><code>$tile-spacing</code></li>
+</ul>
     </section>
 </article>
