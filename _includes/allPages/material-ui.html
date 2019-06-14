@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2019-05-27",
+  "datePublished" : "2019-06-13",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v4.0.1",
+  "softwareVersion" : "v4.1.1",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "47406"
+    "ratingCount" : "47886"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-05-30",
+    "datePublished" : "2019-06-14",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components for faster and easier web development. Build your own design system, or start with Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(4.18 MB), TypeScript(74.23 kB), HTML(304.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(4.20 MB), TypeScript(77.68 kB), HTML(304.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.0.1</h2>
+                <h2 class="card-title">v4.1.1</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">May 27, 2019</h2>
+                <h2 class="card-title">Jun 13, 2019</h2>
                 <p class="card-text"><small>Created at Aug 19, 2014</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">May 30, 2019
+                <h2 class="card-title">Jun 14, 2019
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">344</h2>
+                <h2 class="card-title">323</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">10,424</h2>
+                <h2 class="card-title">10,661</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">47,406</h2>
+                <h2 class="card-title">47,886</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,327</h2>
+                <h2 class="card-title">1,335</h2>
             </div>
         </div>
     </div>
@@ -169,82 +169,60 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on May 27, 2019 for v4.0.1</small>
+        Release Notes <small>on June 13, 2019 for v4.1.1</small>
     </h1>
-        <h6 id="may272019"><em>May 27, 2019</em></h6>
-<p>A big thanks to the 23 contributors who made this release possible!</p>
+        <h6 id="june132019"><em>June 13, 2019</em></h6>
+<p>Big thanks to the 10 contributors who made this release possible!</p>
 <p>Here are some highlights ✨:</p>
 <ul>
-<li>🐛 A stability release after the release of v4.0.0.</li>
-<li>🤖 A new codemod to migrate the theme.spacing.unit API (#15782) @joshwooding</li>
-<li>🐛 Fix IE 11 crash (#15856) @aditya1906</li>
-<li>📚 Clean up the documentation after the next -&gt; master migration</li>
+<li>🐛 Fix react-hot-loader regression (#16195).</li>
+<li>🐛 Fix TypeScript icons regression (#16139) @MayhemYDG.</li>
+<li>🐛 Fix withWidth regression (#16196).</li>
+<li>💄 Add Slider range support (#15703).</li>
+<li>And many more 📚 improvements.</li>
 </ul>
-<h3 id="materialuicorev401"><code>@material-ui/core@v4.0.1</code></h3>
+<h3 id="materialuicorev411"><code>@material-ui/core@v4.1.1</code></h3>
 <ul>
-<li>[Buttons] Consolidate ripple props type declarations (#15843) @lychyi</li>
-<li>[IconButton] Add disable ripple props (#15864) @lychyi</li>
-<li>[ListItemText] Update classes type definitions (#15822) @davjo664</li>
-<li>[Tabs] Hide scrollbar on MacOS (#15762) @Umerbhat</li>
-<li>[Tooltip] Fix alignment issues (#15811) @pkmnct</li>
-<li>[styles] Add MuiLink to ComponentsPropsList (#15814) @stuartgrigg</li>
+<li>[ButtonBase] Fix riple not stoping on mouse up (#16142) @joaosilvalopes</li>
+<li>[useMediaQuery] Defensive logic against matchMedia not available (#16196) @oliviertassinari</li>
+<li>[Typography] Fix variantMapping rejecting partial type (#16187) @eps1lon</li>
 </ul>
-<h3 id="materialuiiconsv401"><code>@material-ui/icons@v4.0.1</code></h3>
+<h3 id="materialuistylesv411"><code>@material-ui/styles@v4.1.1</code></h3>
 <ul>
-<li>[icons] Fix the TypeScript definition of createSvgIcon (#15861) @alexkirsz</li>
+<li>[styles] Fix react-hot-loader regression (#16195) @oliviertassinari</li>
 </ul>
-<h3 id="materialuicodemodv401"><code>@material-ui/codemod@v4.0.1</code></h3>
+<h3 id="materialuiiconsv420"><code>@material-ui/icons@v4.2.0</code></h3>
 <ul>
-<li>[codemod] Create spacing api codemod (#15782) @joshwooding</li>
+<li>[icons] Fix generated index.d.ts (#16139) @MayhemYDG</li>
+<li>[icons] Update and clean the icons (#16166) @oliviertassinari</li>
 </ul>
-<h3 id="materialuistylesv401"><code>@material-ui/styles@v4.0.1</code></h3>
+<h3 id="materialuilabv400alpha16"><code>@material-ui/lab@v4.0.0-alpha.16</code></h3>
 <ul>
-<li>[styles] Fix Symbol() usage in IE11 (#15856) @aditya1906</li>
+<li>[Slider] Support range (#15703) @oliviertassinari</li>
 </ul>
-<h3 id="materialuilabv400alpha14"><code>@material-ui/lab@v4.0.0-alpha.14</code></h3>
+<h3 id="materialuisystemv420"><code>@material-ui/system@v4.2.0</code></h3>
 <ul>
-<li>[lab] Add missing clsx calls (#15809) @merceyz</li>
+<li>[system] Add overflow, textOverflow, whiteSpace properties (#16129) @aditya1906</li>
+<li>[system] Add remaining flexbox properties (#16164) @aditya1906</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Add SECURITY.md (#15804) @oliviertassinari</li>
-<li>[docs] Add Transitions header in the dialogs page (#15847) @prasook-jain</li>
-<li>[docs] Add extendedFab migration (#15866) @chanand</li>
-<li>[docs] Add missing Breadcrumbs CSS API (#15813) @joshwooding</li>
-<li>[docs] Correctly fix the Google Ad issue @oliviertassinari</li>
-<li>[docs] Fix Boolan -&gt; Boolean (#15880) @jaironalves</li>
-<li>[docs] Fix Link import (#15871) @bennyn</li>
-<li>[docs] Fix deploy command @oliviertassinari</li>
-<li>[docs] Fix empty v4 blog post link (#15831) @drac</li>
-<li>[docs] Fix typo in styles advanced guide (#15844) @mgvparas</li>
-<li>[docs] Follow the documentation, my bad @oliviertassinari</li>
-<li>[docs] Global at rule is called font-face (#15865) @aditya1906</li>
-<li>[docs] Hide the Ad fallback to Google (#15815) @oliviertassinari</li>
-<li>[docs] Improve SEO structure @oliviertassinari</li>
-<li>[docs] Improve lighthouse performance score (#15758) @eps1lon</li>
-<li>[docs] Let's take our time, we don't need to rush v5 (#15826) @oliviertassinari</li>
-<li>[docs] Minor fixes (#15836) @mbrookes</li>
-<li>[docs] Minor improvements to codesandbox demos and examples (#15857) @eps1lon</li>
-<li>[docs] Move links to the master branch (#15830) @oliviertassinari</li>
-<li>[docs] Redirect next.material-ui.com to material-ui.com (#15838) @mbrookes</li>
-<li>[docs] Update Installation.md for v4.0.0 (#15818) @hinsxd</li>
-<li>[docs] Update the translations (#15807) @mbrookes</li>
-<li>[docs] Update the v4 blog post (#15862) @mbrookes</li>
-<li>[docs] Update translations (#15841) @mbrookes</li>
-<li>[docs] Use makeStyles from core in layout examples (#15845) @divyanshutomar</li>
-<li>[docs] Fix typo in README (#15817) @ammaristotle</li>
-<li>[example] Update gatsby-plugin-material-ui dependency (#15810) @hupe1980</li>
+<li>[docs] Add 700 font weight support (#16141) @aditya1906</li>
+<li>[docs] Change http to https part 2 (#16171) @aditya1906</li>
+<li>[docs] Fix build on windows (#16154) @merceyz</li>
+<li>[docs] Fix small typos in v3-&gt;v4 migration guide (#16174) @charlax</li>
+<li>[docs] Improve the CssBaseline description (#16148) @levigunz</li>
+<li>[docs] Lowercase text to demo text-transform (#16160) @blmoore</li>
+<li>[docs] Pseudo-class: the style rules that require an increase of specificity (#16120) @oliviertassinari</li>
+<li>[docs] Remove <code>CSS to MUI webpack Loader</code> (#16175) @sabrinaluo</li>
+<li>[docs] import Omit Type from @material-ui/types (#16157) @aditya1906</li>
 </ul>
 <h3 id="core">Core</h3>
 <ul>
-<li>[core] Add cross-env to docs:size-why (#15816) @merceyz</li>
-<li>[core] Change the top package name so we get the number of dependents packages @oliviertassinari</li>
-<li>[core] Fix not appearing in github used/dependents (#15859) @eps1lon</li>
-<li>[core] Prepare focus visible polyfill in ref phase (#15851) @eps1lon</li>
-<li>[core] Remove babel-node for server/shared modules (#15764) @cvanem</li>
-<li>[core] Remove dependency on workspace (#15849) @eps1lon</li>
-<li>Create FUNDING.yml @oliviertassinari</li>
-<li>[test] Remove FontAwesome from screenshot tests (#15853) @eps1lon</li>
+<li>[core] Add TypeScript types for styled (#16133) @merceyz</li>
+<li>[core] Fix withStyles not including props (#16134) @merceyz</li>
+<li>[core] Fix yarn docs:api removing <br> tags on windows (#16165) @merceyz</li>
+<li>[core] Remove bootstrap v4-alpha (#16177) @aditya1906</li>
 </ul>
     </section>
 </article>
