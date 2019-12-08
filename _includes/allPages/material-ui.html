@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "mui-org"
   },
-  "datePublished" : "2019-06-13",
+  "datePublished" : "2019-12-07",
   "publisher" : {
     "@type" : "Organization",
     "name" : "mui-org"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/mui-org/material-ui",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "JavaScript, TypeScript, HTML, Shell",
-  "softwareVersion" : "v4.1.1",
+  "softwareVersion" : "v4.7.2",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "47886"
+    "ratingCount" : "52782"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-06-14",
+    "datePublished" : "2019-12-08",
     "reviewBody" : "Written in   Javascript This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>React components for faster and easier web development. Build your own design system, or start with Material Design.</p>
     <p>Developed by Organization:mui-org</p>
-    <p><small>Used languages: JavaScript(4.20 MB), TypeScript(77.68 kB), HTML(304.00 bytes), Shell(144.00 bytes)</small></p>
+    <p><small>Used languages: JavaScript(4.39 MB), TypeScript(144.60 kB), HTML(304.00 bytes), Shell(144.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.1.1</h2>
+                <h2 class="card-title">v4.7.2</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Jun 13, 2019</h2>
+                <h2 class="card-title">Dec 7, 2019</h2>
                 <p class="card-text"><small>Created at Aug 19, 2014</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jun 14, 2019
+                <h2 class="card-title">Dec 7, 2019
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">323</h2>
+                <h2 class="card-title">304</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">10,661</h2>
+                <h2 class="card-title">13,362</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">47,886</h2>
+                <h2 class="card-title">52,782</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,335</h2>
+                <h2 class="card-title">1,332</h2>
             </div>
         </div>
     </div>
@@ -169,60 +169,42 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on June 13, 2019 for v4.1.1</small>
+        Release Notes <small>on December 7, 2019 for v4.7.2</small>
     </h1>
-        <h6 id="june132019"><em>June 13, 2019</em></h6>
-<p>Big thanks to the 10 contributors who made this release possible!</p>
-<p>Here are some highlights ✨:</p>
+        <h6 id="dec72019"><em>Dec 7, 2019</em></h6>
+<p>Big thanks to the 18 contributors who made this release possible.</p>
+<h3 id="materialuicorev472"><code>@material-ui/core@v4.7.2</code></h3>
 <ul>
-<li>🐛 Fix react-hot-loader regression (#16195).</li>
-<li>🐛 Fix TypeScript icons regression (#16139) @MayhemYDG.</li>
-<li>🐛 Fix withWidth regression (#16196).</li>
-<li>💄 Add Slider range support (#15703).</li>
-<li>And many more 📚 improvements.</li>
+<li>[Tooltip] Add missing classes type definitions (#18645) @dufia</li>
+<li>[Tooltip] Fix arrow placement in RTL languages (#18706) @mosijava</li>
+<li>[Tooltip] Fix onMouseOver event leak (#18687) @r3dm1ke</li>
+<li>[ClickAwayListener] Support other documents (#18701) @Izhaki</li>
+<li>[Avatar] Fallback images when fails to load (#18711) @netochaves</li>
+<li>[Chip] Support text-overflow ellipsis by default (#18708) @suliskh</li>
+<li>[Container] Add missing default theme props Type (#18654) @max10rogerio</li>
+<li>[Modal] Document the 'Focus trap' limitation (#18643) @PutziSan</li>
+<li>[Portal] Support any children node (#18692) @luffywuliao</li>
+<li>[TablePagination] Fix responsive display issue (#18668) @r3dm1ke</li>
+<li>[TextField] InputAdornment shouldn't wrap (#18641) @TrejGun</li>
+<li>[l10n] Add Polish translation (#18685) @eXtreme</li>
+<li>[theme] Fix wrong ResponsiveFontSizesOptions type (#18661) @pstadler</li>
+<li>[useMediaQuery] Fix hydrationCompleted true before hydrated (#18683) @toddmazierski</li>
 </ul>
-<h3 id="materialuicorev411"><code>@material-ui/core@v4.1.1</code></h3>
+<h3 id="materialuilabv400alpha35"><code>@material-ui/lab@v4.0.0-alpha.35</code></h3>
 <ul>
-<li>[ButtonBase] Fix riple not stoping on mouse up (#16142) @joaosilvalopes</li>
-<li>[useMediaQuery] Defensive logic against matchMedia not available (#16196) @oliviertassinari</li>
-<li>[Typography] Fix variantMapping rejecting partial type (#16187) @eps1lon</li>
-</ul>
-<h3 id="materialuistylesv411"><code>@material-ui/styles@v4.1.1</code></h3>
-<ul>
-<li>[styles] Fix react-hot-loader regression (#16195) @oliviertassinari</li>
-</ul>
-<h3 id="materialuiiconsv420"><code>@material-ui/icons@v4.2.0</code></h3>
-<ul>
-<li>[icons] Fix generated index.d.ts (#16139) @MayhemYDG</li>
-<li>[icons] Update and clean the icons (#16166) @oliviertassinari</li>
-</ul>
-<h3 id="materialuilabv400alpha16"><code>@material-ui/lab@v4.0.0-alpha.16</code></h3>
-<ul>
-<li>[Slider] Support range (#15703) @oliviertassinari</li>
-</ul>
-<h3 id="materialuisystemv420"><code>@material-ui/system@v4.2.0</code></h3>
-<ul>
-<li>[system] Add overflow, textOverflow, whiteSpace properties (#16129) @aditya1906</li>
-<li>[system] Add remaining flexbox properties (#16164) @aditya1906</li>
+<li>[Autocomplete] Add getOptionSelected prop (#18695) @DarkKnight1992</li>
+<li>[Autocomplete] Add size prop (#18624) @oliviertassinari</li>
+<li>[Autocomplete] Prevent tag overflow (#18662) @fbarbare</li>
 </ul>
 <h3 id="docs">Docs</h3>
 <ul>
-<li>[docs] Add 700 font weight support (#16141) @aditya1906</li>
-<li>[docs] Change http to https part 2 (#16171) @aditya1906</li>
-<li>[docs] Fix build on windows (#16154) @merceyz</li>
-<li>[docs] Fix small typos in v3-&gt;v4 migration guide (#16174) @charlax</li>
-<li>[docs] Improve the CssBaseline description (#16148) @levigunz</li>
-<li>[docs] Lowercase text to demo text-transform (#16160) @blmoore</li>
-<li>[docs] Pseudo-class: the style rules that require an increase of specificity (#16120) @oliviertassinari</li>
-<li>[docs] Remove <code>CSS to MUI webpack Loader</code> (#16175) @sabrinaluo</li>
-<li>[docs] import Omit Type from @material-ui/types (#16157) @aditya1906</li>
+<li>[docs] Break up blog template into smaller sections (#18627) @mbrookes</li>
+<li>[docs] Update the translations (#18644) @mbrookes</li>
+<li>[docs] <code>ssrMatchMedia</code> required for client rending as well (#18680) @moshest</li>
 </ul>
 <h3 id="core">Core</h3>
 <ul>
-<li>[core] Add TypeScript types for styled (#16133) @merceyz</li>
-<li>[core] Fix withStyles not including props (#16134) @merceyz</li>
-<li>[core] Fix yarn docs:api removing <br> tags on windows (#16165) @merceyz</li>
-<li>[core] Remove bootstrap v4-alpha (#16177) @aditya1906</li>
+<li>[core] Batch changes (#18629) @oliviertassinari</li>
 </ul>
     </section>
 </article>

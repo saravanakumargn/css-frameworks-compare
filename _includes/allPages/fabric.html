@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "OfficeDev"
   },
-  "datePublished" : "2019-05-14",
+  "datePublished" : "2019-10-17",
   "publisher" : {
     "@type" : "Organization",
     "name" : "OfficeDev"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/OfficeDev/office-ui-fabric-core",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript, HTML, TypeScript",
-  "softwareVersion" : "10.1.0",
+  "softwareVersion" : "11.0.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "3169"
+    "ratingCount" : "3313"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2019-06-14",
+    "datePublished" : "2019-12-08",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>The front-end CSS framework for building experiences for Office and Office 365.</p>
     <p>Developed by Organization:OfficeDev</p>
-    <p><small>Used languages: CSS(410.02 kB), JavaScript(60.31 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
+    <p><small>Used languages: CSS(464.95 kB), JavaScript(54.08 kB), HTML(18.50 kB), TypeScript(14.63 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -101,21 +101,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">10.1.0</h2>
-                <p class="card-text"><small>253.80 kB</small></p>
+                <h2 class="card-title">11.0.0</h2>
+                <p class="card-text"><small>283.77 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">May 14, 2019</h2>
+                <h2 class="card-title">Oct 17, 2019</h2>
                 <p class="card-text"><small>Created at May 20, 2015</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">May 14, 2019
+                <h2 class="card-title">Oct 17, 2019
                 </h2>
             </div>
         </div>
@@ -127,19 +127,19 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">29</h2>
+                <h2 class="card-title">44</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">423</h2>
+                <h2 class="card-title">441</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">3,169</h2>
+                <h2 class="card-title">3,313</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
@@ -171,11 +171,390 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on May 14, 2019 for 10.1.0</small>
+        Release Notes <small>on October 17, 2019 for 11.0.0</small>
     </h1>
-        <h2 id="new">New</h2>
+        <p>This release includes the icon changes captured in PR #1195 . While that change is <em>mostly</em> minor additions and changes to the icon font, it removes 4 icons that are no longer supported, so it's technically a breaking change if you were using those icons.</p>
+<p>Here're the release notes adapted from that PR.</p>
+<h1 id="updateiconstov354">Update icons to v3.54</h1>
+<p>This release updates the base Fabric Core icon set to more closely match <a href="https://www.npmjs.com/package/@uifabric/icons">Fabric React's</a>. The big news here is that this adds <strong>356</strong> new icons to Fabric Core. There may be some additional visual tweaks to existing icons as well, to match the latest design intent in Fabric React.</p>
+<p>First, let's review what else has been changed.</p>
+<h2 id="nomorewoff2andttfsupport">No more .woff2 and .ttf support</h2>
+<p>After the last release of the icons, there were a number of changes to the icon font/production toolchain that resulted in some different outputs. Today, that means that <strong>.woff2 and .tt files are not included</strong>. These may be restored in a future addition, but for now, .woff is the only format that will be provided.</p>
+<h2 id="renamedicons">Renamed icons</h2>
+<p><strong>Two</strong> icons have been renamed from their original versions. These include:</p>
+<p>| Old name | New name |
+|---|---|
+| OneDrive | OneDriveLogo |
+| ToggleOff | ToggleRight |</p>
+<p>The original names have been retained in the definitions, variables, mixins, and classnames to support backwards compatibility. </p>
+<h2 id="removediconsbreakingchanges">Removed icons (breaking changes)</h2>
+<p><strong>Four</strong> icons have been removed that are no longer supported for public distribution. These are considered a breaking change as they will affect the build and runtime usage of anyone using Fabric Core &lt;=10 with any of these icons today.</p>
+<p>Icons removed include:</p>
 <ul>
-<li>#1172 Adds the new, updated brand icons, including the new Office App Icons and the Fluent File Type Icons</li>
+<li>ExternalGit</li>
+<li>GitFork</li>
+<li>MTMLogo</li>
+<li>NonprofitLogo32</li>
 </ul>
+<h2 id="newicons">New icons</h2>
+<p><strong>356</strong> new icons have been added to Fabric Core. These represent requests from dozens of Microsoft product teams and other developers using Fabric Core.</p>
+<ol>
+<li>AccessibiltyChecker</li>
+<li>AccountActivity</li>
+<li>AccountBrowser</li>
+<li>ActionCenter</li>
+<li>AddHome</li>
+<li>AddIn</li>
+<li>AddLink</li>
+<li>AddReaction</li>
+<li>AddToShoppingList</li>
+<li>AddWork</li>
+<li>AlertSettings</li>
+<li>AllCurrency</li>
+<li>AppIconDefaultAdd</li>
+<li>AppIconDefaultList</li>
+<li>AuthenticatorApp</li>
+<li>BacklogList</li>
+<li>Bank</li>
+<li>BarChartVerticalEdit</li>
+<li>BarChartVerticalFill</li>
+<li>BarChartVerticalFilter</li>
+<li>BarChartVerticalFilterSolid</li>
+<li>Blocked2Solid</li>
+<li>BlockedSiteSolid12</li>
+<li>Blog</li>
+<li>BookAnswers</li>
+<li>BookmarkReport</li>
+<li>Brush</li>
+<li>BuildDefinition</li>
+<li>BulletedListBullet</li>
+<li>BulletedListBulletMirrored</li>
+<li>BulletedListText</li>
+<li>BulletedListTextMirrored</li>
+<li>BulletedTreeList</li>
+<li>BullseyeTarget</li>
+<li>BullseyeTargetEdit</li>
+<li>ButtonControl</li>
+<li>CalculatorPercentage</li>
+<li>CalendarYear</li>
+<li>Calories</li>
+<li>CampaignTemplate</li>
+<li>ChangeEntitlements</li>
+<li>ChartTemplate</li>
+<li>ChatBot</li>
+<li>CheckboxFill</li>
+<li>CheckListCheck</li>
+<li>CheckListCheckMirrored</li>
+<li>CheckListText</li>
+<li>CheckListTextMirrored</li>
+<li>Childof</li>
+<li>ChromeFullScreen</li>
+<li>ChromeRestore</li>
+<li>CityNext2</li>
+<li>ClearFormattingA</li>
+<li>ClearFormattingEraser</li>
+<li>ClearSelection</li>
+<li>ClearSelectionMirrored</li>
+<li>ClipboardList</li>
+<li>ClipboardListMirrored</li>
+<li>CloudImportExport</li>
+<li>ColumnVerticalSection</li>
+<li>ColumnVerticalSectionEdit</li>
+<li>CommentActive</li>
+<li>CommentSolid</li>
+<li>Compare</li>
+<li>ComplianceAudit</li>
+<li>ConnectVirtualMachine</li>
+<li>ContactHeart</li>
+<li>ContactList</li>
+<li>Coupon</li>
+<li>CRMCustomerInsightsApp</li>
+<li>CRMProcesses</li>
+<li>CRMServices</li>
+<li>CubeShape</li>
+<li>CustomizeToolbar</li>
+<li>D365TalentHRCore</li>
+<li>D365TalentInsight</li>
+<li>D365TalentLearn</li>
+<li>DatabaseSync</li>
+<li>Dataflows</li>
+<li>DataflowsLink</li>
+<li>DataManagementSettings</li>
+<li>Decimals</li>
+<li>DecreaseIndentArrow</li>
+<li>DecreaseIndentArrowMirrored</li>
+<li>DecreaseIndentText</li>
+<li>DecreaseIndentTextMirrored</li>
+<li>DefenderTVM</li>
+<li>DependencyAdd</li>
+<li>DependencyRemove</li>
+<li>Devices2</li>
+<li>DiagnosticDataBarTooltip</li>
+<li>Diamond</li>
+<li>DisconnectVirtualMachine</li>
+<li>DistributeDown</li>
+<li>DoubleDownArrow</li>
+<li>DuplicateRow</li>
+<li>EaseOfAccess</li>
+<li>eDiscovery</li>
+<li>EditCreate</li>
+<li>EntitlementPolicy</li>
+<li>EntitlementRedemption</li>
+<li>Event12</li>
+<li>EventDateMissed12</li>
+<li>EventToDoLogo</li>
+<li>Eyedropper</li>
+<li>EyeShadow</li>
+<li>FabricFolderConfirm</li>
+<li>FabricNetworkFolder</li>
+<li>FabricTextHighlight</li>
+<li>FabricTextHighlightComposite</li>
+<li>FabricUserFolder</li>
+<li>FileRequest</li>
+<li>FilterSettings</li>
+<li>FitPage</li>
+<li>FitWidth</li>
+<li>Flashlight</li>
+<li>FlowChart</li>
+<li>Flower</li>
+<li>Focus</li>
+<li>Footer</li>
+<li>Forum</li>
+<li>FrontCamera</li>
+<li>FunnelChart</li>
+<li>Game</li>
+<li>GenericScanFilled</li>
+<li>GIF</li>
+<li>GlobalNavButtonActive</li>
+<li>Go</li>
+<li>GoMirrored</li>
+<li>GoToDashboard</li>
+<li>GreetingCard</li>
+<li>GripperDotsVertical</li>
+<li>GroupList</li>
+<li>Header</li>
+<li>Hide3</li>
+<li>HistoricalWeather</li>
+<li>HomeGroup</li>
+<li>HomeVerify</li>
+<li>HorizontalTabKey</li>
+<li>IgnoreConversation</li>
+<li>ImportAllMirrored</li>
+<li>IncomingCall</li>
+<li>IncreaseIndentArrow</li>
+<li>IncreaseIndentArrowMirrored</li>
+<li>IncreaseIndentText</li>
+<li>IncreaseIndentTextMirrored</li>
+<li>InformationBarriers</li>
+<li>InkingTool</li>
+<li>Insert</li>
+<li>Installation</li>
+<li>InternalInvestigation</li>
+<li>KeyboardClassic</li>
+<li>KnowledgeArticle</li>
+<li>Link12</li>
+<li>LinkedDatabase</li>
+<li>Lock12</li>
+<li>M365InvoicingLogo</li>
+<li>MailAttached</li>
+<li>MailOptions</li>
+<li>MailSchedule</li>
+<li>Manufacturing</li>
+<li>MapLayers</li>
+<li>MarkAsProtected</li>
+<li>MedalSolid</li>
+<li>Media</li>
+<li>MicOff2</li>
+<li>MicrosoftTranslatorLogo</li>
+<li>MicrosoftTranslatorLogoBlue</li>
+<li>MicrosoftTranslatorLogoGreen</li>
+<li>MiniContractMirrored</li>
+<li>MiniExpandMirrored</li>
+<li>ModelingView</li>
+<li>MountainClimbing</li>
+<li>MuteChat</li>
+<li>NewMail</li>
+<li>NumberedListNumber</li>
+<li>NumberedListNumberMirrored</li>
+<li>NumberedListText</li>
+<li>NumberedListTextMirrored</li>
+<li>NumberSymbol</li>
+<li>OfficeChat</li>
+<li>OfficeChatSolid</li>
+<li>OfflineStorage</li>
+<li>Onboarding</li>
+<li>OneDriveLogo</li>
+<li>OpenEnrollment</li>
+<li>OpenInNewTab</li>
+<li>OpenWith</li>
+<li>OpenWithMirrored</li>
+<li>Orientation2</li>
+<li>PageArrowRight</li>
+<li>PageData</li>
+<li>PageHeader</li>
+<li>PageHeaderEdit</li>
+<li>PageLink</li>
+<li>PageList</li>
+<li>PageListFilter</li>
+<li>PageShared</li>
+<li>PassiveAuthentication</li>
+<li>PasswordField</li>
+<li>PenWorkspace</li>
+<li>Photo</li>
+<li>Photo2Fill</li>
+<li>PhotoVideoMedia</li>
+<li>PinnedSolid</li>
+<li>PinSolid12</li>
+<li>PinSolidOff12</li>
+<li>PlainText</li>
+<li>PlaybackRate1x</li>
+<li>PlayReverse</li>
+<li>PlayReverseResume</li>
+<li>PollResults</li>
+<li>PowerAppsCDS</li>
+<li>PowerBILogo16</li>
+<li>PowerBILogoBackplate16</li>
+<li>PowerShell</li>
+<li>PowerShell2</li>
+<li>Presentation</li>
+<li>Presentation12</li>
+<li>ProductCatalog</li>
+<li>ProductionFloorManagement</li>
+<li>ProductList</li>
+<li>ProductRelease</li>
+<li>ProductVariant</li>
+<li>ProjectDocument</li>
+<li>PromotedDatabase</li>
+<li>PublishContent</li>
+<li>QandA</li>
+<li>QandAMirror</li>
+<li>QRCode</li>
+<li>QuadColumn</li>
+<li>Quantity</li>
+<li>RealEstate</li>
+<li>RecruitmentManagement</li>
+<li>RectangleShape</li>
+<li>Relationship</li>
+<li>ReleaseDefinition</li>
+<li>ReleaseGate</li>
+<li>ReleaseGateCheck</li>
+<li>ReleaseGateError</li>
+<li>ReminderTime</li>
+<li>RemoveFromShoppingList</li>
+<li>RemoveFromTrash</li>
+<li>RemoveLinkChain</li>
+<li>RemoveLinkX</li>
+<li>RepeatAll</li>
+<li>RepeatOne</li>
+<li>ReportDocument</li>
+<li>ReportLock</li>
+<li>ReportWarning</li>
+<li>Rerun</li>
+<li>ReservationOrders</li>
+<li>ResetDevice</li>
+<li>ResponsesMenu</li>
+<li>ReturnKey</li>
+<li>RingerSolid</li>
+<li>Rotate90Clockwise</li>
+<li>Rotate90CounterClockwise</li>
+<li>SaveTemplate</li>
+<li>SaveToMobile</li>
+<li>ScaleVolume</li>
+<li>ScatterChart</li>
+<li>SchoolDataSyncLogo</li>
+<li>ScreenCast</li>
+<li>SearchData</li>
+<li>SearchNearby</li>
+<li>SecondaryNav</li>
+<li>SeeDo</li>
+<li>ShakeDevice</li>
+<li>Shapes</li>
+<li>SharepointAppIcon16</li>
+<li>ShieldAlert</li>
+<li>Shirt</li>
+<li>ShowGrid</li>
+<li>ShowTimeAs</li>
+<li>Signin</li>
+<li>SkypeArrow</li>
+<li>SkypeCircleArrow</li>
+<li>SkypeCircleSlash</li>
+<li>SkypeSlash</li>
+<li>Slideshow</li>
+<li>SmartGlassRemote</li>
+<li>SnapToGrid</li>
+<li>SpecialEvent</li>
+<li>StackColumnChart</li>
+<li>StackedColumnChart2</li>
+<li>StackedColumnChart2Fill</li>
+<li>StatusCircleBlock</li>
+<li>StatusCircleSync</li>
+<li>StickyNotesOutlineAppIcon</li>
+<li>StickyNotesSolidAppIcon</li>
+<li>StorageOptical</li>
+<li>Street</li>
+<li>StreetsideSplitMinimize</li>
+<li>SyncStatus</li>
+<li>SyncStatusSolid</li>
+<li>TabCenter</li>
+<li>TableComputed</li>
+<li>TableGroup</li>
+<li>TableLink</li>
+<li>TabOneColumn</li>
+<li>TabThreeColumn</li>
+<li>TabTwoColumn</li>
+<li>TagSolid</li>
+<li>TagUnknown</li>
+<li>TagUnknown12</li>
+<li>TagUnknown12Mirror</li>
+<li>TagUnknownMirror</li>
+<li>TeamsLogo16</li>
+<li>TeamsLogoFill16</li>
+<li>Telemarketer</li>
+<li>TimePicker</li>
+<li>ToDoLogoOutline</li>
+<li>ToggleLeft</li>
+<li>ToggleRight</li>
+<li>Toolbox</li>
+<li>Translate</li>
+<li>TriangleShape</li>
+<li>Trim</li>
+<li>TrimEnd</li>
+<li>TrimStart</li>
+<li>TripleColumnWide</li>
+<li>Uneditable2</li>
+<li>Uneditable2Mirrored</li>
+<li>UnpublishContent</li>
+<li>UnSetColor</li>
+<li>UnstackSelected</li>
+<li>Untag</li>
+<li>UpgradeAnalysis</li>
+<li>USB</li>
+<li>UserGauge</li>
+<li>UserOptional</li>
+<li>UserWarning</li>
+<li>Variable2</li>
+<li>VerifiedBrand</li>
+<li>VerifiedBrandSolid</li>
+<li>Video360Generic</li>
+<li>VideoLightOff</li>
+<li>ViewOriginal</li>
+<li>VisioDiagramSync</li>
+<li>VisuallyImpaired</li>
+<li>WarningSolid</li>
+<li>WavingHand</li>
+<li>WebAppBuilderFragment</li>
+<li>WebAppBuilderFragmentCreate</li>
+<li>WebAppBuilderModule</li>
+<li>WebAppBuilderSlot</li>
+<li>Webcam2</li>
+<li>Webcam2Off</li>
+<li>WebComponents</li>
+<li>WebTemplate</li>
+<li>Wheelchair</li>
+<li>WifiWarning4</li>
+<li>WorkItemAlert</li>
+<li>ZoomOut</li>
+<li>ZoomToFit</li>
+</ol>
     </section>
 </article>
