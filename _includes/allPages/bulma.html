@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "jgthms"
   },
-  "datePublished" : "2019-10-18",
+  "datePublished" : "2020-06-07",
   "publisher" : {
     "@type" : "Person",
     "name" : "jgthms"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/jgthms/bulma",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, Shell",
-  "softwareVersion" : "0.8.0",
+  "softwareVersion" : "0.9.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "38233"
+    "ratingCount" : "40179"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2020-01-24",
+    "datePublished" : "2020-06-20",
     "reviewBody" : "Written in Sass   This is frameworks design for plain, metro. This framework Feature types are prototype"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Modern CSS framework based on Flexbox</p>
     <p>Developed by User:jgthms</p>
-    <p><small>Used languages: CSS(123.30 kB), Shell(1.22 kB)</small></p>
+    <p><small>Used languages: CSS(361.09 kB), Shell(579.00 bytes)</small></p>
   </div>
 </section>
 <hr>
@@ -100,21 +100,21 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">0.8.0</h2>
-                <p class="card-text"><small>137.92 kB</small></p>
+                <h2 class="card-title">0.9.0</h2>
+                <p class="card-text"><small>227.89 kB</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Oct 18, 2019</h2>
+                <h2 class="card-title">Jun 7, 2020</h2>
                 <p class="card-text"><small>Created at Jan 24, 2016</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jan 22, 2020
+                <h2 class="card-title">Jun 15, 2020
                 </h2>
             </div>
         </div>
@@ -126,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">293</h2>
+                <h2 class="card-title">330</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">3,208</h2>
+                <h2 class="card-title">3,427</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">38,233</h2>
+                <h2 class="card-title">40,179</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">682</h2>
+                <h2 class="card-title">670</h2>
             </div>
         </div>
     </div>
@@ -170,101 +170,68 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on October 18, 2019 for 0.8.0</small>
+        Release Notes <small>on June 7, 2020 for 0.9.0</small>
     </h1>
-        <h3 id="bigupdate">Big update</h3>
-<h4 id="largerformcontrols">Larger form controls</h4>
-<p>Controls and buttons are now <code>2.5em</code> high. You can revert this resizing by setting these previous values:</p>
-<pre><code class="sass language-sass">$control-height: 2.25em
-$control-padding-vertical: calc(0.375em - #{$control-border-width})
-$control-padding-horizontal: calc(0.625em - #{$control-border-width})
-$button-padding-vertical: calc(0.375em - #{$button-border-width})
-$button-padding-horizontal: 0.75em 
-</code></pre>
-<h4 id="lightanddarkcolors">Light and dark colors</h4>
-<p>Each main color (<code>"primary"</code>, <code>"info"</code>, <code>"success"</code>, <code>"warning"</code>, <code>"danger"</code>) now has a <code>*-light</code> and <code>*-dark</code> version. They are calculated using 2 new color functions:</p>
+        <h3 id="deprecationwarning">Deprecation warning</h3>
+<p>The <code>base/helpers.sass</code> file is <strong>deprecated</strong>. It has moved into its own <code>/helpers</code> folder. If you were importing <code>base/helpers.sass</code> or <code>base/_all.sass</code>, please import <code>sass/helpers/_all.sass</code> now.
+If you were simply importing the whole of Bulma with <code>@import "~/bulma/bulma.sass"</code> or similar, you won't have to change anything, and everything will work as before.</p>
+<p>The <code>list</code> component is also <strong>deprecated</strong>: the <code>components/list.sass</code> file has been deleted. It was never officialy supported as it was too similar to  <code>panel</code> component. Use that one instead.</p>
+<h3 id="rtlsupport">RTL support</h3>
+<p>Bulma now has <strong>RTL support</strong>.</p>
+<p>By setting the Sass flag <code>$rtl</code> to <code>true</code>, you can create an RTL version of Bulma, thanks to 4 new Sass mixins:</p>
 <ul>
-<li><code>findLightColor()</code> which finds the light version of a color</li>
-<li><code>findDarkolor()</code> which finds the dark version of a color</li>
+<li><code>=ltr</code></li>
+<li><code>=rtl</code></li>
+<li><code>=ltr-property($property, $spacing, $right: true)</code></li>
+<li><code>=ltr-position($spacing, $right: true)</code></li>
 </ul>
-<p>The light colors are used by the <code>button</code> element, while the light and dark colors are used by the <code>message</code> component.</p>
-<h4 id="panelcolors">Panel colors</h4>
-<p>The <code>panel</code> component is now available in all the different colors.</p>
-<h4 id="4valuecolormap">4-value color map</h4>
-<p>The <code>$colors</code> Sass map now accepts, for each of its values, a map of up to <strong>4</strong> values. For example: the key <code>"info"</code> now has the <code>($info, $info-invert, $info-light, $info-dark)</code> map.</p>
-<p>If you provide a <code>$custom-colors</code> map, you can decide to provide a map of 1, 2, 3 or 4 values for each value. If fewer than 4 are provided, Bulma will calculate the remaining ones:</p>
-<pre><code class="scss language-scss">$custom-colors: (
-  "lime": (lime),
-  "tomato": (tomato, white),
-  "orange": ($orange, $orange-invert, $orange-light),
-  "lavender": ($lavender, $lavender-invert, $lavender-light, $lavender-dark)
-);
-</code></pre>
-<p>This is processed by the updated <code>mergeColorMaps()</code> Sass function.</p>
-<h4 id="schemevariables">Scheme variables</h4>
-<p>There are 6 new <code>$scheme</code> derived variables: <code>$scheme-main</code> <code>$scheme-main-bis</code> <code>$scheme-main-ter</code> <code>$scheme-invert</code> <code>$scheme-invert-bis</code> <code>$scheme-invert-ter</code>
-They replace the <code>$white</code> and <code>$black</code> occurences in the codebase. This makes it easy to create a "Dark mode" simply by swapping the values:</p>
-<pre><code class="sass language-sass">$scheme-main: $black
-$scheme-invert: $white
-// etc.
-</code></pre>
-<p>That is also why most of the codebase now references <strong>derived</strong> variables (<code>$text</code>, <code>$background</code>, <code>$border</code> etc.) instead of <strong>initial</strong> ones (<code>$grey</code>, <code>$grey-lighter</code>, <code>$grey-darker</code> etc.): updating the derived variables will affect all elements and components directly.</p>
-<h4 id="initialvariables">Initial variables</h4>
+<p>The Bulma package now also comes with a <code>bulma-rtl.css</code> and <code>bulma-rtl.min.css</code> file to be used straight away.</p>
+<h3 id="spacinghelpers">Spacing helpers</h3>
+<p>Bulma now has <strong>spacing helpers</strong>: https://bulma.io/documentation/helpers/spacing-helpers/</p>
+<p>Bulma provides <strong>margin</strong> <code>m*</code> and <strong>padding</strong> <code>p*</code> helpers in all <strong>directions</strong>:</p>
 <ul>
-<li><code>$green: hsl(141, 53%, 53%)</code></li>
-<li><code>$cyan: hsl(204, 71%, 53%)</code></li>
-<li><code>$red: hsl(348, 86%, 61%)</code></li>
+  <li>
+    <code>*t</code> for <strong>top</strong>
+  </li>
+  <li>
+    <code>*r</code> for <strong>right</strong>
+  </li>
+  <li>
+    <code>*b</code> for <strong>bottom</strong>
+  </li>
+  <li>
+    <code>*l</code> for <strong>left</strong>
+  </li>
+  <li>
+    <code>*x</code> horizontally for both <strong>left</strong> and <strong>right</strong>
+  </li>
+  <li>
+    <code>*y</code> vertically for both <strong>top</strong> and <strong>bottom</strong>
+  </li>
 </ul>
-<h4 id="derivedvariables">Derived variables</h4>
+<p>
+  You need to <strong>combine</strong> a margin/padding prefix with a direciton suffix. For example:
+</p>
 <ul>
-<li><p><code>$primary-invert: findColorInvert($primary)</code></p></li>
-<li><p><code>$primary-light: findLightColor($primary)</code></p></li>
-<li><p><code>$primary-dark: findDarkColor($primary)</code></p></li>
-<li><p><code>$info-invert: findColorInvert($info)</code></p></li>
-<li><p><code>$info-light: findLightColor($info)</code></p></li>
-<li><p><code>$info-dark: findDarkColor($info)</code></p></li>
-<li><p><code>$success-invert: findColorInvert($success)</code></p></li>
-<li><p><code>$success-light: findLightColor($success)</code></p></li>
-<li><p><code>$success-dark: findDarkColor($success)</code></p></li>
-<li><p><code>$warning-invert: findColorInvert($warning)</code></p></li>
-<li><p><code>$warning-light: findLightColor($warning)</code></p></li>
-<li><p><code>$warning-dark: findDarkColor($warning)</code></p></li>
-<li><p><code>$danger-invert: findColorInvert($danger)</code></p></li>
-<li><p><code>$danger-light: findLightColor($danger)</code></p></li>
-<li><p><code>$danger-dark: findDarkColor($danger)</code></p></li>
-<li><p><code>$light-invert: findColorInvert($light)</code></p></li>
-<li><p><code>$dark-invert: findColorInvert($dark)</code></p></li>
-<li><p><code>$scheme-main: $white</code></p></li>
-<li><p><code>$scheme-main-bis: $white-bis</code></p></li>
-<li><p><code>$scheme-main-ter: $white-ter</code></p></li>
-<li><p><code>$scheme-invert: $black</code></p></li>
-<li><p><code>$scheme-invert-bis: $black-bis</code></p></li>
-<li><p><code>$scheme-invert-ter: $black-ter</code></p></li>
+  <li>for a <code>margin-top</code>, use <code>mt-*</code></li>
+  <li>for a <code>padding-bottom</code>, use <code>pb-*</code></li>
+  <li>for both <code>margin-left</code> and <code>margin-right</code>, use <code>mx-*</code></li>
 </ul>
-<h3 id="othervariables">Other variables</h3>
+<p>
+  Each of these <code>property-direction</code> <strong>combinations</strong> needs to be appended with one of <strong>6 value suffixes</strong>
+</p>
+<p>This release also includes the following helpers:</p>
 <ul>
-<li><code>$control-height: 2.5em</code></li>
-<li><code>$control-padding-vertical: calc(0.5em - #{$control-border-width})</code></li>
-<li><code>$control-padding-horizontal: calc(0.75em - #{$control-border-width})</code></li>
-<li><code>$media-border-color: rgba($border, 0.5)</code></li>
-<li><code>$notification-code-background-color: $scheme-main</code></li>
-<li><code>$panel-radius: $radius-large</code></li>
-<li><code>$panel-shadow: 0 0.5em 1em -0.125em rgba($scheme-invert, 0.1), 0 0px 0 1px rgba($scheme-invert, 0.02)</code></li>
-<li><code>$textarea-padding: $control-padding-horizontal</code></li>
-<li><code>$textarea-max-height: 40em</code></li>
-<li><code>$textarea-min-height: 8em</code></li>
+<li>light and dark color helpers</li>
+<li>light and dark background color helpers</li>
+</ul>
+<h3 id="improvements">Improvements</h3>
+<ul>
+<li>#2925 Center table cell content vertically with <code>is-vcentered</code></li>
 </ul>
 <h3 id="bugfixes">Bug fixes</h3>
 <ul>
-<li>Fix #2647 -&gt; Missing meta tags in snippet</li>
-<li>Fix #2031, Fix #2483 -&gt; Invalid output when declaring a custom shade map</li>
-<li>Fix #2060 -&gt; <code>height: auto</code> on HTML <code>audio</code> element breaks height of element</li>
-<li>Fix #706 -&gt; Derive <code>-invert</code> variables using <code>findColorInvert()</code></li>
-<li>#1608 Fix #1552 -&gt; <code>.container.is-fluid</code> margins</li>
-</ul>
-<h3 id="newfeatures">New features</h3>
-<ul>
-<li>#2563 <code>.image</code> has a new <code>.is-fullwidth</code> modifier</li>
+<li>#2955 Fix issue when there's only one <code>is-toggle</code> tag</li>
 </ul>
     </section>
 </article>

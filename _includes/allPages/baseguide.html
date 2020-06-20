@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "slavanga"
   },
-  "datePublished" : "2019-10-18",
+  "datePublished" : "2020-04-15",
   "publisher" : {
     "@type" : "Person",
     "name" : "slavanga"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/slavanga/baseguide",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript",
-  "softwareVersion" : "v3.3.0",
+  "softwareVersion" : "v4.0.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "119"
+    "ratingCount" : "121"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2020-01-24",
+    "datePublished" : "2020-06-20",
     "reviewBody" : "Written in Sass   This is frameworks design for plain. This framework Feature types are prototype"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Lightweight and robust CSS framework for prototyping and production code.</p>
     <p>Developed by User:slavanga</p>
-    <p><small>Used languages: CSS(43.43 kB), JavaScript(3.25 kB)</small></p>
+    <p><small>Used languages: CSS(44.55 kB), JavaScript(3.31 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v3.3.0</h2>
+                <h2 class="card-title">v4.0.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Oct 18, 2019</h2>
+                <h2 class="card-title">Apr 15, 2020</h2>
                 <p class="card-text"><small>Created at Mar 8, 2015</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Dec 15, 2019
+                <h2 class="card-title">Jun 12, 2020
                 </h2>
             </div>
         </div>
@@ -131,13 +131,13 @@
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">12</h2>
+                <h2 class="card-title">14</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">119</h2>
+                <h2 class="card-title">121</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
@@ -169,22 +169,32 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on October 18, 2019 for v3.3.0</small>
+        Release Notes <small>on April 15, 2020 for v4.0.0</small>
     </h1>
-        <h3 id="updates">Updates</h3>
+        <h3 id="features">Features</h3>
 <ul>
-<li>Add new select icon (13734fe1737eba0883408f9d88db0dab89c85ca5)</li>
-<li>Add variable $button-cursor-pointer (c2de247c9bdacdeef671d189dd4c174183a2b5be)</li>
-<li>Update Sass MQ to v5.0.1 (fb90214a120084388efc480070cf955acd4f6233)</li>
-<li>Optional grid-helper classes, by @KasperAndersson (5555b829c47143c5042d80bea0b01fdde5b0de6f)</li>
-<li>Optimize spacing styles (89e7d2cb5b5822659de7f898b800e36a8bb7fd1d)</li>
-<li>Remove default border on iframes (f45a11e5f16371fa888d7942cea0fc88409e92b6)</li>
-<li>Remove tabindex ruleset (5016a051466cb76591a9faee4fade7ad4a919099)</li>
+<li>Add responsive typescale (62757273f69774c2827b757aeecc7c74503d8ed6, 6c60958f7c726ea51c7fe03a3198d790cbf80ff0)</li>
+<li>Add fluid-calc mixin (8bcdda1db07cad1e5d6dfe1c2b5daa29b8000c44, 4180e41fbccfc89d170b84969c8d055476de0bd8, 0439a4d8139c905c90f7028fede2e891e947a214)</li>
+</ul>
+<h3 id="updates">Updates</h3>
+<ul>
+<li>Remove media-fullscreen class (df6af96bd4874e984896e7a207d3fe37c4f3495f)</li>
+<li>Simplify largest breakpoint handling (7cd646fcdf5dc4e4f9e41d4d41b3a3532e9034e7)</li>
+<li>Remove grid fallback with floats (cfeb32eaddc22db7dd6fa2a2baff459d6823e11d, ee8f626a99d0e7e081ee28446ee3d574ec37a7fb)</li>
+<li>Reset spacing on last heading (1dd8597003091b919ac2fbfb148fb27088c40a03)</li>
+<li>Encode svg icons in get-icon function (2198c748835a67124bbc3214f424b063aee6b960)</li>
+<li>Update underline mixin (ce403c6abbc32d8f297ba6ed7530053855ea34cf)</li>
+<li>Add variable $checkbox-border-radius (840ccada2d9dca47ec1eb638df9baab13aa25290)</li>
+<li>Add px unit to xs breakpoint (4e790c45f673986b7259340340971013ce5d4d12, 72ab31a8092a09a2b284e67a6867b29ef4cd95ae)</li>
 </ul>
 <h3 id="build">Build</h3>
 <ul>
-<li>Get html files from config source (29714da39199bdea6515805f085d69bab78d3ccf)</li>
-<li>Use autofix for eslint (d0e92bede17dece10fa485472a7af9eccd2f239d)</li>
+<li>Add babel to build process (dfc82de59c569e83de41f30fb545b017b5ec019e)</li>
+<li>Use exports syntax for gulp tasks (0fdea48a27ccd4d18faf7916c22060a37effb5d6)</li>
+</ul>
+<h3 id="docs">Docs</h3>
+<ul>
+<li>Add typography docs (ca354f982f577d6ec0c62daec92aafb177694043)</li>
 </ul>
     </section>
 </article>

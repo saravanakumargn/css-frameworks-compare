@@ -10,7 +10,7 @@
     "@type" : "Person",
     "name" : "olton"
   },
-  "datePublished" : "2020-01-14",
+  "datePublished" : "2020-05-17",
   "publisher" : {
     "@type" : "Person",
     "name" : "olton"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/olton/Metro-UI-CSS",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "CSS, JavaScript, HTML, PHP",
-  "softwareVersion" : "v4.3.5",
+  "softwareVersion" : "4.3.7",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "6440"
+    "ratingCount" : "6557"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2020-01-24",
+    "datePublished" : "2020-06-20",
     "reviewBody" : "Written in  Less Javascript This is frameworks design for plain, metro. This framework Feature types are full"
   }
 }
@@ -47,7 +47,7 @@
   <div class="media-body">
     <p>Build responsive, mobile-first projects on the web with the first front-end component library in Metro Style and not only.</p>
     <p>Developed by User:olton</p>
-    <p><small>Used languages: CSS(4.98 MB), JavaScript(2.85 MB), HTML(23.01 kB), PHP(1.05 kB)</small></p>
+    <p><small>Used languages: CSS(6.97 MB), JavaScript(2.89 MB), HTML(23.01 kB), PHP(1.05 kB)</small></p>
   </div>
 </section>
 <hr>
@@ -100,20 +100,20 @@
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">v4.3.5</h2>
+                <h2 class="card-title">4.3.7</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">Jan 14, 2020</h2>
+                <h2 class="card-title">May 17, 2020</h2>
                 <p class="card-text"><small>Created at Mar 9, 2012</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jan 14, 2020
+                <h2 class="card-title">May 17, 2020
                 </h2>
             </div>
         </div>
@@ -125,25 +125,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">12</h2>
+                <h2 class="card-title">22</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">2,001</h2>
+                <h2 class="card-title">2,000</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">6,440</h2>
+                <h2 class="card-title">6,557</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">576</h2>
+                <h2 class="card-title">578</h2>
             </div>
         </div>
     </div>
@@ -169,36 +169,67 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on January 14, 2020 for v4.3.5</small>
+        Release Notes <small>on May 17, 2020 for 4.3.7</small>
     </h1>
-        <h3 id="435">4.3.5</h3>
-<h5 id="m4q">M4Q</h5>
+        <h3 id="437">4.3.7</h3>
+<h4 id="m4q">M4Q</h4>
 <ul>
-<li>[x] M4Q: upd to <code>1.0.5</code></li>
-<li>[x] M4Q Events: fix firing events, Metro 4 issue #1476</li>
-<li>[x] M4Q Events: optimize method <code>trigger</code>, now this is a synonym of <code>fire</code></li>
+<li>[x] Animation: a new engine for animation. The <code>animate</code> function changed. Now function receives one argument. Also, you can use old syntax :)</li>
+<li>[x] Init: fix minor bug for creating elements in context</li>
+<li>[x] Ajax: add parameter <code>contentType</code>. If this param has value <code>false</code>, <code>Content-type</code> can't be defined.</li>
+<li>[x] Contains: add checks with <code>:visible</code> to method <code>is</code>. Example: <code>$(...).is(':visible')</code></li>
+<li>[x] Utils: add methods <code>$.random(array | a, b)</code>, <code>$.getUnit(a)</code>, <code>$.strip(where, what)</code>, <code>$.hasProp(obj, prop)</code>, <code>$.dashedName(val)</code> </li>
+<li>[x] Classes: add method <code>$(...).removeClassBy(mask)</code></li>
 </ul>
-<h5 id="metro4">Metro 4</h5>
+<h4 id="metro4">Metro 4</h4>
 <ul>
-<li>[x] Tag input: change <code>trigger</code> defining </li>
-<li>[x] Tag input: add <code>clear button</code> with attributes <code>clearButton</code>, <code>clsClearButton</code>, <code>clearButtonIcon</code>  </li>
-<li>[x] Tag input: add attributes <code>clsComponent</code>, <code>clsInput</code>  </li>
-<li>[x] Tag input: add event <code>onClear</code>  </li>
-<li>[x] List: add attribute <code>data-sort-initial</code> to sorts on create component, issue #1475</li>
-<li>[x] Tag input: add attribute <code>data-static</code> and static mode for <code>data-static='true'</code> or if present attribute <code>readonly</code></li>
-<li>[x] Tag input: add method <code>toggleStatic([true|false])</code></li>
-<li>[x] Select: fix clearing <code>select-input</code>, issue #1477</li>
-<li>[x] Calendar picker: fix closing calendar when user click on overlay, issue #1478</li>
-<li>[x] Select: fix styles for <code>input-large</code>, <code>input-small</code> classes</li>
-<li>[x] Tag input: change <code>keyup</code> to <code>keydown</code> for tag trigger event</li>
-<li>[x] Tag input: add event <code>onTagTrigger</code>  </li>
-<li>[x] Tag input: add removing last tag on current value is empty end user press <code>Backspace</code>, you can disable it with attribute <code>data-backspace='false'</code></li>
-<li>[x] Draggable: add attribute <code>data-timeout</code> for set timeout before creating component</li>
-<li>[x] Components: creating components can be deferred with attribute <code>data-[componentName]-deferred=[ms]</code>. Example: <code>&lt;div data-role='draggable' data-draggable-deferred='2000'&gt;...&lt;/div&gt;</code></li>
-<li>[x] Counter: add attribute <code>data-start-on-viewport</code>. If attribute value is <code>true</code>, counter started after element showed in viewport. You can combine this with <code>data-timeout</code></li>
-<li>[x] Select: fix bug with <code>data-filter='false'</code> </li>
-<li>[x] File: fix method <code>clear</code> for mode <code>dropzone</code></li>
-<li>[x] Select: add mode <code>button</code></li>
+<li>[x] Source: reposition source code</li>
+<li>[x] Builder: new builder config, and new builder version <code>2020.1</code>. New version not compatibility with 4.3.6</li>
+<li>[x] Input: fix append size and padding, issue #1512</li>
+<li>[x] Ripple: added ripple call for any element, issue #1515</li>
+<li>[x] Splitter: added event <code>onResizeWindow</code>. Setup this event with prop <code>data-on-resize-window</code> or event <code>$(...).on('resizewindow', ...)</code>, issue #1516</li>
+<li>[x] Table: add <code>skip to page</code> functionality, issue #1511</li>
+<li>[x] Table: add attributes <code>data-show-skip</code>, <code>data-table-skip-title</code>, <code>data-skip-wrapper</code>, <code>data-cls-table-skip</code>, <code>data-cls-table-skip-input</code>, <code>data-cls-table-skip-button</code></li>
+<li>[x] Table: add event <code>data-on-skip</code></li>
+<li>[x] Common css: optimize <code>lists</code>, <code>reset</code></li>
+<li>[x] UtilsJS: improve <code>isFloat</code> function, issue #1518</li>
+<li>[x] Icons: add <code>whatsapp</code> icon, issue #1510 </li>
+<li>[x] AudioButton: add new component for the button with role <code>audio-button</code></li>
+<li>[x] Select: fix <code>prepend</code>, <code>append</code> for <code>input-small</code>, <code>input-large</code>. With <code>multiple</code>, <code>append</code> and <code>prepend</code> will not displayed.</li>
+<li>[x] Input: fix <code>prepend</code>, <code>append</code> for <code>input-small</code>, <code>input-large</code>. Issue #1522</li>
+<li>[x] Counter: fix start if element already in viewport</li>
+<li>[x] CSS: added <code>metro-reset.css</code>, <code>metro-common.css</code>, <code>metro-components.css</code> as standalone.</li>
+<li>[x] Image magnifier: fix glass image when user resize original image</li>
+<li>[x] Notifies: minor improve notify create method </li>
+<li>[x] Donut: update for using new <code>animate</code> function to draw <code>stroke-dasharray</code></li>
+<li>[x] Counter: update for using new <code>animate</code> function to draw</li>
+<li>[x] File: fix clear when user fire <code>reset</code> on form in <code>drop</code> mode, issue #1524</li>
+<li>[x] Adblock: a new component for hunting on the ads blockers </li>
+<li>[x] Core: refactoring for new component definition</li>
+<li>[x] Audio: rename component to <code>audio-player</code></li>
+<li>[x] Video: rename component to <code>video-player</code></li>
+<li>[x] Calendar: minor upd for action buttons</li>
+<li>[x] i18n: refactoring definition. Now each lang defined in own file</li>
+<li>[x] Third party: third party components styles <code>select2</code>, <code>datatables</code> move to components and include to main</li>
+<li>[x] Container: remove prop <code>display: block</code></li>
+<li>[x] Select: add using empty value for <code>option</code>, issue #1527</li>
+<li>[x] Action button: fix sub actions position </li>
+<li>[x] Additional colors: refactoring</li>
+<li>[x] Utils: remove method <code>random</code>, to get random value from an array or two values, use <code>$.random(array | a, b)</code> from <code>m4q</code></li>
+<li>[x] Utils: remove method <code>uniqueID</code>, to get unique GUID, use <code>$.uniqueID(prefix)</code> from <code>m4q</code></li>
+<li>[x] Utils: remove method <code>formData</code>, to get form data as array, use <code>$.serializeToArray(form)</code> from <code>m4q</code> and <code>$.serialize(form)</code> to get stringify value with <code>&amp;</code> divider</li>
+<li>[x] Utils: remove method <code>strToArray</code>, to transform string to array, use String.prototype method <code>String.prototype.toArray(delimiter, type, format)</code></li>
+<li>[x] Utils: remove method <code>callback</code>, execute function or code, use method <code>Utils.exec(fn, args, context)</code></li>
+<li>[x] Sidebar: add attribute <code>data-menu-scrollbar="true|false"</code>. Attribute enable or disable scrollbar in the sidebar menu, issue #1528</li>
+<li>[x] Tag: new component. Used in <code>tag-input</code>, <code>select</code>, can be used as standalone.</li>
+<li>[x] Ribbon menu: fix sizes and positions for <code>ribbon-icon-button</code>, <code>ribbon-tool-button</code> </li>
+<li>[x] Menus: removed <code>text-decoration</code> for anchors (<code>a</code>) inside any types of menus</li>
+<li>[x] Cookie: new class for cookie manipulation <code>Metro.cookie</code>. Contains methods: <code>setCookie()</code>, <code>getCookie()</code>, <code>delCookie()</code> </li>
+<li>[x] Cookie disclaimer: new component for accept cookies for GDPR, and not only, issue #1530</li>
+<li>[x] Metro icon font: add 65 new icons <code>cross-light</code>, <code>document-file-*</code> (64)</li>
+<li>[x] Select: improved performance for creating options, issue #1534</li>
+<li>[x] Select: remove dependency from <code>d-menu</code></li>
+<li>[x] Navview: add scrollable to <code>navview-menu</code> in <code>compacted</code> mode</li>
 </ul>
     </section>
 </article>
