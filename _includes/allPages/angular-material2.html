@@ -10,7 +10,7 @@
     "@type" : "Organization",
     "name" : "angular"
   },
-  "datePublished" : "2020-06-16",
+  "datePublished" : "2020-06-25",
   "publisher" : {
     "@type" : "Organization",
     "name" : "angular"
@@ -19,10 +19,10 @@
   "downloadUrl" : "https://github.com/angular/components",
   "operatingSystem" : "Windows, OSX, Android, IOS, all",
   "requirements" : "TypeScript, CSS, HTML, Starlark, JavaScript, Shell",
-  "softwareVersion" : "9.2.4",
+  "softwareVersion" : "10.0.0",
   "aggregateRating" : {
     "@type" : "AggregateRating",
-    "ratingCount" : "19938"
+    "ratingCount" : "19964"
   },
   "review" : {
     "@type" : "Review",
@@ -30,7 +30,7 @@
       "@type" : "Person",
       "name" : "Saravanakumar.org"
     },
-    "datePublished" : "2020-06-20",
+    "datePublished" : "2020-06-25",
     "reviewBody" : "Written in Sass  Javascript. Very good build in templates are available. This is frameworks design for material. This framework Feature types are full"
   }
 }
@@ -96,53 +96,25 @@
     </div>
 </div>
 <hr>
-<p>
-  <a class="btn btn-lg btn-danger" data-toggle="collapse" href="#collapsePrerelease" aria-expanded="false" aria-controls="collapsePrerelease">
-    Prerelease version available
-  </a> 
-  <a class="btn btn-danger" data-toggle="collapse" href="#collapsePrerelease" aria-expanded="false" aria-controls="collapsePrerelease">
-    Show more
-  </a>     
-</p>
-<div class="collapse" id="collapsePrerelease">
-    <div class="card-deck-wrapper my-2">
-        <div class="card-deck">
-            <div class="card card-inverse sa-card-aqua text-xs-center">
-                <div class="card-block">
-                    <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Prerelease version</h4>
-                    <h2 class="card-title">10.0.0-rc.2</h2>
-                </div>
-            </div>
-            <div class="card card-inverse sa-card-yellow text-xs-center">
-                <div class="card-block">
-                    <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last Release</h4>
-                    <h2 class="card-title">Jun 16, 2020</h2>
-                    <p class="card-text"><small>Created at Jun 15, 2020</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<hr>
 <div class="card-deck-wrapper my-2">
     <div class="card-deck">
         <div class="card card-inverse sa-card-blue text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-cloud-download" aria-hidden="true"></i> Current version</h4>
-                <h2 class="card-title">9.2.4</h2>
+                <h2 class="card-title">10.0.0</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-navy text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-clone" aria-hidden="true"></i> Last release</h4>
-                <h2 class="card-title">May 19, 2020</h2>
+                <h2 class="card-title">Jun 25, 2020</h2>
                 <p class="card-text"><small>Created at Jan 5, 2016</small></p>
             </div>
         </div>
         <div class="card card-inverse sa-card-brown text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Last commit</h4>
-                <h2 class="card-title">Jun 20, 2020
+                <h2 class="card-title">Jun 25, 2020
                 </h2>
             </div>
         </div>
@@ -154,25 +126,25 @@
         <div class="card card-inverse sa-card-orange text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-file-text" aria-hidden="true"></i> Open Issues</h4>
-                <h2 class="card-title">2,126</h2>
+                <h2 class="card-title">2,163</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-fuchsia text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-code-fork" aria-hidden="true"></i> Forks</h4>
-                <h2 class="card-title">5,378</h2>
+                <h2 class="card-title">5,388</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-purple text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-star" aria-hidden="true"></i> Star</h4>
-                <h2 class="card-title">19,938</h2>
+                <h2 class="card-title">19,964</h2>
             </div>
         </div>
         <div class="card card-inverse sa-card-maroon text-xs-center">
             <div class="card-block">
                 <h4 class="card-title"><i class="fa fa-eye" aria-hidden="true"></i> Watchers</h4>
-                <h2 class="card-title">1,050</h2>
+                <h2 class="card-title">1,049</h2>
             </div>
         </div>
     </div>
@@ -198,30 +170,136 @@
 
     <section class="my-2">
     <h1>
-        Release Notes <small>on May 19, 2020 for 9.2.4</small>
+        Release Notes <small>on June 25, 2020 for 10.0.0</small>
     </h1>
-        <h3 id="cdk">cdk</h3>
+        <h2 id="highlights">Highlights</h2>
+<ul>
+<li>A number of previously deprecated APIs have been removed (see below for more details).</li>
+<li>New date-range picker in <code>@angular/material</code></li>
+</ul>
+<h2 id="nodesassdeprecation"><code>node-sass</code> deprecation</h2>
+<p>Support for <code>node-sass</code> with Angular CDK and Angular Material is now deprecated in favor of the
+newer and more actively supported <code>sass</code> package. Ending support for <code>node-sass</code> will allow use of
+the new Sass module system, which offers a number of benefits over the existing import system.</p>
+<h3 id="cdk">cdk</h3>
+<h4 id="breakingchanges">Breaking changes</h4>
+<ul>
+<li><code>CdkDropList.start</code> has been removed.</li>
+<li><code>CdkDropList.drop</code> has been removed.</li>
+<li><code>CdkDropList.enter</code> has been removed.</li>
+<li><code>CdkDropList.exit</code> has been removed.</li>
+<li><code>CdkDropList.getItemIndex</code> has been removed.</li>
+<li><code>CDK_DRAG_CONFIG_FACTORY</code> has been removed.</li>
+<li><code>CdkTable.setHeaderRowDef</code> has been removed. Use <code>CdkTable.addHeaderRowDef</code> and <code>CdkTable.removeHeaderRowDef</code> instead.</li>
+<li><code>CdkTable.setFooterRowDef</code> has been removed. Use <code>CdkTable.addFooterRowDef</code> and <code>CdkTable.removeFooterRowDef</code> instead.</li>
+<li>The <code>_platformId</code> parameter in the <code>Platform</code> constructor is now required.</li>
+<li>The <code>copied</code> event from <code>cdkCopyToClipboard</code> has been renamed to <code>cdkCopyToClipboardCopied</code>.</li>
+<li>The <code>_ngZone</code> parameter in the <code>CdkCopyToClipboard</code> constructor is now required.</li>
+</ul>
 <p>|            |                       |
 | ---------- | --------------------- |
-| bug fix |  <strong>a11y:</strong> focus monitor not checking children if monitor is called multiple times with different parameters (<a href="https://github.com/angular/components/issues/19237">#19237</a>) (<a href="https://github.com/angular/components/commit/07711b4">07711b4</a>), closes <a href="https://github.com//github.com/angular/components/pull/19135/issues/discussion_r412471591">/github.com/angular/components/pull/19135#discussion_r412471591</a> <a href="https://github.com/angular/components/issues/19218">#19218</a> |
-| bug fix |  <strong>overlay:</strong> remove potentially leaky observable (<a href="https://github.com/angular/components/issues/19146">#19146</a>) (<a href="https://github.com/angular/components/commit/6f79527">6f79527</a>), closes <a href="https://github.com/angular/components/issues/10573">#10573</a> |</p>
+| bug fix |  <strong>table:</strong> project colgroup and col elements (<a href="https://github.com/angular/components/issues/18135">#18135</a>) (<a href="https://github.com/angular/components/commit/5b23084">5b23084</a>) |
+| feature |  <strong>tree:</strong> support optional trackBy in FlatTreeControl (<a href="https://github.com/angular/components/issues/18708">#18708</a>) (<a href="https://github.com/angular/components/commit/04d1588">04d1588</a>) |
+| bug fix |  <strong>testing/testbed:</strong> set defined event properties as configurable (<a href="https://github.com/angular/components/commit/94571c5">94571c5</a>) |
+| bug fix |  <strong>testing/testbed:</strong> synthetic DOM events cannot be prevented multiple times (<a href="https://github.com/angular/components/commit/bde3af8">bde3af8</a>), closes <a href="https://github.com/angular/components/issues/19440">#19440</a> |
+| bug fix |  <strong>drag-drop:</strong> error during device emulation on firefox (<a href="https://github.com/angular/components/issues/19396">#19396</a>) (<a href="https://github.com/angular/components/commit/d309ee2">d309ee2</a>), closes <a href="https://github.com/angular/components/issues/19385">#19385</a> |
+| bug fix |  <strong>drag-drop:</strong> error when item enters from the top and last has an intermediate child (<a href="https://github.com/angular/components/issues/19361">#19361</a>) (<a href="https://github.com/angular/components/commit/fbd6440">fbd6440</a>), closes <a href="https://github.com/angular/components/issues/19116">#19116</a> <a href="https://github.com/angular/components/issues/19359">#19359</a> |
+| feature |  <strong>table:</strong> add the ability to show a data row when no data is available (<a href="https://github.com/angular/components/issues/18041">#18041</a>) (<a href="https://github.com/angular/components/commit/e512581">e512581</a>) |
+| bug fix |  <strong>overlay:</strong> remove potentially leaky observable (<a href="https://github.com/angular/components/issues/19146">#19146</a>) (<a href="https://github.com/angular/components/commit/27a812b">27a812b</a>), closes <a href="https://github.com/angular/components/issues/10573">#10573</a> |</p>
 <h3 id="material">material</h3>
+<h4 id="breakingchanges-1">Breaking changes</h4>
+<ul>
+<li><code>MAT_HAMMER_OPTIONS</code> has been removed.</li>
+<li><code>GestureConfig</code> has been removed.</li>
+<li><code>HammerInput</code> has been removed.</li>
+<li><code>HammerStatic</code> has been removed.</li>
+<li><code>Recognizer</code> has been removed.</li>
+<li><code>RecognizerStatic</code> has been removed.</li>
+<li><code>HammerInstance</code> has been removed.</li>
+<li><code>HammerManager</code> has been removed.</li>
+<li><code>HammerOptions</code> has been removed.</li>
+<li><code>MatButtonToggleGroupMultiple</code> has been removed. Use <code>MatButtonToggleGroup</code> instead.</li>
+<li><code>MatSlideToggleDefaultOptions.disableDragValue</code> has been removed.</li>
+<li><code>MatSlideToggle.dragChange</code> has been removed.</li>
+<li>The <code>_ngZone</code> and <code>_dir</code> parameters have been removed from the <code>MatSlideToggle</code> constructor.</li>
+<li>The <code>_viewportRuler</code> parameter in the <code>MatAutocompleteTrigger</code> constructor is now required.</li>
+<li>The <code>_location</code> and <code>_errorHandler</code> parameters in the <code>MatIcon</code> constructor are now required.</li>
+<li>The <code>_errorHandler</code> parameter in the <code>MatIconRegistry</code> constructor is now required.</li>
+<li>The _ngZone and _document parameters in the <code>MatSlider</code> constructor are now required.</li>
+<li>The <code>_focusMonitor</code> and <code>_elementRef</code> parameters in the MatSortHeader constructor are now required.</li>
+<li>The <code>_hammerLoader</code> parameter has been removed from the MatTooltip constructor.</li>
+</ul>
 <p>|            |                       |
 | ---------- | --------------------- |
-| bug fix |  <strong>autocomplete:</strong> incorrectly detecting shadow DOM when inserted through an embedded view (<a href="https://github.com/angular/components/issues/19332">#19332</a>) (<a href="https://github.com/angular/components/commit/8d79d73">8d79d73</a>) |
-| bug fix |  <strong>chips:</strong> chip list overriding chip disabled value (<a href="https://github.com/angular/components/issues/19228">#19228</a>) (<a href="https://github.com/angular/components/commit/49be570">49be570</a>), closes <a href="https://github.com/angular/components/issues/19213">#19213</a> |
-| bug fix |  <strong>dialog:</strong> focus trap not attached if autoFocus is disabled (<a href="https://github.com/angular/components/issues/19251">#19251</a>) (<a href="https://github.com/angular/components/commit/e61deb9">e61deb9</a>), closes <a href="https://github.com/angular/components/issues/18826">#18826</a> <a href="https://github.com/angular/components/issues/19246">#19246</a> |
-| bug fix |  <strong>form-field:</strong> add missing material common module (<a href="https://github.com/angular/components/issues/19093">#19093</a>) (<a href="https://github.com/angular/components/commit/8e9e1fb">8e9e1fb</a>) |
-| bug fix |  <strong>icon:</strong> cancel in-flight icon requests if the icon changes (<a href="https://github.com/angular/components/issues/19303">#19303</a>) (<a href="https://github.com/angular/components/commit/bef4e80">bef4e80</a>) |
-| bug fix |  <strong>input:</strong> avoid repeat accesses to check if element is a textarea (<a href="https://github.com/angular/components/issues/19115">#19115</a>) (<a href="https://github.com/angular/components/commit/8688dd8">8688dd8</a>) |
-| bug fix |  <strong>list:</strong> selection list marked as touched when tabbing in (<a href="https://github.com/angular/components/issues/19177">#19177</a>) (<a href="https://github.com/angular/components/commit/2e7dc62">2e7dc62</a>), closes <a href="https://github.com/angular/components/issues/18445">#18445</a> <a href="https://github.com/angular/components/issues/19171">#19171</a> |
-| bug fix |  <strong>tabs:</strong> don't prevent default space/enter action if action tab doesn't change (<a href="https://github.com/angular/components/issues/19207">#19207</a>) (<a href="https://github.com/angular/components/commit/7a4128b">7a4128b</a>), closes <a href="https://github.com/angular/components/issues/19190">#19190</a> |
-| bug fix |  <strong>text-field:</strong> unable to undo/redo in autosized text field on firefox (<a href="https://github.com/angular/components/issues/19238">#19238</a>) (<a href="https://github.com/angular/components/commit/7e1fd89">7e1fd89</a>) |</p>
+| bug fix |  <strong>chips:</strong> chip list overriding chip disabled value (<a href="https://github.com/angular/components/issues/19228">#19228</a>) (<a href="https://github.com/angular/components/commit/9be5156">9be5156</a>), closes <a href="https://github.com/angular/components/issues/19213">#19213</a> |
+| bug fix |  <strong>dialog:</strong> focus trap not attached if autoFocus is disabled (<a href="https://github.com/angular/components/issues/19251">#19251</a>) (<a href="https://github.com/angular/components/commit/5bb81e8">5bb81e8</a>), closes <a href="https://github.com/angular/components/issues/18826">#18826</a> <a href="https://github.com/angular/components/issues/19246">#19246</a> |
+| bug fix |  <strong>form-field:</strong> add missing material common module (<a href="https://github.com/angular/components/issues/19093">#19093</a>) (<a href="https://github.com/angular/components/commit/ba521d2">ba521d2</a>) |
+| bug fix |  <strong>input:</strong> avoid repeat accesses to check if element is a textarea (<a href="https://github.com/angular/components/issues/19115">#19115</a>) (<a href="https://github.com/angular/components/commit/f8d9c96">f8d9c96</a>) |
+| bug fix |  <strong>list:</strong> selection list marked as touched when tabbing in (<a href="https://github.com/angular/components/issues/19177">#19177</a>) (<a href="https://github.com/angular/components/commit/7fde305">7fde305</a>), closes <a href="https://github.com/angular/components/issues/18445">#18445</a> <a href="https://github.com/angular/components/issues/19171">#19171</a> |
+| bug fix |  <strong>tabs:</strong> don't prevent default space/enter action if action tab doesn't change (<a href="https://github.com/angular/components/issues/19207">#19207</a>) (<a href="https://github.com/angular/components/commit/b38c812">b38c812</a>), closes <a href="https://github.com/angular/components/issues/19190">#19190</a> |
+| feature |  <strong>datepicker:</strong> add date range picker (<a href="https://github.com/angular/components/issues/19125">#19125</a>) (<a href="https://github.com/angular/components/commit/96efaad">96efaad</a>), closes <a href="https://github.com/angular/components/issues/18090">#18090</a> <a href="https://github.com/angular/components/issues/17363">#17363</a> <a href="https://github.com/angular/components/issues/17497">#17497</a> <a href="https://github.com/angular/components/issues/17766">#17766</a> <a href="https://github.com/angular/components/issues/17363">#17363</a> <a href="https://github.com/angular/components/issues/17942">#17942</a> <a href="https://github.com/angular/components/issues/18159">#18159</a> <a href="https://github.com/angular/components/issues/18213">#18213</a> <a href="https://github.com/angular/components/issues/18247">#18247</a> <a href="https://github.com/angular/components/issues/18278">#18278</a> <a href="https://github.com/angular/components/issues/18292">#18292</a> <a href="https://github.com/angular/components/issues/18369">#18369</a> <a href="https://github.com/angular/components/issues/18404">#18404</a> <a href="https://github.com/angular/components/issues/18531">#18531</a> <a href="https://github.com/angular/components/issues/18630">#18630</a> <a href="https://github.com/angular/components/issues/18660">#18660</a> <a href="https://github.com/angular/components/issues/18753">#18753</a> <a href="https://github.com/angular/components/issues/18819">#18819</a> <a href="https://github.com/angular/components/issues/18874">#18874</a> <a href="https://github.com/angular/components/issues/18884">#18884</a> <a href="https://github.com/angular/components/issues/18943">#18943</a> <a href="https://github.com/angular/components/issues/18936">#18936</a> <a href="https://github.com/angular/components/issues/18980">#18980</a> <a href="https://github.com/angular/components/issues/19031">#19031</a> <a href="https://github.com/angular/components/issues/19098">#19098</a> <a href="https://github.com/angular/components/issues/19088">#19088</a> <a href="https://github.com/angular/components/issues/19111">#19111</a> <a href="https://github.com/angular/components/issues/19174">#19174</a> <a href="https://github.com/angular/components/issues/19088">#19088</a> <a href="https://github.com/angular/components/issues/19179">#19179</a> <a href="https://github.com/angular/components/issues/19176">#19176</a> <a href="https://github.com/angular/components/issues/19187">#19187</a> <a href="https://github.com/angular/components/issues/19211">#19211</a> <a href="https://github.com/angular/components/issues/19219">#19219</a> <a href="https://github.com/angular/components/issues/19239">#19239</a> <a href="https://github.com/angular/components/issues/19170">#19170</a> |
+| feature |  <strong>datepicker:</strong> allow for the dropdown position to be customized (<a href="https://github.com/angular/components/issues/16698">#16698</a>) (<a href="https://github.com/angular/components/commit/9104a0b">9104a0b</a>), closes <a href="https://github.com/angular/components/issues/16550">#16550</a> |
+| feature |  <strong>icon:</strong> allow fetching icons with credentials (<a href="https://github.com/angular/components/issues/18896">#18896</a>) (<a href="https://github.com/angular/components/commit/77730e9">77730e9</a>), closes <a href="https://github.com/angular/components/issues/18871">#18871</a> |
+| bug fix |  <strong>datepicker:</strong> set color on range separator (<a href="https://github.com/angular/components/issues/19308">#19308</a>) (<a href="https://github.com/angular/components/commit/2f8b271">2f8b271</a>) |
+| bug fix |  <strong>expansion:</strong> disable header height transition if noop animations is set (<a href="https://github.com/angular/components/issues/19373">#19373</a>) (<a href="https://github.com/angular/components/commit/189d98e">189d98e</a>) |
+| feature |  report warning if duplicate theme styles are generated (<a href="https://github.com/angular/components/commit/6095e29">6095e29</a>), closes <a href="https://github.com/angular/components/issues/19141">#19141</a> |
+| bug fix |  <strong>dialog:</strong> focus recapturing not accounting for autoFocus option (<a href="https://github.com/angular/components/issues/19356">#19356</a>) (<a href="https://github.com/angular/components/commit/72b0219">72b0219</a>), closes <a href="https://github.com/angular/components/issues/18826">#18826</a> <a href="https://github.com/angular/components/issues/19350">#19350</a> |
+| bug fix |  <strong>ng-add:</strong> ng add <a href="https://github.com/angular">@angular</a>/material fails in library projects (<a href="https://github.com/angular/components/issues/19164">#19164</a>) (<a href="https://github.com/angular/components/commit/822e3e0">822e3e0</a>) |
+| bug fix |  <strong>table:</strong> incorrectly sticking multiple footer rows (<a href="https://github.com/angular/components/issues/19321">#19321</a>) (<a href="https://github.com/angular/components/commit/95007e5">95007e5</a>), closes <a href="https://github.com/angular/components/issues/19311">#19311</a> |
+| feature |  <strong>tooltip/testing:</strong> add test harness for mat-tooltip (<a href="https://github.com/angular/components/issues/19144">#19144</a>) (<a href="https://github.com/angular/components/commit/44accd6">44accd6</a>), closes <a href="https://github.com/angular/components/issues/16676">#16676</a> |
+| bug fix |  <strong>datepicker:</strong> placeholder not behaving correctly in legacy form field (<a href="https://github.com/angular/components/issues/19595">#19595</a>) (<a href="https://github.com/angular/components/commit/ec7219d">ec7219d</a>) |
+| feature |  <strong>mdc-list:</strong> add list-option template (<a href="https://github.com/angular/components/issues/19327">#19327</a>) (<a href="https://github.com/angular/components/commit/c865136">c865136</a>) |
+| feature |  <strong>menu:</strong> add input to add overlay pane classes (<a href="https://github.com/angular/components/issues/19547">#19547</a>) (<a href="https://github.com/angular/components/commit/5244a9f">5244a9f</a>) |
+| bug fix |  <strong>checkbox:</strong> high contrast focus indication not working (<a href="https://github.com/angular/components/issues/19488">#19488</a>) (<a href="https://github.com/angular/components/commit/a95da92">a95da92</a>), closes <a href="https://github.com/angular/components/issues/19443">#19443</a> |
+| bug fix |  <strong>checkbox:</strong> pass aria-describedby through to input (<a href="https://github.com/angular/components/issues/19495">#19495</a>) (<a href="https://github.com/angular/components/commit/e1d85d2">e1d85d2</a>), closes <a href="https://github.com/angular/components/issues/19477">#19477</a> |
+| bug fix |  <strong>datepicker:</strong> compilation errors with ViewEngine (<a href="https://github.com/angular/components/issues/19516">#19516</a>) (<a href="https://github.com/angular/components/commit/00e2171">00e2171</a>) |
+| bug fix |  <strong>slider:</strong> focus ring not matching theme color (<a href="https://github.com/angular/components/issues/19519">#19519</a>) (<a href="https://github.com/angular/components/commit/2a6a63c">2a6a63c</a>), closes <a href="https://github.com/angular/components/issues/19507">#19507</a> |
+| bug fix |  <strong>datepicker:</strong> date range overriding model value if both fields are changed at the same time (<a href="https://github.com/angular/components/issues/19593">#19593</a>) (<a href="https://github.com/angular/components/commit/e2a579a">e2a579a</a>), closes <a href="https://github.com/angular/components/issues/19588">#19588</a> |
+| bug fix |  <strong>datepicker:</strong> not revalidating after value is changed through the calendar (<a href="https://github.com/angular/components/issues/19695">#19695</a>) (<a href="https://github.com/angular/components/commit/10888f3">10888f3</a>) |
+| bug fix |  <strong>input/testing:</strong> unable to set the value of inputs that don't respond to typing (<a href="https://github.com/angular/components/issues/18812">#18812</a>) (<a href="https://github.com/angular/components/commit/7e5802a">7e5802a</a>), closes <a href="https://github.com/angular/components/issues/18790">#18790</a> |</p>
+<h3 id="youtubeplayer">youtube-player</h3>
+<h4 id="breakingchanges-2">Breaking changes</h4>
+<ul>
+<li>The <code>platformId</code> parameter of the <code>YouTubePlayer</code> constructor is now required.</li>
+</ul>
+<p>|            |                       |
+| ---------- | --------------------- |
+| bug fix |  binding some event listeners too late (<a href="https://github.com/angular/components/issues/19429">#19429</a>) (<a href="https://github.com/angular/components/commit/d85732c">d85732c</a>), closes <a href="https://github.com/angular/components/issues/19408">#19408</a> |</p>
+<h3 id="googlemaps">google-maps</h3>
+<p>|            |                       |
+| ---------- | --------------------- |
+| feature |  add ground overlay component (<a href="https://github.com/angular/components/issues/19143">#19143</a>) (<a href="https://github.com/angular/components/commit/eba622a">eba622a</a>) |
+| feature |  expose the underlying Google Maps objects. (<a href="https://github.com/angular/components/issues/18613">#18613</a>) (<a href="https://github.com/angular/components/commit/3e00f4c">3e00f4c</a>) |
+| bug fix |  allow for ground overlay image to be changed (<a href="https://github.com/angular/components/issues/19306">#19306</a>) (<a href="https://github.com/angular/components/commit/485352e">485352e</a>) |
+| bug fix |  allow different anchor objects for info window (<a href="https://github.com/angular/components/issues/19378">#19378</a>) (<a href="https://github.com/angular/components/commit/d0ab041">d0ab041</a>) |
+| bug fix |  add exportAs to all directives (<a href="https://github.com/angular/components/issues/19522">#19522</a>) (<a href="https://github.com/angular/components/commit/6544de8">6544de8</a>), closes <a href="https://github.com/angular/components/issues/19462">#19462</a> |</p>
+<h3 id="cdkexperimental">cdk-experimental</h3>
+<p>|            |                       |
+| ---------- | --------------------- |
+| feature |  <strong>menu:</strong> Add menu skeleton and build scripts (<a href="https://github.com/angular/components/issues/19583">#19583</a>) (<a href="https://github.com/angular/components/commit/c7cadc3">c7cadc3</a>) |
+| bug fix |  <strong>column-resize:</strong> not working inside OnPush component (<a href="https://github.com/angular/components/issues/19671">#19671</a>) (<a href="https://github.com/angular/components/commit/8ff9844">8ff9844</a>), closes <a href="https://github.com/angular/components/issues/19670">#19670</a> |</p>
 <h3 id="materialexperimental">material-experimental</h3>
 <p>|            |                       |
 | ---------- | --------------------- |
-| bug fix |  <strong>column-resize:</strong> Resize table as well as columns, improve handing … (<a href="https://github.com/angular/components/issues/19264">#19264</a>) (<a href="https://github.com/angular/components/commit/87b8edb">87b8edb</a>) |
-| bug fix |  <strong>form-field:</strong> add setLabelRequired adapter (<a href="https://github.com/angular/components/issues/19284">#19284</a>) (<a href="https://github.com/angular/components/commit/e43f4ac">e43f4ac</a>) |
-| bug fix |  <strong>mdc-list:</strong> properly render leading and trailing icons on list items (<a href="https://github.com/angular/components/issues/19201">#19201</a>) (<a href="https://github.com/angular/components/commit/ce136a9">ce136a9</a>) |</p>
+| bug fix |  <strong>mdc-form-field:</strong> add setLabelRequired adapter (<a href="https://github.com/angular/components/issues/19284">#19284</a>) (<a href="https://github.com/angular/components/commit/7b42c7e">7b42c7e</a>) |
+| bug fix |  <strong>mdc-progress-bar:</strong> better server-side rendering support (<a href="https://github.com/angular/components/issues/19036">#19036</a>) (<a href="https://github.com/angular/components/commit/5d25d1b">5d25d1b</a>) |
+| feature |  <strong>mdc-button:</strong> support density scaling (<a href="https://github.com/angular/components/commit/9500e75">9500e75</a>) |
+| feature |  <strong>mdc-checkbox:</strong> support density scaling (<a href="https://github.com/angular/components/commit/84f2c1a">84f2c1a</a>) |
+| feature |  <strong>mdc-chips:</strong> support for density scaling (<a href="https://github.com/angular/components/commit/ee1e181">ee1e181</a>) |
+| feature |  <strong>mdc-form-field:</strong> support density scaling (<a href="https://github.com/angular/components/commit/3bcdc5e">3bcdc5e</a>) |
+| feature |  <strong>mdc-radio:</strong> support for density scaling (<a href="https://github.com/angular/components/commit/c659664">c659664</a>) |
+| feature |  <strong>mdc-slide-toggle:</strong> support density scaling (<a href="https://github.com/angular/components/commit/feafb2b">feafb2b</a>) |
+| feature |  <strong>mdc-table:</strong> support for density scaling (<a href="https://github.com/angular/components/commit/e288558">e288558</a>) |
+| feature |  <strong>mdc-tabs:</strong> support for density scaling (<a href="https://github.com/angular/components/commit/90d294b">90d294b</a>) |
+| bug fix |  <strong>mdc-slider:</strong> remove slider theme from all-theme (<a href="https://github.com/angular/components/issues/19411">#19411</a>) (<a href="https://github.com/angular/components/commit/d952a22">d952a22</a>) |
+| bug fix |  <strong>mdc-chips:</strong> removing chip on any key press (<a href="https://github.com/angular/components/issues/19425">#19425</a>) (<a href="https://github.com/angular/components/commit/ee63f63">ee63f63</a>) |
+| bug fix |  <strong>mdc-radio:</strong> avoid hard references to base material components (<a href="https://github.com/angular/components/issues/19403">#19403</a>) (<a href="https://github.com/angular/components/commit/fb9174a">fb9174a</a>) |
+| bug fix |  <strong>mdc-form-field:</strong> do not show focus overlay when disabled (<a href="https://github.com/angular/components/commit/6bf7f24">6bf7f24</a>) |
+| bug fix |  <strong>mdc-form-field:</strong> show required asterisk for disabled fields (<a href="https://github.com/angular/components/commit/e3413ba">e3413ba</a>), closes <a href="https://github.com/angular/components/issues/19410">#19410</a> |
+| bug fix |  <strong>mdc-menu:</strong> missing padding after latest canary release (<a href="https://github.com/angular/components/issues/19548">#19548</a>) (<a href="https://github.com/angular/components/commit/b618a96">b618a96</a>) |
+| bug fix |  <strong>mdc-slide-toggle:</strong> fix focus indicator position (<a href="https://github.com/angular/components/issues/19551">#19551</a>) (<a href="https://github.com/angular/components/commit/6c212b7">6c212b7</a>) |
+| bug fix |  <strong>mdc-menu:</strong> menu items missing padding (<a href="https://github.com/angular/components/issues/19634">#19634</a>) (<a href="https://github.com/angular/components/commit/9b8baa6">9b8baa6</a>), closes <a href="https://github.com/angular/components/issues/19548">#19548</a> |
+| bug fix |  <strong>popover-edit:</strong> closing instantly when opening with enter key (<a href="https://github.com/angular/components/issues/18444">#18444</a>) (<a href="https://github.com/angular/components/commit/23b9145">23b9145</a>), closes <a href="https://github.com/angular/components/issues/18194">#18194</a> |
+| feature |  <strong>mdc-list:</strong> add MDC foundation for action/nav list (<a href="https://github.com/angular/components/issues/19601">#19601</a>) (<a href="https://github.com/angular/components/commit/5f15763">5f15763</a>) |</p>
     </section>
 </article>
